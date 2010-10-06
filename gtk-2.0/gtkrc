@@ -14,7 +14,7 @@ gtk-auto-mnemonics = 1
 
 style "default"
 {
-	xthickness = 1
+	xthickness = 3 # set >= 3 to get nice spacing on breadcrumb in open file dialog
 	ythickness = 1
 
 	#######################
@@ -120,7 +120,7 @@ style "default"
 		glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
 		
 		gradient_shades     = {1.15, 1.02, 1.02, 0.9} # default: {1.1,1.0,1.0,1.1}
-		highlight_shade     = 1.05   # set highlight amount for buttons or widgets
+		highlight_shade     = 1.0   # set highlight amount for buttons or widgets
 		lightborder_shade   = 1.1   # sets lightborder amount for buttons or widgets
 		lightborderstyle    = 1     # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 1     # 0 = flat, 1 = glassy, 2 = raised
@@ -155,7 +155,7 @@ style "debug"
 	text[SELECTED]    = shade(0.8, "red")
 	text[INSENSITIVE] = shade(0.6, "red")
 	
-    fg[NORMAL]      = "blue"
+        fg[NORMAL]      = "blue"
 	fg[PRELIGHT]    = shade(1.2, "blue")
 	fg[ACTIVE]      = shade(1.4, "blue")
 	fg[SELECTED]    = shade(0.8, "blue")
@@ -187,7 +187,8 @@ style "wider"
 
 style "entry" 
 {
-	xthickness = 3
+        # has to be >= roundness
+	xthickness = 3 
 	ythickness = 3
 
 	#bg[SELECTED] = mix (0.4, @selected_bg_color, @base_color)
@@ -202,9 +203,11 @@ style "entry"
 
 style "button"
 {
-        ythickness= 0
-        xthickness = 3  # set >= 3 to get nice spacing on breadcrumb in open file dialog
-        
+
+        # this should be equal for focus overlays
+        ythickness= 1
+        xthickness = 1          
+
 	engine "murrine"
 	{
 		lightborder_shade = 1.1
@@ -252,7 +255,7 @@ style "panel" = "selected"
 	xthickness = 0
 	ythickness = 0
 
-	bg_pixmap[NORMAL] = "panel_bg.png"
+	bg_pixmap[NORMAL] = "panel_bg_smooth.png"
 
 	bg[NORMAL] = shade(0.81, @bg_color)
 	bg[ACTIVE] = mix(0.4, @selected_bg_color, shade(.8, @bg_color)) # active window
@@ -326,8 +329,8 @@ style "treeview"
 # look too bumpy
 style "treeview-header"
 {
-	ythickness = 4
-	xthickness = 2
+	ythickness = 1
+	xthickness = 1
 
 	bg[NORMAL]	= shade(1.02,@bg_color)
 	bg[PRELIGHT] 	= shade (.9, @bg_color)
@@ -340,7 +343,7 @@ style "treeview-header"
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
 		gradient_shades     = {1.05, 0.97, 0.97, 0.9} # default: {1.1,1.0,1.0,1.1}
-		highlight_shade     	= 1.05  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.0  # set highlight amount for buttons or widgets
 		lightborder_shade   	= 1.1   # sets lightborder amount for buttons or widgets
                 roundness = 1
 		spinbuttonstyle     = 0     # 0 = no seperator, 1 = with separator
@@ -406,7 +409,7 @@ style "chiclet"
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
 		gradient_shades     = {1.02, 0.97, 0.97, 0.92} # default: {1.1,1.0,1.0,1.1}
-		highlight_shade     	= 1.05  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.0  # set highlight amount for buttons or widgets
 		lightborder_shade   	= 1.1   # sets lightborder amount for buttons or widgets
 		spinbuttonstyle     = 0     # 0 = no seperator, 1 = with separator
 	}
