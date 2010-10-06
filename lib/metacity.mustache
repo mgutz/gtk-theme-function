@@ -216,16 +216,17 @@
    -->
 
 {{#close_button}}
-    <line color="HILITE" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
-    <line color="HILITE" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
-    <line color="HILITE" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
-    <line color="HILITE" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <!-- inset -->
+    <line color="HILITE" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 1"     x2="(width-6)/2 + 6" y2="(height-6)/2 + 6 + 1"/>
+    <line color="HILITE" width="1"  x1="(width-6)/2 + 6" y1="(height-6)/2 + 6 + 1" x2="(width-6)/2 + 7" y2="(height-6)/2 + 6 + 1"/> <!-- cap bottom right -->
+    <line color="HILITE" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 6 + 1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 1"/>
+    <line color="HILITE" width="1"   x1="(width-6)/2 + 6" y1="(height-6)/2 + 0 + 1"     x2="(width-6)/2 + 7" y2="(height-6)/2 + 1"/> <!-- cap top right -->
 
-    <line color="COLOR" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
-    <line color="COLOR" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
-    <line color="COLOR" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
-    <line color="COLOR" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
-
+    <!-- glyph -->
+    <line color="COLOR" width="2" x1="(width-6)/2"     y1="(height-6)/2"     x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="COLOR" width="1"  x1="(width-6)/2 + 6" y1="(height-6)/2 + 6" x2="(width-6)/2 + 7" y2="(height-6)/2 + 6"/> <!-- cap bottom right -->
+    <line color="COLOR" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="COLOR" width="1"   x1="(width-6)/2 + 6" y1="(height-6)/2 + 0"     x2="(width-6)/2 + 7" y2="(height-6)/2"/> <!-- cap top right -->
 {{/close_button}}
 
 <!--
