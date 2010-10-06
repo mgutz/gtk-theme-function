@@ -120,7 +120,7 @@ style "default"
 		glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
 		
 		gradient_shades     = {1.15, 1.02, 1.02, 0.9} # default: {1.1,1.0,1.0,1.1}
-		highlight_shade     = 1.0   # set highlight amount for buttons or widgets
+		highlight_shade     = 1.05   # set highlight amount for buttons or widgets
 		lightborder_shade   = 1.1   # sets lightborder amount for buttons or widgets
 		lightborderstyle    = 1     # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 1     # 0 = flat, 1 = glassy, 2 = raised
@@ -255,7 +255,7 @@ style "panel" = "selected"
 	xthickness = 0
 	ythickness = 0
 
-	bg_pixmap[NORMAL] = "panel_bg_smooth.png"
+	bg_pixmap[NORMAL] = "panel_bg_shiny.png"
 
 	bg[NORMAL] = shade(0.81, @bg_color)
 	bg[ACTIVE] = mix(0.4, @selected_bg_color, shade(.8, @bg_color)) # active window
@@ -343,9 +343,9 @@ style "treeview-header"
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
 		gradient_shades     = {1.05, 0.97, 0.97, 0.9} # default: {1.1,1.0,1.0,1.1}
-		highlight_shade     	= 1.0  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.04  # set highlight amount for buttons or widgets
 		lightborder_shade   	= 1.1   # sets lightborder amount for buttons or widgets
-                roundness = 1
+                roundness = 0
 		spinbuttonstyle     = 0     # 0 = no seperator, 1 = with separator
 
 	}
@@ -374,7 +374,7 @@ style "progressbar"
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.14   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
-		#highlight_shade     	= 1.02  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.06  # set highlight amount for buttons or widgets
 		#lightborder_shade   	= 1.2   # sets lightborder amount for buttons or widgets
 		roundness		= 9
 		gradient_shades     = {1.1,1.05,1.05,0.95} # default: {1.1,1.0,1.0,1.1}
@@ -409,7 +409,7 @@ style "chiclet"
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
 		gradient_shades     = {1.02, 0.97, 0.97, 0.92} # default: {1.1,1.0,1.0,1.1}
-		highlight_shade     	= 1.0  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.05  # set highlight amount for buttons or widgets
 		lightborder_shade   	= 1.1   # sets lightborder amount for buttons or widgets
 		spinbuttonstyle     = 0     # 0 = no seperator, 1 = with separator
 	}
@@ -432,7 +432,7 @@ style "scale"
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.14   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
-		highlight_shade     	= 1.05  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.06  # set highlight amount for buttons or widgets
 		roundness		= 6
 	}
 
@@ -462,7 +462,7 @@ style "scrollbar"
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
-		#highlight_shade     	= 1.02  # set highlight amount for buttons or widgets
+		highlight_shade     	= 1.06  # set highlight amount for buttons or widgets
 		#lightborder_shade   	= 1.2   # sets lightborder amount for buttons or widgets
 		roundness		= 6
 		gradient_shades     = {1.1,1.05,1.05,0.95} # default: {1.1,1.0,1.0,1.1}
@@ -518,7 +518,7 @@ style "radiocheck"
 	engine "murrine"
 	{
 	    	contrast = 0.8
-	    	highlight_shade = 1.0
+	    	highlight_shade = 1.05
 	    	lightborder_shade = 1.0
 	    	gradient_shades = {1.1,1.0,1.0,0.9}
 	}
