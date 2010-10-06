@@ -514,8 +514,6 @@ style "nautilus-sidebar"
 
 style "radiocheck"
 {
-	bg[SELECTED] 	= @selected_bg_color 
-	
 	engine "murrine"
 	{
 	    	contrast = 0.8
