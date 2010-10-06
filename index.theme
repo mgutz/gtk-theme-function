@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Name=Function
+Type=X-GNOME-Metatheme
+Comment=mgutz
+Name[en_US]=Function
+
+[X-GNOME-Metatheme]
+GtkTheme=Function
+MetacityTheme=Function
+IconTheme=Faenza

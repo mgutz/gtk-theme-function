@@ -1,0 +1,9 @@
+*.o
+*swp
+*~
+*tbz
+._*
+.DS_Store
+.VimballRecord
+.netrwhist
+*.so
