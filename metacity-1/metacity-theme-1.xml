@@ -83,10 +83,10 @@
 <draw_ops name="bg_topbar_small_focused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
     <color value="#c4c4c4"/>
-    <color value="#b1b1b1"/>
+    <color value="#b0b0b0"/>
   </gradient>
   <gradient type="vertical" x="0" y="(title_height+4)/2" width="width" height="(title_height+4)/2">
-    <color value="#acacac"/>
+    <color value="#b0b0b0"/>
     <color value="#9c9c9c"/>
   </gradient>
   <!-- highlight -->
@@ -98,10 +98,10 @@
 <draw_ops name="bg_topbar_small_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
     <color value="#e0e0e0"/>
-    <color value="#d0d0d0"/>
+    <color value="#c9c9c9"/>
   </gradient>
   <gradient type="vertical" x="0" y="(title_height+4)/2" width="width" height="(title_height+4)/2">
-    <color value="#d0d0d0"/>
+    <color value="#c9c9c9"/>
     <color value="#b2b2b2"/>
   </gradient>
   <!-- highlight -->
