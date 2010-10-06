@@ -257,105 +257,133 @@
 </draw_ops>
 <!-- restore_button-->
 <draw_ops name="restore_button_normal">
-  <rectangle color="#bdbdbd" x="ButtonPad-1" y="ButtonPad-1 + 1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#bdbdbd" x="ButtonPad" y="ButtonPad + 1" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#bdbdbd" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2 + 1" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2 + 1"/>
-  <line color="#bdbdbd" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3 + 1" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1 + 1"/>
-  <rectangle color="#484848" x="ButtonPad-1" y="ButtonPad-1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#484848" x="ButtonPad" y="ButtonPad" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#484848" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2"/>
-  <line color="#484848" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1"/>
+  <rectangle color="#bdbdbd" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
+  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <line color="#bdbdbd" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
+  <line color="#bdbdbd" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
+  <rectangle color="#484848" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
+  <rectangle color="#484848" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+  <line color="#484848" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
+  <line color="#484848" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
 </draw_ops>
 <draw_ops name="restore_button_prelight">
-  <rectangle color="#bdbdbd" x="ButtonPad-1" y="ButtonPad-1 + 1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#bdbdbd" x="ButtonPad" y="ButtonPad + 1" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#bdbdbd" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2 + 1" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2 + 1"/>
-  <line color="#bdbdbd" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3 + 1" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1 + 1"/>
-  <rectangle color="#181818" x="ButtonPad-1" y="ButtonPad-1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#181818" x="ButtonPad" y="ButtonPad" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#181818" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2"/>
-  <line color="#181818" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1"/>
+  <rectangle color="#bdbdbd" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
+  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <line color="#bdbdbd" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
+  <line color="#bdbdbd" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
+  <rectangle color="#181818" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
+  <rectangle color="#181818" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+  <line color="#181818" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
+  <line color="#181818" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
 </draw_ops>
 <draw_ops name="restore_button_pressed">
-  <rectangle color="#bdbdbd" x="ButtonPad-1" y="ButtonPad-1 + 1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#bdbdbd" x="ButtonPad" y="ButtonPad + 1" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#bdbdbd" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2 + 1" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2 + 1"/>
-  <line color="#bdbdbd" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3 + 1" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1 + 1"/>
-  <rectangle color="#000000" x="ButtonPad-1" y="ButtonPad-1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#000000" x="ButtonPad" y="ButtonPad" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#000000" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2"/>
-  <line color="#000000" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1"/>
+  <rectangle color="#bdbdbd" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
+  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <line color="#bdbdbd" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
+  <line color="#bdbdbd" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
+  <rectangle color="#000000" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
+  <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+  <line color="#000000" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
+  <line color="#000000" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
 </draw_ops>
 <draw_ops name="restore_button_unfocused_normal">
-  <rectangle color="#cecece" x="ButtonPad-1" y="ButtonPad-1 + 1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#cecece" x="ButtonPad" y="ButtonPad + 1" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#cecece" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2 + 1" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2 + 1"/>
-  <line color="#cecece" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3 + 1" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1 + 1"/>
-  <rectangle color="#6c6c6c" x="ButtonPad-1" y="ButtonPad-1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#6c6c6c" x="ButtonPad" y="ButtonPad" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#6c6c6c" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2"/>
-  <line color="#6c6c6c" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1"/>
+  <rectangle color="#cecece" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
+  <rectangle color="#cecece" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <line color="#cecece" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
+  <line color="#cecece" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
+  <rectangle color="#6c6c6c" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
+  <rectangle color="#6c6c6c" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+  <line color="#6c6c6c" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
+  <line color="#6c6c6c" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
 </draw_ops>
 <draw_ops name="restore_button_unfocused_prelight">
-  <rectangle color="#cecece" x="ButtonPad-1" y="ButtonPad-1 + 1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#cecece" x="ButtonPad" y="ButtonPad + 1" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#cecece" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2 + 1" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2 + 1"/>
-  <line color="#cecece" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3 + 1" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1 + 1"/>
-  <rectangle color="#3c3c3c" x="ButtonPad-1" y="ButtonPad-1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#3c3c3c" x="ButtonPad" y="ButtonPad" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#3c3c3c" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2"/>
-  <line color="#3c3c3c" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1"/>
+  <rectangle color="#cecece" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
+  <rectangle color="#cecece" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <line color="#cecece" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
+  <line color="#cecece" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
+  <rectangle color="#3c3c3c" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
+  <rectangle color="#3c3c3c" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+  <line color="#3c3c3c" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
+  <line color="#3c3c3c" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
 </draw_ops>
 <draw_ops name="restore_button_unfocused_pressed">
-  <rectangle color="#cecece" x="ButtonPad-1" y="ButtonPad-1 + 1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#cecece" x="ButtonPad" y="ButtonPad + 1" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#cecece" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2 + 1" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2 + 1"/>
-  <line color="#cecece" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3 + 1" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1 + 1"/>
-  <rectangle color="#000000" x="ButtonPad-1" y="ButtonPad-1" width="width-ButtonPad*2" height="height-ButtonPad*2"/>
-  <rectangle color="#000000" x="ButtonPad" y="ButtonPad" width="width-ButtonPad*2-2" height="height-ButtonPad*2-2"/>
-  
-  <line color="#000000" width="2" x1="ButtonPad-1+2" y1="ButtonPad-1-2" x2="ButtonPad-1 + width-ButtonPad*2+1+2" y2="ButtonPad-1-2"/>
-  <line color="#000000" width="2" x1="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y1="ButtonPad-1-3" x2="ButtonPad-1 + width-ButtonPad*2 + 1 + 2" y2="ButtonPad-1-2+height-ButtonPad*2+1"/>
+  <rectangle color="#cecece" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
+  <rectangle color="#cecece" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <line color="#cecece" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
+  <line color="#cecece" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
+  <rectangle color="#000000" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
+  <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+  <line color="#000000" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
+  <line color="#000000" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
 </draw_ops>
 <!--
      <line color="HILITE" width="2" x1="" y1="" x2="" y2=""/>
    -->
 <!-- close_button-->
 <draw_ops name="close_button_normal">
-    <rectangle  color="#bdbdbd" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
-    <rectangle  color="#484848" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+    <line color="#bdbdbd" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
+    <line color="#bdbdbd" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
+    <line color="#bdbdbd" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
+    <line color="#bdbdbd" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <line color="#484848" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="#484848" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
+    <line color="#484848" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="#484848" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
 </draw_ops>
 <draw_ops name="close_button_prelight">
-    <rectangle  color="#bdbdbd" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
-    <rectangle  color="#181818" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+    <line color="#bdbdbd" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
+    <line color="#bdbdbd" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
+    <line color="#bdbdbd" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
+    <line color="#bdbdbd" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <line color="#181818" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="#181818" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
+    <line color="#181818" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="#181818" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
 </draw_ops>
 <draw_ops name="close_button_pressed">
-    <rectangle  color="#bdbdbd" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
-    <rectangle  color="#000000" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+    <line color="#bdbdbd" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
+    <line color="#bdbdbd" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
+    <line color="#bdbdbd" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
+    <line color="#bdbdbd" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <line color="#000000" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="#000000" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
+    <line color="#000000" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="#000000" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
 </draw_ops>
 <draw_ops name="close_button_unfocused_normal">
-    <rectangle  color="#cecece" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
-    <rectangle  color="#6c6c6c" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+    <line color="#cecece" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
+    <line color="#cecece" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
+    <line color="#cecece" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
+    <line color="#cecece" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <line color="#6c6c6c" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="#6c6c6c" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
+    <line color="#6c6c6c" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="#6c6c6c" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
 </draw_ops>
 <draw_ops name="close_button_unfocused_prelight">
-    <rectangle  color="#cecece" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
-    <rectangle  color="#3c3c3c" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+    <line color="#cecece" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
+    <line color="#cecece" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
+    <line color="#cecece" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
+    <line color="#cecece" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <line color="#3c3c3c" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="#3c3c3c" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
+    <line color="#3c3c3c" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="#3c3c3c" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
 </draw_ops>
 <draw_ops name="close_button_unfocused_pressed">
-    <rectangle  color="#cecece" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
-    <rectangle  color="#000000" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+    <line color="#cecece" width="2" x1="(width-6)/2" y1="(height-6)/2+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/>
+    <line color="#cecece" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7+1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6+1"/> <!-- cap -->
+    <line color="#cecece" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6+1" x2="(width-6)/2 + 6" y2="(height-6)/2+1"/>
+    <line color="#cecece" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1+1" x2="(width-6)/2 + 6" y2="(width-6)/2+1"/>
+    <line color="#000000" width="2" x1="(width-6)/2" y1="(height-6)/2" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
+    <line color="#000000" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 + 7" x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/> <!-- cap -->
+    <line color="#000000" width="2" x1="(width-6)/2" y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
+    <line color="#000000" width="1" x1="(width-6)/2 + 7" y1="(height-6)/2 -1" x2="(width-6)/2 + 6" y2="(width-6)/2"/>
 </draw_ops>
+<!--
+    <rectangle  color="HILITE" x="(width-4)/2" y="(height-4)/2+1" width="4" height="4" filled="true"/>
+    <rectangle  color="COLOR" x="(width-4)/2" y="(height-4)/2" width="4" height="4" filled="true"/>
+-->
 <draw_ops name="title_focused">
     <clip x="0" y="0" width="width" height="height"/>
     <title color="#bdbdbd" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>

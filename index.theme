@@ -1,11 +1,11 @@
 
 [Desktop Entry]
-Name=Function
+Name=Function Shiny 
 Type=X-GNOME-Metatheme
 Comment=mgutz
-Name[en_US]=Function
+Name[en_US]=Function Shiny
 
 [X-GNOME-Metatheme]
-GtkTheme=Function
-MetacityTheme=Function
+GtkTheme=Function Shiny
+MetacityTheme=Function Shiny
 IconTheme=Faenza
