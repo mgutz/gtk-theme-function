@@ -65,3 +65,6 @@ To compile the metacity theme:
 
 0.2
 - Cleaned up tabs
+
+0.2.2
+- x close button
