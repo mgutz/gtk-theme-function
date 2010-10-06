@@ -90,25 +90,25 @@
     <color value="#9c9c9c"/>
   </gradient>
   <!-- highlight -->
-  <line color="#cccccc" width="1" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="#d0d0d0" width="1" x1="0" y1="0" x2="width" y2="0"/>
   <!--<line color="#adadad" width="1" x1="0" y1="title_height+4-2" x2="width" y2="title_height+4-1"/>-->
   <!-- shadow -->
-  <line color="#8c8c8c" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <line color="#7c7c7c" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
-    <color value="#e0e0e0"/>
-    <color value="#c9c9c9"/>
+    <color value="#d8d8d8"/>
+    <color value="#c4c4c4"/>
   </gradient>
   <gradient type="vertical" x="0" y="(title_height+4)/2" width="width" height="(title_height+4)/2">
-    <color value="#c9c9c9"/>
-    <color value="#b2b2b2"/>
+    <color value="#c4c4c4"/>
+    <color value="#b0b0b0"/>
   </gradient>
   <!-- highlight -->
-  <line color="#e8e8e8" width="1" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="#e4e4e4" width="1" x1="0" y1="0" x2="width" y2="0"/>
   <!--<line color="#adadad" width="1" x1="0" y1="title_height+4-2" x2="width" y2="title_height+4-1"/>-->
   <!-- shadow -->
-  <line color="#a4a4a4" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <line color="#a0a0a0" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_max">
     <include name="bg_topbar_focused"/>
