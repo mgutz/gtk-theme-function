@@ -80,3 +80,6 @@ To compile the metacity theme:
 
 0.2.6
 - raven: more conrast active/inactive window bars
+
+0.2.7
+- raven: odd/even listview colors (doesn't fix nautilus though)
