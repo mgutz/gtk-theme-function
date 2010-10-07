@@ -398,7 +398,7 @@ style "chiclet"
 	ythickness = 3
 	xthickness = 3
 
-	bg[NORMAL]	= shade(0.98, @base_color)
+	bg[NORMAL]	= shade(1.1, @bg_color)
 	bg[INSENSITIVE]	= @bg_color
 
 	engine "murrine"
@@ -514,6 +514,8 @@ style "nautilus-sidebar"
 
 style "radiocheck"
 {
+	bg[SELECTED] 	= @selected_bg_color 
+	
 	engine "murrine"
 	{
 	    	contrast = 0.8
