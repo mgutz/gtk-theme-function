@@ -68,3 +68,12 @@ To compile the metacity theme:
 
 0.2.2
 - x close button
+
+0.2.3
+- x glyph fix
+
+0.2.4
+- red hover over close button
+
+0.2.5
+- base comboboxes, etc on windows bg not input bg
