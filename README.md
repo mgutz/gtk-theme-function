@@ -83,3 +83,4 @@ To compile the metacity theme:
 
 0.2.7
 - raven: odd/even listview colors (doesn't fix nautilus though)
+- raven: select text color
