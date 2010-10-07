@@ -163,7 +163,6 @@
 </draw_ops>
 <draw_ops name="bg_button_pressed">
 </draw_ops>
-<!-- menu_button-->
 <draw_ops name="menu_button_normal">
     <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
     <rectangle color="#484848" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
@@ -188,7 +187,6 @@
     <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
     <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
 </draw_ops>
-<!-- minimize_button-->
 <draw_ops name="minimize_button_normal">
   <!-- hilite -->
   <line color="#bdbdbd" width="2" x1="(width-8)/2" y1="(height-6)/2 + 6 + 1 + 1" x2="(width-8)/2 + 8" y2="(height-6)/2 + 6 + 1 + 1"/>
@@ -219,7 +217,6 @@
   <line color="#cccccc" width="2" x1="(width-8)/2" y1="(height-6)/2 + 6 + 1 + 1" x2="(width-8)/2 + 8" y2="(height-6)/2 + 6 + 1 + 1"/>
   <line color="#000000" width="2" x1="(width-8)/2" y1="(height-6)/2 + 6 + 1" x2="(width-8)/2 + 8" y2="(height-6)/2 + 6 + 1"/>
 </draw_ops>
-<!-- maximize_button-->
 <draw_ops name="maximize_button_normal">
   <rectangle color="#bdbdbd" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
   <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
@@ -256,7 +253,6 @@
   <rectangle color="#000000" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
   <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
 </draw_ops>
-<!-- restore_button-->
 <draw_ops name="restore_button_normal">
   <rectangle color="#bdbdbd" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
   <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
@@ -320,7 +316,6 @@
 <!--
      <line color="HILITE" width="2" x1="" y1="" x2="" y2=""/>
    -->
-<!-- close_button-->
 <draw_ops name="close_button_normal">
     <!-- inset -->
     <line color="#bdbdbd" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 1"     x2="(width-6)/2 + 6" y2="(height-6)/2 + 6 + 1"/>

@@ -77,3 +77,6 @@ To compile the metacity theme:
 
 0.2.5
 - base comboboxes, etc on windows bg not input bg
+
+0.2.6
+- raven: more conrast active/inactive window bars
