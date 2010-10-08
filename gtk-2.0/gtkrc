@@ -429,7 +429,7 @@ style "nautilus-sidebar"
 }
 style "radiocheck"
 {
-	bg[SELECTED] 	= @selected_bg_color 
+        bg[SELECTED] 	= @selected_bg_color 
 	
 	engine "murrine"
 	{

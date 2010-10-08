@@ -520,6 +520,16 @@ style "nautilus-sidebar"
 
 style "radiocheck"
 {
+        {{#darkTheme}}
+	bg[NORMAL]        = @bg_color
+	bg[PRELIGHT]      = shade (1.02, @bg_color)
+	bg[ACTIVE]        = shade (0.88, @bg_color)
+	bg[INSENSITIVE]   = @bg_color
+
+        text[NORMAL] = "#cccccc" 
+        text[PRELIGHT] = "#eeeeee" 
+        {{/darkTheme}}
+
 	bg[SELECTED] 	= @selected_bg_color 
 	
 	engine "murrine"
