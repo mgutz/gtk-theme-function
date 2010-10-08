@@ -205,9 +205,10 @@ style "notebook" = "wider"
 		lightborder_shade = 1.1
 	}
 	
-	
-	#bg[NORMAL]   = mix(0.2, @selected_bg_color, @bg_color)
 	bg[ACTIVE] = shade(1.05, @bg_color) # inactive tabs
+        fg[ACTIVE] = "red"
+        text[ACTIVE] = "red"
+        base[ACTIVE] = "red"
 }
 style "panel" = "selected"
 {
@@ -218,9 +219,6 @@ style "panel" = "selected"
 	bg[NORMAL] = shade(0.81, @bg_color)
 	bg[ACTIVE] = mix(0.4, @selected_bg_color, shade(.8, @bg_color)) # active window
 	
-	#bg[ACTIVE] = @selected_bg_color	
-        #fg[ACTIVE]   = @selected_fg_color
-        
 	engine "murrine" 
 	{
 		gradient_shades     = {1.18, 1.0, 1.0, 0.82} # default: {1.1,1.0,1.0,1.1}
