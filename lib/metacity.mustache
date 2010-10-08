@@ -17,7 +17,7 @@
   <distance name="left_width" value="{{border_width}}"/>
   <distance name="right_width" value="{{border_width}}"/>
   <distance name="bottom_height" value="{{border_width}}"/>
-  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="left_titlebar_edge" value="5"/>
   <distance name="right_titlebar_edge" value="5"/>
   <distance name="title_vertical_pad" value="0"/>
   <border name="title_border" left="0" right="0" top="4" bottom="4"/>
@@ -74,16 +74,23 @@
   </gradient>
 
   {{#version2}}
-  <!-- soften rounding -->
-  <arc from="270.0" to="360.0" filled="false" color="HILITE" x="0" y="0" width="6" height="6" />
-  <arc from="0.0" to="90.0" filled="false" color="HILITE" x="width-7" y="0" width="6" height="6" />
+  <!-- top-left arc hilite -->
+  <tint color="white" alpha="T_BORDER_ALPHA" x="1" y="1" width="1" height="1"/>
+  <!-- top-right arc hilite -->
+  <tint color="white" alpha="T_BORDER_ALPHA" x="width-2" y="1" width="1" height="1"/>
   {{/version2}}
 
-  <!-- top hilite -->
-  <line color="HILITE" width="1" x1="0" y1="0" x2="width" y2="0"/>
+  <!-- left hilite -->
+  <tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+8 - 1"/>
 
-  <!-- bottom hilite -->
-  <line color="SHADOW" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <!-- right hilite -->
+  <tint color="white" alpha="LR_BORDER_ALPHA" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
+
+  <!-- top hilite -->
+  <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
+
+  <!-- bottom shadow -->
+  <tint color="black" alpha="B_BORDER_ALPHA" x="0" y="title_height+8-1" width="width" height="1"/>
 {{/topbar}}
 
 
@@ -98,11 +105,24 @@
     <color value="GRADIENT3"/>
   </gradient>
 
-  <!-- highlight -->
-  <line color="HILITE" width="1" x1="0" y1="0" x2="width" y2="0"/>
-  <!--<line color="#adadad" width="1" x1="0" y1="title_height+4-2" x2="width" y2="title_height+4-1"/>-->
-  <!-- shadow -->
-  <line color="SHADOW" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  {{#version2}}
+  <!-- top-left arc hilite -->
+  <tint color="white" alpha="T_BORDER_ALPHA" x="1" y="1" width="1" height="1"/>
+  <!-- top-right arc hilite -->
+  <tint color="white" alpha="T_BORDER_ALPHA" x="width-2" y="1" width="1" height="1"/>
+  {{/version2}}
+
+  <!-- left hilite -->
+  <tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+4 - 1"/>
+
+  <!-- right hilite -->
+  <tint color="white" alpha="LR_BORDER_ALPHA" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+
+  <!-- top hilite -->
+  <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
+
+  <!-- bottom shadow -->
+  <tint color="black" alpha="B_BORDER_ALPHA" x="0" y="title_height+4-1" width="width" height="1"/>
 {{/topbar_small}}
 
 

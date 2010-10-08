@@ -13,7 +13,7 @@
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
-  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="left_titlebar_edge" value="5"/>
   <distance name="right_titlebar_edge" value="5"/>
   <distance name="title_vertical_pad" value="0"/>
   <border name="title_border" left="0" right="0" top="4" bottom="4"/>
@@ -62,10 +62,14 @@
     <color value="#b0b0b0"/>
     <color value="#9c9c9c"/>
   </gradient>
+  <!-- left hilite -->
+  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+8 - 1"/>
+  <!-- right hilite -->
+  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
   <!-- top hilite -->
-  <line color="#d8d8d8" width="1" x1="0" y1="0" x2="width" y2="0"/>
-  <!-- bottom hilite -->
-  <line color="#7c7c7c" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <tint color="white" alpha="0.3" x="0" y="0" width="width" height="1"/>
+  <!-- bottom shadow -->
+  <tint color="black" alpha="0.2" x="0" y="title_height+8-1" width="width" height="1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+8)/2">
@@ -76,10 +80,14 @@
     <color value="#c4c4c4"/>
     <color value="#b0b0b0"/>
   </gradient>
+  <!-- left hilite -->
+  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+8 - 1"/>
+  <!-- right hilite -->
+  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
   <!-- top hilite -->
-  <line color="#ececec" width="1" x1="0" y1="0" x2="width" y2="0"/>
-  <!-- bottom hilite -->
-  <line color="#a0a0a0" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <tint color="white" alpha="0.3" x="0" y="0" width="width" height="1"/>
+  <!-- bottom shadow -->
+  <tint color="black" alpha="0.2" x="0" y="title_height+8-1" width="width" height="1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_focused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
@@ -90,11 +98,14 @@
     <color value="#b0b0b0"/>
     <color value="#9c9c9c"/>
   </gradient>
-  <!-- highlight -->
-  <line color="#d0d0d0" width="1" x1="0" y1="0" x2="width" y2="0"/>
-  <!--<line color="#adadad" width="1" x1="0" y1="title_height+4-2" x2="width" y2="title_height+4-1"/>-->
-  <!-- shadow -->
-  <line color="#7c7c7c" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <!-- left hilite -->
+  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <!-- right hilite -->
+  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <!-- top hilite -->
+  <tint color="white" alpha="0.3" x="0" y="0" width="width" height="1"/>
+  <!-- bottom shadow -->
+  <tint color="black" alpha="0.2" x="0" y="title_height+4-1" width="width" height="1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
@@ -105,11 +116,14 @@
     <color value="#c4c4c4"/>
     <color value="#b0b0b0"/>
   </gradient>
-  <!-- highlight -->
-  <line color="#e4e4e4" width="1" x1="0" y1="0" x2="width" y2="0"/>
-  <!--<line color="#adadad" width="1" x1="0" y1="title_height+4-2" x2="width" y2="title_height+4-1"/>-->
-  <!-- shadow -->
-  <line color="#a0a0a0" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <!-- left hilite -->
+  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <!-- right hilite -->
+  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <!-- top hilite -->
+  <tint color="white" alpha="0.3" x="0" y="0" width="width" height="1"/>
+  <!-- bottom shadow -->
+  <tint color="black" alpha="0.2" x="0" y="title_height+4-1" width="width" height="1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_max">
     <include name="bg_topbar_focused"/>
