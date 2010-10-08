@@ -206,9 +206,6 @@ style "notebook" = "wider"
 	}
 	
 	bg[ACTIVE] = shade(1.05, @bg_color) # inactive tabs
-        fg[ACTIVE] = "red"
-        text[ACTIVE] = "red"
-        base[ACTIVE] = "red"
 }
 style "panel" = "selected"
 {
