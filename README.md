@@ -90,3 +90,10 @@ To compile the metacity theme:
 
 0.2.9
 - Rounded corners
+
+0.3.0
+- Create a seperate Lambda theme set for rounded corners
+
+0.3.1
+- Improved highlighting to lessen the effect of jagged round corners
+- Keep square corners on utility windows (GIMP toolboxes) 

@@ -29,7 +29,7 @@
   <!--<border name="title_border" left="0" right="0" top="4" bottom="4"/>-->
   <!--<border name="button_border" left="1" right="1" top="3" bottom="3"/>-->
 </frame_geometry>
-<frame_geometry name="utility" parent="normal" title_scale="small">
+<frame_geometry name="utility" rounded_top_left="false" rounded_top_right="false" parent="normal" title_scale="small">
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
