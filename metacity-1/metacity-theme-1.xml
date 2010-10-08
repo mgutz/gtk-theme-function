@@ -63,7 +63,7 @@
     <color value="#9c9c9c"/>
   </gradient>
   <!-- top hilite -->
-  <line color="#d0d0d0" width="1" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="#d8d8d8" width="1" x1="0" y1="0" x2="width" y2="0"/>
   <!-- bottom hilite -->
   <line color="#7c7c7c" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
 </draw_ops>
@@ -77,7 +77,7 @@
     <color value="#b0b0b0"/>
   </gradient>
   <!-- top hilite -->
-  <line color="#e4e4e4" width="1" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="#ececec" width="1" x1="0" y1="0" x2="width" y2="0"/>
   <!-- bottom hilite -->
   <line color="#a0a0a0" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
 </draw_ops>
