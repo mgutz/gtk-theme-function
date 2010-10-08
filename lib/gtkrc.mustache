@@ -307,8 +307,9 @@ style "menu-item" = "default"
 	xthickness = 0
 	ythickness = 4
 
-        # hmmm .. prelight is used for text instead of selected
         #bg[SELECTED] = mix(0.5, @selected_bg_color, @bg_color) #@selected_bg_color 
+	bg[SELECTED] = @selected_bg_color
+        bg[PRELIGHT] = @selected_bg_color 
         fg[PRELIGHT] = @selected_fg_color 
         
 
@@ -518,7 +519,7 @@ style "nautilus-location"
 
 style "nautilus-sidebar" 
 {
-	#GtkTreeView::even_row_color = @bg_color
+	GtkTreeView::even_row_color = @base_color 
 }
 
 style "radiocheck"

@@ -95,6 +95,10 @@ To compile the metacity theme:
 - Create a seperate Lambda theme set for rounded corners
 
 0.3.1
+! Strange bug in Appearance Preferences. Switching between Function and Lambda themes
+does not always change the theme correctly. I'm guessing because I'm sharing GTK
+themes. Workaround is to choose another theme like Clearlooks and then Function or Lambda.
+
 - Improved highlighting to lessen the effect of jagged round corners
 - Keep square corners on utility windows (GIMP toolboxes) 
 - Change nautilus side pane bg to be consistent with open file dialog

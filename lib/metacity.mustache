@@ -80,6 +80,7 @@
   <tint color="white" alpha="T_BORDER_ALPHA" x="width-2" y="1" width="1" height="1"/>
   {{/version2}}
 
+
   <!-- left hilite -->
   <tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+8 - 1"/>
 
@@ -90,7 +91,7 @@
   <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
 
   <!-- bottom shadow -->
-  <tint color="black" alpha="B_BORDER_ALPHA" x="0" y="title_height+8-1" width="width" height="1"/>
+  <line color="B_BORDER" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
 {{/topbar}}
 
 
@@ -122,7 +123,7 @@
   <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
 
   <!-- bottom shadow -->
-  <tint color="black" alpha="B_BORDER_ALPHA" x="0" y="title_height+4-1" width="width" height="1"/>
+  <line color="B_BORDER" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
 {{/topbar_small}}
 
 
@@ -136,6 +137,14 @@
 
 <draw_ops name="bg_left_title">
 </draw_ops>
+
+<draw_ops name="bg_bottom_title_focused">
+  <line color="black" width="1" x1="0" y1="0" x2="width" y2="0"/>
+</draw_ops>
+<draw_ops name="bg_bottom_title_unfocused">
+  <line color="black" width="1" x1="0" y1="0" x2="width" y2="0"/>
+</draw_ops>
+
 
 <draw_ops name="bg_left_title_shaded">
 </draw_ops>
