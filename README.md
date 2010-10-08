@@ -1,4 +1,4 @@
-# Function
+# Function Metacity + GTK2 Theme
 
 Clean. Gray. Function'al metacity theme.
 
@@ -87,3 +87,6 @@ To compile the metacity theme:
 
 0.2.8
 - removed hidden window menu button
+
+0.2.9
+- Rounded corners

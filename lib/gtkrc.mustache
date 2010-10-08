@@ -55,10 +55,8 @@ style "default"
 	GtkTreeView::indent-expanders = 1
 	GtkTreeView::vertical-separator = 0
 
-        {{#darkTheme}}
-        GtkTreeView::odd-row-color = shade(1.12, @base_color) 
-        GtkTreeView::even-row-color = shade(1, @base_color) 
-        {{/darkTheme}}
+        GtkTreeView::odd-row-color = @base_color 
+        GtkTreeView::even-row-color = shade(1.03, @base_color)
 
 	#GtkProgressBar ::min-vertical-bar-width = 14 #GtkProgressBar ::min-horizontal-bar-width = 14 #GtkProgressBar ::min-horizontal-bar-height = 14 #GtkProgressBar ::min-vertical-bar-height = 12
 
@@ -154,7 +152,7 @@ style "default"
 
 style "debug" 
 {
-    text[NORMAL]      = "red"
+        text[NORMAL]      = "red"
 	text[PRELIGHT]    = shade(1.2, "red")
 	text[ACTIVE]      = shade(1.4, "red")
 	text[SELECTED]    = shade(0.8, "red")
@@ -165,6 +163,18 @@ style "debug"
 	fg[ACTIVE]      = shade(1.4, "blue")
 	fg[SELECTED]    = shade(0.8, "blue")
 	fg[INSENSITIVE] = shade(0.6, "blue")
+
+        bg[NORMAL]      = "green"
+	bg[PRELIGHT]    = shade(1.2, "green")
+	bg[ACTIVE]      = shade(1.4, "green")
+	bg[SELECTED]    = shade(0.8, "green")
+	bg[INSENSITIVE] = shade(0.6, "green")
+        
+        base[NORMAL]      = "magenta"
+	base[PRELIGHT]    = shade(1.2, "magenta")
+	base[ACTIVE]      = shade(1.4, "magenta")
+	base[SELECTED]    = shade(0.8, "magenta")
+	base[INSENSITIVE] = shade(0.6, "magenta")
 }
 
 
@@ -693,4 +703,4 @@ widget_class "*Notif*" 					style "panel"
 
 class "TerminalScreen" style "terminal"
 
-# vim: set ft=GTKRC :
+# vim: set ft=gtkrc :

@@ -13,12 +13,12 @@
 
 <!--<constant name="IconSpacing" value="22"/>-->
 
-<frame_geometry name="normal">
+<frame_geometry name="normal" rounded_top_left="{{topRounding}}" rounded_top_right="{{topRounding}}">
   <distance name="left_width" value="{{border_width}}"/>
   <distance name="right_width" value="{{border_width}}"/>
   <distance name="bottom_height" value="{{border_width}}"/>
   <distance name="left_titlebar_edge" value="3"/>
-  <distance name="right_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="5"/>
   <distance name="title_vertical_pad" value="0"/>
   <border name="title_border" left="0" right="0" top="4" bottom="4"/>
   <border name="button_border" left="1" right="1" top="4" bottom="4"/>
@@ -72,6 +72,12 @@
     <color value="GRADIENT2"/>
     <color value="GRADIENT3"/>
   </gradient>
+
+  {{#version2}}
+  <!-- soften rounding -->
+  <arc from="270.0" to="360.0" filled="false" color="HILITE" x="0" y="0" width="6" height="6" />
+  <arc from="0.0" to="90.0" filled="false" color="HILITE" x="width-7" y="0" width="6" height="6" />
+  {{/version2}}
 
   <!-- top hilite -->
   <line color="HILITE" width="1" x1="0" y1="0" x2="width" y2="0"/>
@@ -260,6 +266,21 @@
   <button function="menu" state="normal" draw_ops="nop"/>
   <button function="menu" state="pressed" draw_ops="nop"/>
   <button function="menu" state="prelight" draw_ops="nop"/>
+
+  {{#version2}}
+  <button function="shade" state="normal" draw_ops="nop"/>
+  <button function="shade" state="pressed" draw_ops="nop"/>
+  <button function="unshade" state="normal" draw_ops="nop"/>
+  <button function="unshade" state="pressed" draw_ops="nop"/>
+  <button function="above" state="normal" draw_ops="nop"/>
+  <button function="above" state="pressed" draw_ops="nop"/>
+  <button function="unabove" state="normal" draw_ops="nop"/>
+  <button function="unabove" state="pressed" draw_ops="nop"/>
+  <button function="stick" state="normal" draw_ops="nop"/>
+  <button function="stick" state="pressed" draw_ops="nop"/>
+  <button function="unstick" state="normal" draw_ops="nop"/>
+  <button function="unstick" state="pressed" draw_ops="nop"/>  
+  {{/version2}}
 </frame_style>
 
 
@@ -291,6 +312,21 @@
   <button function="menu" state="normal" draw_ops="nop"/>
   <button function="menu" state="pressed" draw_ops="nop"/>
   <button function="menu" state="prelight" draw_ops="nop"/>
+
+  {{#version2}}
+  <button function="shade" state="normal" draw_ops="nop"/>
+  <button function="shade" state="pressed" draw_ops="nop"/>
+  <button function="unshade" state="normal" draw_ops="nop"/>
+  <button function="unshade" state="pressed" draw_ops="nop"/>
+  <button function="above" state="normal" draw_ops="nop"/>
+  <button function="above" state="pressed" draw_ops="nop"/>
+  <button function="unabove" state="normal" draw_ops="nop"/>
+  <button function="unabove" state="pressed" draw_ops="nop"/>
+  <button function="stick" state="normal" draw_ops="nop"/>
+  <button function="stick" state="pressed" draw_ops="nop"/>
+  <button function="unstick" state="normal" draw_ops="nop"/>
+  <button function="unstick" state="pressed" draw_ops="nop"/>  
+  {{/version2}}
 </frame_style>
 
 <frame_style name="normal_shaded_unfocused" geometry="normal" parent="normal_unfocused">
