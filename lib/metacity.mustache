@@ -218,48 +218,68 @@
 
 {{#version2}}
 {{#shade_button}}
-    <rectangle color="HILITE" x="(width-10)/2" y="(height-4)/2+1" width="10" height="4" filled="false" />
-    <rectangle color="COLOR" x="(width-10)/2" y="(height-4)/2" width="10" height="4" filled="false" />
+    <!-- GLYPH -->
+
+    <!-- TL to BR -->
+    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
+
+    <!-- TR to BL-->
+    <line color="COLOR" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
+
+
+    <!-- INSET -->
+
+    <!-- TL to BR -->
+    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
+
+    <!-- TR to BL-->
+    <line color="HILITE" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+
 {{/shade_button}}
 
 {{#unshade_button}}
-    <rectangle color="HILITE" x="(width-10)/2" y="(height-4)/2+1" width="10" height="4" filled="false" />
-    <rectangle color="COLOR" x="(width-10)/2" y="(height-4)/2" width="10" height="4" filled="false" />
+    <!-- GLYPH -->
+
+    <!-- TL to BR -->
+    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
+
+    <!-- BL to TR -->
+    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
+
+
+    <!-- INSET -->
+
+    <!-- TL to BR -->
+    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
+
+    <!-- BL to TR -->
+    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
 {{/unshade_button}}
 {{/version2}}
 
 
 
 {{#minimize_button}}
-  <!-- hilite -->
-  <line color="HILITE" width="2" x1="(width-8)/2" y1="(height-6)/2 + 6 + 1 + 1" x2="(width-8)/2 + 8" y2="(height-6)/2 + 6 + 1 + 1"/>
+  <!-- inset -->
+  <line color="HILITE" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
 
-  <line color="COLOR" width="2" x1="(width-8)/2" y1="(height-6)/2 + 6 + 1" x2="(width-8)/2 + 8" y2="(height-6)/2 + 6 + 1"/>
+  <line color="COLOR" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
 {{/minimize_button}}
 
 
 {{#maximize_button}}
-  <rectangle color="HILITE" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
   <rectangle color="HILITE" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
 
-
-  <rectangle color="COLOR" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
   <rectangle color="COLOR" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
 {{/maximize_button}}
 
 
 {{#restore_button}}
-  <rectangle color="HILITE" x="(width-6)/2 - 1" y="(height-6)/2 - 1 + 1" width="8" height="8"/>
   <rectangle color="HILITE" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+  <rectangle color="HILITE" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
 
-  <line color="HILITE" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2 + 1" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2 + 1"/>
-  <line color="HILITE" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1 + 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1 + 1"/>
-
-  <rectangle color="COLOR" x="(width-6)/2 - 1" y="(height-6)/2 - 1" width="8" height="8"/>
   <rectangle color="COLOR" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-
-  <line color="COLOR" width="2" x1="(width-6)/2 - 1 + 2" y1="(height-6)/2 - 1 - 2" x2="(width-6)/2 - 1 + 2 + 8" y2="(height-6)/2 - 1 - 2"/>
-  <line color="COLOR" width="2" x1="(width-6)/2 - 1 + 2 + 8 + 1" y1="(height-6)/2 - 1 - 2 - 1" x2="(width-6)/2 - 1 + 2 + 8 + 1" y2="(height-6)/2 - 1 - 2 + 8 + 1"/>
+  <rectangle color="COLOR" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
 {{/restore_button}}
 
    <!--
@@ -268,16 +288,12 @@
 
 {{#close_button}}
     <!-- inset -->
-    <line color="HILITE" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 1"     x2="(width-6)/2 + 6" y2="(height-6)/2 + 6 + 1"/>
-    <line color="HILITE" width="1"  x1="(width-6)/2 + 6" y1="(height-6)/2 + 6 + 1" x2="(width-6)/2 + 7" y2="(height-6)/2 + 6 + 1"/> <!-- cap bottom right -->
-    <line color="HILITE" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 6 + 1" x2="(width-6)/2 + 6" y2="(height-6)/2 + 1"/>
-    <line color="HILITE" width="1"   x1="(width-6)/2 + 6" y1="(height-6)/2 + 0 + 1"     x2="(width-6)/2 + 7" y2="(height-6)/2 + 1"/> <!-- cap top right -->
+    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
+    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
 
     <!-- glyph -->
-    <line color="COLOR" width="2" x1="(width-6)/2"     y1="(height-6)/2"     x2="(width-6)/2 + 6" y2="(height-6)/2 + 6"/>
-    <line color="COLOR" width="1"  x1="(width-6)/2 + 6" y1="(height-6)/2 + 6" x2="(width-6)/2 + 7" y2="(height-6)/2 + 6"/> <!-- cap bottom right -->
-    <line color="COLOR" width="2" x1="(width-6)/2"     y1="(height-6)/2 + 6" x2="(width-6)/2 + 6" y2="(height-6)/2"/>
-    <line color="COLOR" width="1"   x1="(width-6)/2 + 6" y1="(height-6)/2 + 0"     x2="(width-6)/2 + 7" y2="(height-6)/2"/> <!-- cap top right -->
+    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
+    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
 {{/close_button}}
 
 
