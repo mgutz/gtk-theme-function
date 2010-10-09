@@ -75,12 +75,11 @@
     <color value="GRADIENT3"/>
   </gradient>
 
-  {{#version2}}
   <!-- top-left arc hilite -->
   <tint color="white" alpha="T_BORDER_ALPHA" x="1" y="1" width="1" height="1"/>
+
   <!-- top-right arc hilite -->
   <tint color="white" alpha="T_BORDER_ALPHA" x="width-2" y="1" width="1" height="1"/>
-  {{/version2}}
 
 
   <!-- left hilite -->
@@ -108,12 +107,6 @@
     <color value="GRADIENT3"/>
   </gradient>
 
-  {{#version2}}
-  <!-- top-left arc hilite -->
-  <!--<tint color="white" alpha="T_BORDER_ALPHA" x="1" y="1" width="1" height="1"/>-->
-  <!-- top-right arc hilite -->
-  <!--<tint color="white" alpha="T_BORDER_ALPHA" x="width-2" y="1" width="1" height="1"/>-->
-  {{/version2}}
 
   <!-- left hilite -->
   <tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+4 - 1"/>
@@ -216,7 +209,6 @@
 {{/menu_button}}
 
 
-{{#version2}}
 {{#shade_button}}
     <!-- GLYPH -->
 
@@ -255,7 +247,6 @@
     <!-- BL to TR -->
     <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
 {{/unshade_button}}
-{{/version2}}
 
 
 
@@ -327,7 +318,6 @@
   <button function="menu" state="pressed" draw_ops="nop"/>
   <button function="menu" state="prelight" draw_ops="nop"/>
 
-  {{#version2}}
   <button function="shade" state="normal" draw_ops="shade_button_normal"/>
   <button function="shade" state="pressed" draw_ops="shade_button_pressed"/>
   <button function="unshade" state="normal" draw_ops="unshade_button_normal"/>
@@ -340,7 +330,6 @@
   <button function="stick" state="pressed" draw_ops="nop"/>
   <button function="unstick" state="normal" draw_ops="nop"/>
   <button function="unstick" state="pressed" draw_ops="nop"/>  
-  {{/version2}}
 </frame_style>
 
 
@@ -373,7 +362,6 @@
   <button function="menu" state="pressed" draw_ops="nop"/>
   <button function="menu" state="prelight" draw_ops="nop"/>
 
-  {{#version2}}
   <button function="shade" state="normal" draw_ops="shade_button_unfocused_normal"/>
   <button function="shade" state="pressed" draw_ops="shade_button_unfocused_pressed"/>
   <button function="unshade" state="normal" draw_ops="unshade_button_unfocused_normal"/>
@@ -386,7 +374,6 @@
   <button function="stick" state="pressed" draw_ops="nop"/>
   <button function="unstick" state="normal" draw_ops="nop"/>
   <button function="unstick" state="pressed" draw_ops="nop"/>  
-  {{/version2}}
 </frame_style>
 
 <frame_style name="normal_shaded_unfocused" geometry="normal" parent="normal_unfocused">
