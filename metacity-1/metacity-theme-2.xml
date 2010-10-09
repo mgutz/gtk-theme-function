@@ -65,17 +65,17 @@
     <color value="#9c9c9c"/>
   </gradient>
   <!-- top-left arc hilite -->
-  <tint color="white" alpha="0.15" x="1" y="1" width="1" height="1"/>
+  <tint color="white" alpha="0.13" x="1" y="1" width="1" height="1"/>
   <!-- top-right arc hilite -->
-  <tint color="white" alpha="0.15" x="width-2" y="1" width="1" height="1"/>
+  <tint color="white" alpha="0.13" x="width-2" y="1" width="1" height="1"/>
   <!-- left hilite -->
-  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+8 - 1"/>
+  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="title_height+8 - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
+  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
   <!-- top hilite -->
-  <tint color="white" alpha="0.15" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="0.13" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#9c9c9c/0.8" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <line color="shade/#9c9c9c/0.7" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+8)/2">
@@ -87,17 +87,17 @@
     <color value="#b0b0b0"/>
   </gradient>
   <!-- top-left arc hilite -->
-  <tint color="white" alpha="0.15" x="1" y="1" width="1" height="1"/>
+  <tint color="white" alpha="0.13" x="1" y="1" width="1" height="1"/>
   <!-- top-right arc hilite -->
-  <tint color="white" alpha="0.15" x="width-2" y="1" width="1" height="1"/>
+  <tint color="white" alpha="0.13" x="width-2" y="1" width="1" height="1"/>
   <!-- left hilite -->
-  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+8 - 1"/>
+  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="title_height+8 - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
+  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="title_height+8 - 1"/>
   <!-- top hilite -->
-  <tint color="white" alpha="0.15" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="0.13" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#b0b0b0/0.8" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <line color="shade/#b0b0b0/0.7" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_focused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
@@ -109,13 +109,13 @@
     <color value="#9c9c9c"/>
   </gradient>
   <!-- left hilite -->
-  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="title_height+4 - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
   <!-- top hilite -->
-  <tint color="white" alpha="0.15" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="0.13" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#9c9c9c/0.8" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <line color="shade/#9c9c9c/0.7" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
@@ -127,13 +127,13 @@
     <color value="#b0b0b0"/>
   </gradient>
   <!-- left hilite -->
-  <tint color="white" alpha="0.1" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="title_height+4 - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.1" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
   <!-- top hilite -->
-  <tint color="white" alpha="0.15" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="0.13" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#b0b0b0/0.8" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <line color="shade/#b0b0b0/0.7" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_max">
     <include name="bg_topbar_focused"/>
