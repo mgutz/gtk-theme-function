@@ -39,6 +39,8 @@
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="5"/>
+  <distance name="right_titlebar_edge" value="5"/>
   <!--<distance name="left_titlebar_edge" value="3"/>-->
   <!--<distance name="right_titlebar_edge" value="3"/>-->
   <!--<distance name="title_vertical_pad" value="3"/>-->
@@ -123,7 +125,7 @@
   <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
 
   <!-- bottom shadow -->
-  <line color="B_BORDER" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <line color="B_BORDER" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 {{/topbar_small}}
 
 
@@ -208,11 +210,24 @@
 <draw_ops name="bg_button_pressed">
 </draw_ops>
 
-
 {{#menu_button}}
-    <rectangle color="HILITE" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="COLOR" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="HILITE" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="COLOR" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 {{/menu_button}}
+
+
+{{#version2}}
+{{#shade_button}}
+    <rectangle color="HILITE" x="(width-10)/2" y="(height-4)/2+1" width="10" height="4" filled="false" />
+    <rectangle color="COLOR" x="(width-10)/2" y="(height-4)/2" width="10" height="4" filled="false" />
+{{/shade_button}}
+
+{{#unshade_button}}
+    <rectangle color="HILITE" x="(width-10)/2" y="(height-4)/2+1" width="10" height="4" filled="false" />
+    <rectangle color="COLOR" x="(width-10)/2" y="(height-4)/2" width="10" height="4" filled="false" />
+{{/unshade_button}}
+{{/version2}}
+
 
 
 {{#minimize_button}}
@@ -297,10 +312,10 @@
   <button function="menu" state="prelight" draw_ops="nop"/>
 
   {{#version2}}
-  <button function="shade" state="normal" draw_ops="nop"/>
-  <button function="shade" state="pressed" draw_ops="nop"/>
-  <button function="unshade" state="normal" draw_ops="nop"/>
-  <button function="unshade" state="pressed" draw_ops="nop"/>
+  <button function="shade" state="normal" draw_ops="shade_button_normal"/>
+  <button function="shade" state="pressed" draw_ops="shade_button_pressed"/>
+  <button function="unshade" state="normal" draw_ops="unshade_button_normal"/>
+  <button function="unshade" state="pressed" draw_ops="unshade_button_pressed"/>
   <button function="above" state="normal" draw_ops="nop"/>
   <button function="above" state="pressed" draw_ops="nop"/>
   <button function="unabove" state="normal" draw_ops="nop"/>
@@ -343,10 +358,10 @@
   <button function="menu" state="prelight" draw_ops="nop"/>
 
   {{#version2}}
-  <button function="shade" state="normal" draw_ops="nop"/>
-  <button function="shade" state="pressed" draw_ops="nop"/>
-  <button function="unshade" state="normal" draw_ops="nop"/>
-  <button function="unshade" state="pressed" draw_ops="nop"/>
+  <button function="shade" state="normal" draw_ops="shade_button_unfocused_normal"/>
+  <button function="shade" state="pressed" draw_ops="shade_button_unfocused_pressed"/>
+  <button function="unshade" state="normal" draw_ops="unshade_button_unfocused_normal"/>
+  <button function="unshade" state="pressed" draw_ops="unshade_button_unfocused_pressed"/>
   <button function="above" state="normal" draw_ops="nop"/>
   <button function="above" state="pressed" draw_ops="nop"/>
   <button function="unabove" state="normal" draw_ops="nop"/>

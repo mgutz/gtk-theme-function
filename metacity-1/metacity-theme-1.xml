@@ -33,6 +33,8 @@
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="5"/>
+  <distance name="right_titlebar_edge" value="5"/>
   <!--<distance name="left_titlebar_edge" value="3"/>-->
   <!--<distance name="right_titlebar_edge" value="3"/>-->
   <!--<distance name="title_vertical_pad" value="3"/>-->
@@ -105,7 +107,7 @@
   <!-- top hilite -->
   <tint color="white" alpha="0.2" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#9c9c9c/0.8" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <line color="shade/#9c9c9c/0.8" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
@@ -123,7 +125,7 @@
   <!-- top hilite -->
   <tint color="white" alpha="0.2" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#b0b0b0/0.8" width="1" x1="0" y1="title_height+8-1" x2="width" y2="title_height+8-1"/>
+  <line color="shade/#b0b0b0/0.8" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_max">
     <include name="bg_topbar_focused"/>
@@ -184,28 +186,28 @@
 <draw_ops name="bg_button_pressed">
 </draw_ops>
 <draw_ops name="menu_button_normal">
-    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="#484848" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="#484848" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_prelight">
-    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="#181818" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="#181818" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_pressed">
-    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_unfocused_normal">
-    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="#747474" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="#747474" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_unfocused_prelight">
-    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="#444444" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="#444444" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_unfocused_pressed">
-    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="5" filled="false" />
-    <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="5" filled="false" />
+    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="minimize_button_normal">
   <!-- hilite -->

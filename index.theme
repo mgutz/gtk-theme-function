@@ -7,4 +7,4 @@ Comment=Ultra clean light them by mgutz
 GtkTheme=Function
 MetacityTheme=Function
 IconTheme=Faenza
-ButtonLayout=:minimize,maximize,close
+ButtonLayout=shade:minimize,maximize,close
