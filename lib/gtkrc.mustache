@@ -39,7 +39,7 @@ style "default"
         GtkNotebook ::tab-overlap = 3 
 
 	GtkRange::trough-border = 0
-	GtkRange::slider-width = 14
+	GtkRange::slider-width = 15
 	GtkRange::stepper-size = 18 
         GtkRange::trough-under-steppers = 0
 
@@ -230,7 +230,8 @@ style "button"
 		border_shades       	= { 1.02, .85} # draw a gradient on the border.
 		border_colors       	= { darker(@bg_color), darker(@bg_color)}
 		contrast		= 0.8 
-        	gradient_shades         = {1.12, 1.0, 1.0, 0.88} # default: {1.1,1.0,1.0,1.1}
+        	#gradient_shades         = {1.12, 1.0, 1.0, 0.88} # default: {1.1,1.0,1.0,1.1}
+        	gradient_shades         = {1.1, 1.0, 1.0, 0.9} # default: {1.1,1.0,1.0,1.1}
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
