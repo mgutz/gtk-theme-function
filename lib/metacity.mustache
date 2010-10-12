@@ -65,65 +65,7 @@
 </draw_ops>
 
 
-
-{{#topbar}}
-  <gradient type="vertical" x="0" y="0" width="width" height="({{topBarHeight}})/2">
-    <color value="GRADIENT0"/>
-    <color value="GRADIENT1"/>
-  </gradient>
-  <gradient type="vertical" x="0" y="({{topBarHeight}})/2" width="width" height="({{topBarHeight}})/2">
-    <color value="GRADIENT2"/>
-    <color value="GRADIENT3"/>
-  </gradient>
-
-
-  <!-- left hilite -->
-  <tint color="white" alpha="LR_BORDER_ALPHA" x="1" y="0" width="1" height="{{topBarHeight}} - 1"/>
-
-  <!-- right hilite -->
-  <!--<tint color="white" alpha="LR_BORDER_ALPHA" x="width-2" y="0" width="1" height="{{topBarHeight}} - 1"/>-->
-
-  <!-- top hilite -->
-  <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="1" width="width" height="1"/>
-
-  <!-- bottom hilite -->
-  <!--<tint color="white" alpha="B_BORDER_ALPHA" x="0" y="{{topBarHeight}} - 2" width="width" height="1"/>-->
-
-    {{#isRounded}}
-    <!-- top-left arc hilite -->
-    <arc color="shade/#808080/ARC_SHADE" from="270.0" to="360.0" filled="false"  x="1" y="1" width="6" height="6"/>
-
-    <!-- top-right arc hilite -->
-    <arc color="shade/#808080/ARC_SHADE" from="0.0" to="90.0" filled="false"  x="width-8" y="1" width="6" height="6"/>
-    {{/isRounded}}
-
-{{/topbar}}
-
-
-
-{{#topbar_small}}
-  <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
-    <color value="GRADIENT0"/>
-    <color value="GRADIENT1"/>
-  </gradient>
-  <gradient type="vertical" x="0" y="(title_height+4)/2" width="width" height="(title_height+4)/2">
-    <color value="GRADIENT2"/>
-    <color value="GRADIENT3"/>
-  </gradient>
-
-
-  <!-- left hilite -->
-  <!--<tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+4 - 1"/>-->
-
-  <!-- right hilite -->
-  <!--<tint color="white" alpha="LR_BORDER_ALPHA" x="width-1" y="0" width="1" height="title_height+4 - 1"/>-->
-
-  <!-- top hilite -->
-  <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
-
-  <!-- bottom shadow -->
-  <line color="B_BORDER" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
-{{/topbar_small}}
+{{{drawTopBars}}}
 
 
 <draw_ops name="bg_topbar_max">
