@@ -165,17 +165,7 @@
 
 
 {{{outlineWindowFocused}}}
-
-<draw_ops name="outline_unfocused">
-    <rectangle color="shade/#808080/{{unfocusedBorderAlpha}}" filled="false" width="width-1" height="height-1" x="0" y="0"/>
-
-    {{#isRounded}}
-    <!-- top-right arc hilite -->
-    <arc color="shade/#808080/{{unfocusedBorderAlpha}}" from="270.0" to="360.0" filled="false"  x="0" y="0" width="8" height="8"/>
-
-    <arc color="shade/#808080/{{unfocusedBorderAlpha}}" from="0.0" to="90.0" filled="false"  x="width-9" y="0" width="8" height="8"/>
-    {{/isRounded}}
-</draw_ops>
+{{{outlineWindowUnfocused}}}
 
 <draw_ops name="botton_outline">
     <line color="shade/gtk:bg[SELECTED]/0.6" width="1" x1="0" y1="0" x2="width" y2="0"/>
@@ -191,7 +181,7 @@
 
 <draw_ops name="bg_window_borders">
   <include name="bg_window_no_borders"/>
-  <include name="outline"/>
+  <include name="outline_focused"/>
 </draw_ops>
 
 <draw_ops name="bg_window_borders_unfocused">
@@ -394,7 +384,7 @@
 </frame_style>
 
 <frame_style name="border" geometry="border" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="outline"/>
+  <piece position="entire_background" draw_ops="outline_focused"/>
   <piece position="title" draw_ops="nop"/>
 </frame_style>
 
