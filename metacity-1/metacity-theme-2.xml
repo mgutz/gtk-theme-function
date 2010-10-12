@@ -234,15 +234,15 @@
     <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="shade_button_unfocused_normal">
-    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="shade_button_unfocused_prelight">
-    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="shade_button_unfocused_pressed">
-    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="unshade_button_normal">
@@ -258,15 +258,15 @@
     <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="unshade_button_unfocused_normal">
-    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="unshade_button_unfocused_prelight">
-    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="unshade_button_unfocused_pressed">
-    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="minimize_button_normal">
@@ -282,15 +282,15 @@
     <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="minimize_button_unfocused_normal">
-    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="minimize_button_unfocused_prelight">
-    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="minimize_button_unfocused_pressed">
-    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="maximize_button_normal">
@@ -306,15 +306,15 @@
     <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="maximize_button_unfocused_normal">
-    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="maximize_button_unfocused_prelight">
-    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="maximize_button_unfocused_pressed">
-    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="restore_button_normal">
@@ -330,15 +330,15 @@
     <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="restore_button_unfocused_normal">
-    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="restore_button_unfocused_prelight">
-    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="restore_button_unfocused_pressed">
-    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
     <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <!--
