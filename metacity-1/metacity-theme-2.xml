@@ -13,8 +13,8 @@
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
-  <distance name="left_titlebar_edge" value="5"/>
-  <distance name="right_titlebar_edge" value="5"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
   <distance name="title_vertical_pad" value="0"/>
   <border name="title_border" left="0" right="0" top="4" bottom="4"/>
   <border name="button_border" left="1" right="1" top="4" bottom="4"/>
@@ -61,45 +61,45 @@
     <color value="#b0b0b0"/>
   </gradient>
   <gradient type="vertical" x="0" y="((title_height + 8))/2" width="width" height="((title_height + 8))/2">
-    <color value="#b0b0b0"/>
-    <color value="#9c9c9c"/>
+    <color value="#afafaf"/>
+    <color value="#9a9a9a"/>
   </gradient>
   <!-- top-left arc hilite -->
   <tint color="white" alpha="0.1" x="1" y="1" width="1" height="1"/>
   <!-- top-right arc hilite -->
   <tint color="white" alpha="0.1" x="width-2" y="1" width="1" height="1"/>
   <!-- left hilite -->
-  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="(title_height + 8) - 1"/>
+  <tint color="white" alpha="0.06" x="0" y="0" width="1" height="(title_height + 8) - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="(title_height + 8) - 1"/>
+  <tint color="white" alpha="0.06" x="width-1" y="0" width="1" height="(title_height + 8) - 1"/>
   <!-- top hilite -->
   <tint color="white" alpha="0.1" x="0" y="0" width="width" height="1"/>
   <!-- bottom hilite -->
-  <tint color="white" alpha="0.06" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
+  <tint color="white" alpha="0.05" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#9c9c9c/0.8" width="1" x1="0" y1="(title_height + 8)-1" x2="width" y2="(title_height + 8)-1"/>
+  <line color="shade/#989898/0.7" width="1" x1="0" y1="(title_height + 8)-1" x2="width" y2="(title_height + 8)-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="((title_height + 8))/2">
-    <color value="#d8d8d8"/>
-    <color value="#c4c4c4"/>
+    <color value="#dadada"/>
+    <color value="#c6c6c6"/>
   </gradient>
   <gradient type="vertical" x="0" y="((title_height + 8))/2" width="width" height="((title_height + 8))/2">
-    <color value="#c4c4c4"/>
+    <color value="#c5c5c5"/>
     <color value="#b0b0b0"/>
   </gradient>
   <!-- top-left arc hilite -->
-  <tint color="white" alpha="0.1" x="1" y="1" width="1" height="1"/>
+  <tint color="white" alpha="0.09" x="1" y="1" width="1" height="1"/>
   <!-- top-right arc hilite -->
-  <tint color="white" alpha="0.1" x="width-2" y="1" width="1" height="1"/>
+  <tint color="white" alpha="0.09" x="width-2" y="1" width="1" height="1"/>
   <!-- left hilite -->
-  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="(title_height + 8) - 1"/>
+  <tint color="white" alpha="0.06" x="0" y="0" width="1" height="(title_height + 8) - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="(title_height + 8) - 1"/>
+  <tint color="white" alpha="0.06" x="width-1" y="0" width="1" height="(title_height + 8) - 1"/>
   <!-- top hilite -->
-  <tint color="white" alpha="0.1" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="0.09" x="0" y="0" width="width" height="1"/>
   <!-- bottom hilite -->
-  <tint color="white" alpha="0.06" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
+  <tint color="white" alpha="0.05" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
   <!-- bottom shadow -->
   <line color="shade/#b0b0b0/0.8" width="1" x1="0" y1="(title_height + 8)-1" x2="width" y2="(title_height + 8)-1"/>
 </draw_ops>
@@ -109,33 +109,33 @@
     <color value="#b0b0b0"/>
   </gradient>
   <gradient type="vertical" x="0" y="(title_height+4)/2" width="width" height="(title_height+4)/2">
-    <color value="#b0b0b0"/>
-    <color value="#9c9c9c"/>
+    <color value="#afafaf"/>
+    <color value="#9a9a9a"/>
   </gradient>
   <!-- left hilite -->
-  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.06" x="0" y="0" width="1" height="title_height+4 - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.06" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
   <!-- top hilite -->
   <tint color="white" alpha="0.1" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
-  <line color="shade/#9c9c9c/0.8" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
+  <line color="shade/#9c9c9c/0.7" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
 <draw_ops name="bg_topbar_small_unfocused">
   <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4)/2">
-    <color value="#d8d8d8"/>
-    <color value="#c4c4c4"/>
+    <color value="#dadada"/>
+    <color value="#c6c6c6"/>
   </gradient>
   <gradient type="vertical" x="0" y="(title_height+4)/2" width="width" height="(title_height+4)/2">
-    <color value="#c4c4c4"/>
+    <color value="#c5c5c5"/>
     <color value="#b0b0b0"/>
   </gradient>
   <!-- left hilite -->
-  <tint color="white" alpha="0.08" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.06" x="0" y="0" width="1" height="title_height+4 - 1"/>
   <!-- right hilite -->
-  <tint color="white" alpha="0.08" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <tint color="white" alpha="0.06" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
   <!-- top hilite -->
-  <tint color="white" alpha="0.1" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="0.09" x="0" y="0" width="width" height="1"/>
   <!-- bottom shadow -->
   <line color="shade/#b0b0b0/0.8" width="1" x1="0" y1="title_height+4-1" x2="width" y2="title_height+4-1"/>
 </draw_ops>
@@ -198,322 +198,185 @@
 <draw_ops name="bg_button_pressed">
 </draw_ops>
 <draw_ops name="menu_button_normal">
-    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="#484848" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_prelight">
-    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="#181818" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_pressed">
-    <rectangle color="#bdbdbd" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_unfocused_normal">
-    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="#747474" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_unfocused_prelight">
-    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="#444444" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="menu_button_unfocused_pressed">
-    <rectangle color="#cccccc" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="#000000" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 </draw_ops>
 <draw_ops name="shade_button_normal">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#484848" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-    <!-- TR to BL-->
-    <line color="#484848" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-    <!-- TR to BL-->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.65"/> 
 </draw_ops>
 <draw_ops name="shade_button_prelight">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#181818" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-    <!-- TR to BL-->
-    <line color="#181818" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-    <!-- TR to BL-->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="1.0"/> 
 </draw_ops>
 <draw_ops name="shade_button_pressed">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-    <!-- TR to BL-->
-    <line color="#000000" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-    <!-- TR to BL-->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="shade_button_unfocused_normal">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#747474" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-    <!-- TR to BL-->
-    <line color="#747474" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-    <!-- TR to BL-->
-    <line color="#cccccc" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="shade_button_unfocused_prelight">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#444444" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-    <!-- TR to BL-->
-    <line color="#444444" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-    <!-- TR to BL-->
-    <line color="#cccccc" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="shade_button_unfocused_pressed">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-    <!-- TR to BL-->
-    <line color="#000000" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-    <!-- TR to BL-->
-    <line color="#cccccc" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="unshade_button_normal">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#484848" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-    <!-- BL to TR -->
-    <line color="#484848" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-    <!-- BL to TR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.65"/> 
 </draw_ops>
 <draw_ops name="unshade_button_prelight">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#181818" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-    <!-- BL to TR -->
-    <line color="#181818" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-    <!-- BL to TR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="1.0"/> 
 </draw_ops>
 <draw_ops name="unshade_button_pressed">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-    <!-- BL to TR -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-    <!-- BL to TR -->
-    <line color="#bdbdbd" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="unshade_button_unfocused_normal">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#747474" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-    <!-- BL to TR -->
-    <line color="#747474" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-    <!-- BL to TR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="unshade_button_unfocused_prelight">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#444444" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-    <!-- BL to TR -->
-    <line color="#444444" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-    <!-- BL to TR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="unshade_button_unfocused_pressed">
-    <!-- GLYPH -->
-    <!-- TL to BR -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-    <!-- BL to TR -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-    <!-- INSET -->
-    <!-- TL to BR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-    <!-- BL to TR -->
-    <line color="#cccccc" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="minimize_button_normal">
-  <!-- inset -->
-  <line color="#bdbdbd" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
-  <line color="#484848" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.65"/> 
 </draw_ops>
 <draw_ops name="minimize_button_prelight">
-  <!-- inset -->
-  <line color="#bdbdbd" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
-  <line color="#181818" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="1.0"/> 
 </draw_ops>
 <draw_ops name="minimize_button_pressed">
-  <!-- inset -->
-  <line color="#bdbdbd" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
-  <line color="#000000" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="minimize_button_unfocused_normal">
-  <!-- inset -->
-  <line color="#cccccc" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
-  <line color="#747474" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="minimize_button_unfocused_prelight">
-  <!-- inset -->
-  <line color="#cccccc" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
-  <line color="#444444" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="minimize_button_unfocused_pressed">
-  <!-- inset -->
-  <line color="#cccccc" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
-  <line color="#000000" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="maximize_button_normal">
-  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#484848" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.65"/> 
 </draw_ops>
 <draw_ops name="maximize_button_prelight">
-  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#181818" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="1.0"/> 
 </draw_ops>
 <draw_ops name="maximize_button_pressed">
-  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="maximize_button_unfocused_normal">
-  <rectangle color="#cccccc" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#747474" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="maximize_button_unfocused_prelight">
-  <rectangle color="#cccccc" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#444444" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="maximize_button_unfocused_pressed">
-  <rectangle color="#cccccc" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="restore_button_normal">
-  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#bdbdbd" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
-  <rectangle color="#484848" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="#484848" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.65"/> 
 </draw_ops>
 <draw_ops name="restore_button_prelight">
-  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#bdbdbd" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
-  <rectangle color="#181818" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="#181818" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="1.0"/> 
 </draw_ops>
 <draw_ops name="restore_button_pressed">
-  <rectangle color="#bdbdbd" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#bdbdbd" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
-  <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="#000000" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
 </draw_ops>
 <draw_ops name="restore_button_unfocused_normal">
-  <rectangle color="#cccccc" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#cccccc" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
-  <rectangle color="#747474" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="#747474" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <draw_ops name="restore_button_unfocused_prelight">
-  <rectangle color="#cccccc" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#cccccc" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
-  <rectangle color="#444444" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="#444444" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="restore_button_unfocused_pressed">
-  <rectangle color="#cccccc" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="#cccccc" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
-  <rectangle color="#000000" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="#000000" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.1" />
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
 </draw_ops>
 <!--
      <line color="HILITE" width="2" x1="" y1="" x2="" y2=""/>
    -->
 <draw_ops name="close_button_normal">
-    <!-- inset -->
-    <line color="#bababa" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="#bababa" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-    <!-- glyph -->
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="#000000" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
+    <image filename="images/circle-gray.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" colorize="shade/gtk:bg[SELECTED]/0.96"/>
 </draw_ops>
 <draw_ops name="close_button_prelight">
-    <!-- inset -->
-    <line color="#bababa" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="#bababa" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-    <!-- glyph -->
-    <line color="#a00" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="#a00" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
+    <image filename="images/circle-gray.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" colorize="shade/gtk:bg[SELECTED]/1.1"/>
+    <image filename="images/black/close-antialias.png" x="(height-12)/2" y="(height-12)/2 -1" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="close_button_pressed">
-    <!-- inset -->
-    <line color="#bababa" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="#bababa" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-    <!-- glyph -->
-    <line color="#600" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="#600" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
+    <image filename="images/circle-gray.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" colorize="shade/gtk:bg[SELECTED]/0.7"/>
+    <image filename="images/black/close-antialias.png" x="(height-12)/2" y="(height-12)/2 -1" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
+
 <draw_ops name="close_button_unfocused_normal">
-    <!-- inset -->
-    <line color="#c0c0c0" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="#c0c0c0" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-    <!-- glyph -->
-    <line color="#646464" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="#646464" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
+    <image filename="images/circle-gray.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" colorize="shade/gtk:bg[NORMAL]/0.8"/>
 </draw_ops>
 <draw_ops name="close_button_unfocused_prelight">
-    <!-- inset -->
-    <line color="#c0c0c0" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="#c0c0c0" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-    <!-- glyph -->
-    <line color="#a00" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="#a00" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
+    <image filename="images/circle-gray.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" colorize="shade/gtk:bg[NORMAL]/1.0"/>
+    <image filename="images/black/close-antialias.png" x="(height-12)/2" y="(height-12)/2 -1" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
 <draw_ops name="close_button_unfocused_pressed">
-    <!-- inset -->
-    <line color="#c0c0c0" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="#c0c0c0" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-    <!-- glyph -->
-    <line color="#600" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="#600" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
+    <image filename="images/circle-gray.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" colorize="shade/gtk:bg[NORMAL]/0.6"/>
+    <image filename="images/black/close-antialias.png" x="(height-12)/2" y="(height-12)/2 -1" width="12" height="12" alpha="0.7"/> 
 </draw_ops>
+
+
 <draw_ops name="title_focused">
     <clip x="0" y="0" width="width" height="height"/>
-    <title color="#bdbdbd" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
+    <title color="#b8b8b8" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
     <title color="#222222" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
 </draw_ops>
 <draw_ops name="title_unfocused">
     <clip x="0" y="0" width="width" height="height"/>
-    <title color="#cccccc" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
+    <title color="#c8c8c8" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
     <title color="#545454" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
 </draw_ops>
 <frame_style name="normal_focused" geometry="normal">

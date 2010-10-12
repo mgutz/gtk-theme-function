@@ -17,8 +17,8 @@
   <distance name="left_width" value="{{border_width}}"/>
   <distance name="right_width" value="{{border_width}}"/>
   <distance name="bottom_height" value="{{border_width}}"/>
-  <distance name="left_titlebar_edge" value="5"/>
-  <distance name="right_titlebar_edge" value="5"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
   <distance name="title_vertical_pad" value="0"/>
   <border name="title_border" left="0" right="0" top="4" bottom="4"/>
   <border name="button_border" left="1" right="1" top="4" bottom="4"/>
@@ -207,89 +207,50 @@
 </draw_ops>
 
 {{#menu_button}}
-    <rectangle color="HILITE" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
-    <rectangle color="COLOR" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="white" x="1" y="(height-5)/2+1" width="mini_icon_width-2" height="4" filled="false" />
+    <rectangle color="black" x="1" y="(height-5)/2" width="mini_icon_width-2" height="4" filled="false" />
 {{/menu_button}}
 
 
 {{#shade_button}}
-    <!-- GLYPH -->
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" />
 
-    <!-- TL to BR -->
-    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2"/>
-
-    <!-- TR to BL-->
-    <line color="COLOR" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2"/>
-
-
-    <!-- INSET -->
-
-    <!-- TL to BR -->
-    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 +2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +2 +1"/>
-
-    <!-- TR to BL-->
-    <line color="HILITE" width="1" x1="(width-4)/2 + 4 +1"     y1="(height-4)/2 -1 +2 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +2 +1"/>
-
+    <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/shade_button}}
 
 {{#unshade_button}}
-    <!-- GLYPH -->
+    <image filename="images/white/unshade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" />
 
-    <!-- TL to BR -->
-    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3"/>
-
-    <!-- BL to TR -->
-    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2"/>
-
-
-    <!-- INSET -->
-
-    <!-- TL to BR -->
-    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 +1"    x2="(width-4)/2 + 3" y2="(height-4)/2 + 3 +1"/>
-
-    <!-- BL to TR -->
-    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4 +1" x2="(width-4)/2 + 2" y2="(height-4)/2 + 2 +1"/>
+    <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/unshade_button}}
 
 
 
 {{#minimize_button}}
-  <!-- inset -->
-  <line color="HILITE" width="1" x1="(width-6)/2" y1="height/2 + 3 + 1" x2="(width-6)/2 + 8" y2="height/2 + 3 + 1"/>
+    <image filename="images/white/minimize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" />
 
-  <line color="COLOR" width="1" x1="(width-6)/2" y1="height/2 + 3" x2="(width-6)/2 + 8" y2="height/2 + 3"/>
+    <image filename="images/black/minimize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/minimize_button}}
 
 
 {{#maximize_button}}
-  <rectangle color="HILITE" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
+    <image filename="images/white/maximize.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" />
 
-  <rectangle color="COLOR" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
+    <image filename="images/black/maximize.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/maximize_button}}
 
 
 {{#restore_button}}
-  <rectangle color="HILITE" x="(width-6)/2" y="(height-6)/2 + 1" width="6" height="6"/>
-  <rectangle color="HILITE" x="(width-6)/2 +2" y="(height-6)/2 -2 +1" width="6" height="6"/>
+    <image filename="images/white/restore.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" />
 
-  <rectangle color="COLOR" x="(width-6)/2" y="(height-6)/2" width="6" height="6"/>
-  <rectangle color="COLOR" x="(width-6)/2 +2" y="(height-6)/2 -2" width="6" height="6"/>
+    <image filename="images/black/restore.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/restore_button}}
 
    <!--
      <line color="HILITE" width="2" x1="" y1="" x2="" y2=""/>
    -->
 
-{{#close_button}}
-    <!-- inset -->
-    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2  +1"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1  +1"/>
-    <line color="HILITE" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4  +1" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1  +1"/>
-
-    <!-- glyph -->
-    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2"     x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 + 4 + 1"/>
-    <line color="COLOR" width="1" x1="(width-4)/2"     y1="(height-4)/2 + 4" x2="(width-4)/2 + 4 + 1" y2="(height-4)/2 - 1"/>
-{{/close_button}}
-
+{{> close_button}}
 
 
 {{#title}}

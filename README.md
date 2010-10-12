@@ -102,3 +102,13 @@ themes. Workaround is to choose another theme like Clearlooks and then Function 
 - Improved highlighting to lessen the effect of jagged round corners
 - Keep square corners on utility windows (GIMP toolboxes) 
 - Change nautilus side pane bg to be consistent with open file dialog
+
+0.4.1
+
+Ubuntu 10.10 fixes
+
+0.4.2
+
+X was too faint. Trying red close.
+
+

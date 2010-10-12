@@ -29,7 +29,7 @@ style "default"
 	GtkPaned::handle-size = 5
         GtkNotebook ::tab-overlap = 3 
 	GtkRange::trough-border = 0
-	GtkRange::slider-width = 15
+	GtkRange::slider-width = 14
 	GtkRange::stepper-size = 18 
         GtkRange::trough-under-steppers = 0
 	GtkScale::slider-length = 22
@@ -46,7 +46,7 @@ style "default"
         GtkTreeView::even-row-color = shade(1.03, @base_color)
 	#GtkProgressBar ::min-vertical-bar-width = 14 #GtkProgressBar ::min-horizontal-bar-width = 14 #GtkProgressBar ::min-horizontal-bar-height = 14 #GtkProgressBar ::min-vertical-bar-height = 12
 	GtkMenu::horizontal-padding = 1
-	GtkMenu::vertical-padding = 4
+	GtkMenu::vertical-padding = 0
 	WnckTasklist::fade-overlay-rect = 0
 	# The following line hints to gecko (and possibly other appliations)
 	# that the entry should be drawn transparently on the canvas.
@@ -93,7 +93,7 @@ style "default"
 		border_shades       = { 1.2, 1.0 } # gradient to draw on border
 		comboboxstyle       = 0     # 0 = normal combobox, 1 = colorized combobox below arrow
 		colorize_scrollbar  = FALSE  # FALSE = disabled, TRUE = enabled
-		contrast            = 0.8   # 0.8 for less contrast, more than 1.0 for more contrast on borders
+		contrast            = 0.4   # 0.8 for less contrast, more than 1.0 for more contrast on borders
 		expanderstyle       = 0 # 0 = arrows, 1 = circles with plus/minus, 2 = buttons with plus/minus
 		focus_color         = @selected_bg_color 
 		glazestyle          = 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
@@ -106,13 +106,13 @@ style "default"
 		lightborderstyle    = 1     # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 1     # 0 = flat, 1 = glassy, 2 = raised
 		listviewstyle       = 0     # 0 = nothing, 1 = dotted 2 = solid
-		menubaritemstyle    = 2     # 0 = menuitem look, 1 = button look
+		menubaritemstyle    = 0     # 0 = menuitem look, 1 = button look
 		menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle       = 0     # 0 = flat, 1 = glassy, 2 = striped
 		menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
 		prelight_shade      = .95  # shade level for scrollbar's slider, comboboxstyle(1), and prelight state with gradient_colors
 		progressbarstyle    = 1     # 0 = no stripes, 1 = diagonal stripes, 2 = vertical stripes 
-		reliefstyle	    = 4     # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
+		reliefstyle	    = 3     # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		rgba		    = FALSE # FALSE = disabled, TRUE = enabled
 		roundness           = 3     # 0 = squared, 1 = old default, more will increase roundness
 		scrollbarstyle      = 0     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
@@ -195,7 +195,7 @@ style "button"
 		border_colors       	= { darker(@bg_color), darker(@bg_color)}
 		contrast		= 0.8 
         	#gradient_shades         = {1.12, 1.0, 1.0, 0.88} # default: {1.1,1.0,1.0,1.1}
-        	gradient_shades         = {1.1, 1.0, 1.0, 0.9} # default: {1.1,1.0,1.0,1.1}
+        	gradient_shades         = {1.09, 1.0, 1.0, 0.92} # default: {1.1,1.0,1.0,1.1}
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
@@ -245,8 +245,8 @@ style "terminal"
 }
 style "menu" 
 {
-	xthickness = 0
-	ythickness = 0
+	xthickness = 1
+	ythickness = 1
 	bg[INSENSITIVE]   = mix (0.4, @selected_bg_color, @bg_color)
         engine "murrine" 
 	{
@@ -258,12 +258,13 @@ style "menu-item" = "default"
 	xthickness = 0
 	ythickness = 4
         #bg[SELECTED] = mix(0.5, @selected_bg_color, @bg_color) #@selected_bg_color 
-	bg[SELECTED] = @selected_bg_color
+	    bg[SELECTED] = @selected_bg_color
         bg[PRELIGHT] = @selected_bg_color 
         fg[PRELIGHT] = @selected_fg_color 
         
         engine "murrine" 
 	{
+	
             	glowstyle = 0
            	roundness = 0
         }
@@ -401,7 +402,7 @@ style "scrollbar"
 		#highlight_shade     	= 1.0  # set highlight amount for buttons or widgets
 		#lightborder_shade   	= 1.2   # sets lightborder amount for buttons or widgets
 		roundness		= 6
-		gradient_shades     = {1.1,1.05,1.05,0.95} # default: {1.1,1.0,1.0,1.1}
+		gradient_shades     = {1.12,1.05,1.05,0.98} # default: {1.1,1.0,1.0,1.1}
 	}
 	bg[NORMAL]	= shade(1.0, @selected_bg_color)
 	bg[PRELIGHT] 	= shade(0.95, @selected_bg_color)
@@ -417,6 +418,9 @@ style "vscrollbar"
 }
 style "menubar" = "default"
 {
+    xthickness=1
+    ythickness=1
+    
 	#bg[NORMAL]	= "#e0d6ba"
 }
 style "soundfix"
