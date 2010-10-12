@@ -76,26 +76,27 @@
     <color value="GRADIENT3"/>
   </gradient>
 
-  <!-- top-left arc hilite -->
-  <tint color="white" alpha="T_BORDER_ALPHA" x="1" y="1" width="1" height="1"/>
-
-  <!-- top-right arc hilite -->
-  <tint color="white" alpha="T_BORDER_ALPHA" x="width-2" y="1" width="1" height="1"/>
 
   <!-- left hilite -->
-  <tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="{{topBarHeight}} - 1"/>
+  <tint color="white" alpha="LR_BORDER_ALPHA" x="1" y="0" width="1" height="{{topBarHeight}} - 1"/>
 
   <!-- right hilite -->
-  <tint color="white" alpha="LR_BORDER_ALPHA" x="width-1" y="0" width="1" height="{{topBarHeight}} - 1"/>
+  <!--<tint color="white" alpha="LR_BORDER_ALPHA" x="width-2" y="0" width="1" height="{{topBarHeight}} - 1"/>-->
 
   <!-- top hilite -->
-  <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
+  <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="1" width="width" height="1"/>
 
   <!-- bottom hilite -->
-  <tint color="white" alpha="B_BORDER_ALPHA" x="0" y="{{topBarHeight}} - 2" width="width" height="1"/>
+  <!--<tint color="white" alpha="B_BORDER_ALPHA" x="0" y="{{topBarHeight}} - 2" width="width" height="1"/>-->
 
-  <!-- bottom shadow -->
-  <line color="B_BORDER" width="1" x1="0" y1="{{topBarHeight}}-1" x2="width" y2="{{topBarHeight}}-1"/>
+    {{#isRounded}}
+    <!-- top-left arc hilite -->
+    <arc color="shade/#808080/ARC_SHADE" from="270.0" to="360.0" filled="false"  x="1" y="1" width="6" height="6"/>
+
+    <!-- top-right arc hilite -->
+    <arc color="shade/#808080/ARC_SHADE" from="0.0" to="90.0" filled="false"  x="width-8" y="1" width="6" height="6"/>
+    {{/isRounded}}
+
 {{/topbar}}
 
 
@@ -112,10 +113,10 @@
 
 
   <!-- left hilite -->
-  <tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+4 - 1"/>
+  <!--<tint color="white" alpha="LR_BORDER_ALPHA" x="0" y="0" width="1" height="title_height+4 - 1"/>-->
 
   <!-- right hilite -->
-  <tint color="white" alpha="LR_BORDER_ALPHA" x="width-1" y="0" width="1" height="title_height+4 - 1"/>
+  <!--<tint color="white" alpha="LR_BORDER_ALPHA" x="width-1" y="0" width="1" height="title_height+4 - 1"/>-->
 
   <!-- top hilite -->
   <tint color="white" alpha="T_BORDER_ALPHA" x="0" y="0" width="width" height="1"/>
@@ -155,21 +156,25 @@
 
 
 <draw_ops name="bg_borders">
-</draw_ops>
-
-<draw_ops name="outline">
     <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-(title_height+8)-1" x="0" y="title_height+8"/>
     
     <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-(title_height+8)-1" x="width-{{border_width}}" y="title_height+8"/>
     
     <rectangle color="gtk:bg[NORMAL]" filled="true" width="width" height="{{border_width}}" x="0" y="height-{{border_width}}"/>
-
 </draw_ops>
 
+
+{{{outlineWindowFocused}}}
+
 <draw_ops name="outline_unfocused">
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-title_height+8" x="0" y="title_height+8"/>
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-title_height+8" x="width-{{border_width}}" y="title_height+8"/>
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="width" height="{{border_width}}" x="0" y="height-{{border_width}}"/>
+    <rectangle color="shade/#808080/{{unfocusedBorderAlpha}}" filled="false" width="width-1" height="height-1" x="0" y="0"/>
+
+    {{#isRounded}}
+    <!-- top-right arc hilite -->
+    <arc color="shade/#808080/{{unfocusedBorderAlpha}}" from="270.0" to="360.0" filled="false"  x="0" y="0" width="8" height="8"/>
+
+    <arc color="shade/#808080/{{unfocusedBorderAlpha}}" from="0.0" to="90.0" filled="false"  x="width-9" y="0" width="8" height="8"/>
+    {{/isRounded}}
 </draw_ops>
 
 <draw_ops name="botton_outline">
@@ -191,7 +196,7 @@
 
 <draw_ops name="bg_window_borders_unfocused">
   <include name="bg_window_no_borders_unfocused"/>
-  <include name="outline"/>
+  <include name="outline_unfocused"/>
 </draw_ops>
 
 <constant name="ButtonPad" value="4"/>

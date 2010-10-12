@@ -111,4 +111,15 @@ Ubuntu 10.10 fixes
 
 X was too faint. Trying red close.
 
+0.4.3
+
+Silky smooth metacity corners!
+
+- Added outline. Windows were melding into light backgrounds.
+- Much better round corners.
+- Improved close button hover.
+
+0.4.4
+
+- Reduce size of close button by 1px. X glyph was 1 pixel off center.
 
