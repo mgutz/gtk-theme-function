@@ -22,8 +22,8 @@
     </gradient>
     <!-- client area -->
     <gradient type="vertical" x="0" y="<?=topBar.effectiveHeight ?>" width="1" height="height - <?=topBar.effectiveHeight ?>">
-    <color value="<?= outline.gradients[1] ?>"/>
     <color value="<?= outline.gradients[2] ?>"/>
+    <color value="<?= outline.gradients[3] ?>"/>
     </gradient>
 
     <!-- RIGHT LINE -->
@@ -34,12 +34,12 @@
     </gradient>
     <!-- client area -->
     <gradient type="vertical" x="width-1" y="<?= topBar.effectiveHeight ?>" width="1" height="height - <?= topBar.effectiveHeight ?>">
-        <color value="<?= outline.gradients[1] ?>"/>
         <color value="<?= outline.gradients[2] ?>"/>
+        <color value="<?= outline.gradients[3] ?>"/>
     </gradient>
 
     <!-- bottom line -->
-    <line color="<?= outline.gradients[2] ?>" width="1" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
+    <line color="<?= outline.gradients[3] ?>" width="1" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
 
     <!-- topbar shadow -->
     <line color="<?= topBar.shadow ?>" width="1" x1="0" y1="<?=topBar.effectiveHeight ?> -1" x2="width" y2="<?=topBar.effectiveHeight ?> -1"/>

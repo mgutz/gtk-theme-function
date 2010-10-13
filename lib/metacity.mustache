@@ -20,7 +20,7 @@
   <distance name="left_titlebar_edge" value="3"/>
   <distance name="right_titlebar_edge" value="3"/>
   <distance name="title_vertical_pad" value="0"/>
-  <border name="title_border" left="0" right="0" top="4" bottom="4"/>
+  <border name="title_border" left="4" right="5" top="4" bottom="4"/>
   <border name="button_border" left="1" right="1" top="4" bottom="4"/>
   <aspect_ratio name="button" value="1"/>
 </frame_geometry>
@@ -39,8 +39,8 @@
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
-  <distance name="left_titlebar_edge" value="5"/>
-  <distance name="right_titlebar_edge" value="5"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
   <!--<distance name="left_titlebar_edge" value="3"/>-->
   <!--<distance name="right_titlebar_edge" value="3"/>-->
   <!--<distance name="title_vertical_pad" value="3"/>-->
@@ -115,24 +115,22 @@
 
 <draw_ops name="bg_window_no_borders">
   <include name="bg_topbar_focused"/>
+  <include name="outline_focused"/>
 </draw_ops>
 
 <draw_ops name="bg_window_no_borders_unfocused">
   <include name="bg_topbar_unfocused"/>
+  <include name="outline_unfocused"/>
 </draw_ops>
 
 <draw_ops name="bg_window_borders">
   <include name="bg_window_no_borders"/>
-  <include name="outline_focused"/>
 </draw_ops>
 
 <draw_ops name="bg_window_borders_unfocused">
   <include name="bg_window_no_borders_unfocused"/>
-  <include name="outline_unfocused"/>
 </draw_ops>
 
-<constant name="ButtonPad" value="4"/>
-<constant name="PrelightPad" value="3"/>
 
 <draw_ops name="bg_button">
 </draw_ops>
@@ -150,8 +148,7 @@
 
 
 {{#shade_button}}
-    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" />
-
+    <image filename="images/white/shade.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="WHITE_ALPHA" /> 
     <image filename="images/black/shade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/shade_button}}
 
@@ -160,7 +157,6 @@
 
     <image filename="images/black/unshade.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="BLACK_ALPHA"/> 
 {{/unshade_button}}
-
 
 
 {{#minimize_button}}
@@ -212,6 +208,11 @@
   <button function="maximize" state="normal" draw_ops="maximize_button_normal"/>
   <button function="maximize" state="pressed" draw_ops="maximize_button_pressed"/>
   <button function="maximize" state="prelight" draw_ops="maximize_button_prelight"/>
+  <button function="shade" state="normal" draw_ops="shade_button_normal"/>
+  <button function="shade" state="pressed" draw_ops="shade_button_pressed"/>
+  <button function="unshade" state="normal" draw_ops="unshade_button_normal"/>
+  <button function="unshade" state="pressed" draw_ops="unshade_button_pressed"/>
+
   <!--<button function="menu" state="normal" draw_ops="menu_button_normal"/>-->
   <!--<button function="menu" state="pressed" draw_ops="menu_button_pressed"/>-->
   <!--<button function="menu" state="prelight" draw_ops="menu_button_prelight"/>-->
@@ -219,10 +220,6 @@
   <button function="menu" state="pressed" draw_ops="nop"/>
   <button function="menu" state="prelight" draw_ops="nop"/>
 
-  <button function="shade" state="normal" draw_ops="shade_button_normal"/>
-  <button function="shade" state="pressed" draw_ops="shade_button_pressed"/>
-  <button function="unshade" state="normal" draw_ops="unshade_button_normal"/>
-  <button function="unshade" state="pressed" draw_ops="unshade_button_pressed"/>
   <button function="above" state="normal" draw_ops="nop"/>
   <button function="above" state="pressed" draw_ops="nop"/>
   <button function="unabove" state="normal" draw_ops="nop"/>

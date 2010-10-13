@@ -123,3 +123,8 @@ Silky smooth metacity corners!
 
 - Reduce size of close button by 1px. X glyph was 1 pixel off center.
 
+0.4.5
+
+- Tweaked outline
+- Fixed shaded title bar
+- Improved close button.
