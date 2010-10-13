@@ -25,7 +25,7 @@
   <aspect_ratio name="button" value="1"/>
 </frame_geometry>
 
-<frame_geometry name="no_borders" parent="normal">
+<frame_geometry name="no_borders" parent="normal" rounded_top_left="false" rounded_top_right="false">
   <distance name="left_width" value="0"/>
   <distance name="right_width" value="0"/>
   <distance name="bottom_height" value="0"/>
@@ -46,6 +46,7 @@
   <!--<distance name="title_vertical_pad" value="3"/>-->
   <!--<border name="button_border" left="0" right="0" top="0" bottom="0"/>-->
   <border name="title_border" left="0" right="0" top="2" bottom="2"/>
+  <border name="button_border" left="1" right="1" top="4" bottom="4"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
@@ -57,7 +58,7 @@
   <distance name="button_width" value="0"/>
   <distance name="button_height" value="0"/>
   <distance name="title_vertical_pad" value="0"/>
-  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="title_border" left="200" right="0" top="0" bottom="0"/>
   <border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
@@ -67,10 +68,6 @@
 
 {{{drawTopBars}}}
 
-
-<draw_ops name="bg_topbar_max">
-    <include name="bg_topbar_focused"/>
-</draw_ops>
 
 <draw_ops name="bg_top_title">
 </draw_ops>
@@ -114,21 +111,23 @@
 </draw_ops>
 
 <draw_ops name="bg_window_no_borders">
+  <include name="bg_topbar_focused_max"/>
+  <include name="outline_focused_topbar_shadow"/>
+</draw_ops>
+
+<draw_ops name="bg_window_no_borders_unfocused">
+  <include name="bg_topbar_unfocused_max"/>
+  <include name="outline_unfocused_topbar_shadow"/>
+</draw_ops>
+
+<draw_ops name="bg_window_borders">
   <include name="bg_topbar_focused"/>
   <include name="outline_focused"/>
 </draw_ops>
 
-<draw_ops name="bg_window_no_borders_unfocused">
+<draw_ops name="bg_window_borders_unfocused">
   <include name="bg_topbar_unfocused"/>
   <include name="outline_unfocused"/>
-</draw_ops>
-
-<draw_ops name="bg_window_borders">
-  <include name="bg_window_no_borders"/>
-</draw_ops>
-
-<draw_ops name="bg_window_borders_unfocused">
-  <include name="bg_window_no_borders_unfocused"/>
 </draw_ops>
 
 
@@ -185,6 +184,30 @@
 
 {{> close_button}}
 
+<draw_ops name="utility_close_button_normal">
+    <image filename="images/white/close.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/close.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.65"/> 
+</draw_ops>
+<draw_ops name="utility_close_button_prelight">
+    <image filename="images/white/close.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/close.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="1.0"/> 
+</draw_ops>
+<draw_ops name="utility_close_button_pressed">
+    <image filename="images/white/close.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.2" />
+    <image filename="images/black/close.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.6"/> 
+</draw_ops>
+<draw_ops name="utility_close_button_unfocused_normal">
+    <image filename="images/white/close.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
+    <image filename="images/black/close.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
+</draw_ops>
+<draw_ops name="utility_close_button_unfocused_prelight">
+    <image filename="images/white/close.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
+    <image filename="images/black/close.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.7"/> 
+</draw_ops>
+<draw_ops name="utility_close_button_unfocused_pressed">
+    <image filename="images/white/close.png" x="(height-12)/2" y="(height-12)/2 +1" width="12" height="12" alpha="0.15" />
+    <image filename="images/black/close.png" x="(height-12)/2" y="(height-12)/2" width="12" height="12" alpha="0.35"/> 
+</draw_ops>
 
 {{#title}}
     <clip x="0" y="0" width="width" height="height"/>
@@ -192,9 +215,7 @@
     <title color="COLOR" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
 {{/title}}
 
-
-<frame_style name="normal_focused" geometry="normal">
-  <piece position="entire_background" draw_ops="bg_window_borders"/>
+<frame_style name="common_focused" geometry="normal">
   <piece position="title" draw_ops="title_focused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="bg_left_title"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="bg_right_title"/>-->
@@ -231,8 +252,14 @@
 </frame_style>
 
 
+
+<frame_style name="normal_focused" geometry="normal" parent="common_focused">
+  <piece position="entire_background" draw_ops="bg_window_borders"/>
+</frame_style>
+
+
 <frame_style name="normal_shaded_focused" geometry="normal" parent="normal_focused">
-  <piece position="entire_background" draw_ops="bg_window_no_borders"/>
+  <piece position="entire_background" draw_ops="bg_window_borders"/>
   <!--<piece position="left_titlebar_edge" draw_ops="bg_left_title_shaded"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="bg_right_title_shaded"/>-->
 </frame_style>
@@ -275,13 +302,13 @@
 </frame_style>
 
 <frame_style name="normal_shaded_unfocused" geometry="normal" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="bg_window_no_borders"/>
+  <piece position="entire_background" draw_ops="bg_window_borders"/>
   <!--<piece position="left_titlebar_edge" draw_ops="bg_left_title_shaded"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="bg_right_title_shaded"/>-->
 </frame_style>
 
-<frame_style name="maximized_focused" geometry="no_borders" parent="normal_focused">
-  <piece position="entire_background" draw_ops="bg_topbar_max"/>
+<frame_style name="maximized_focused" geometry="no_borders" parent="common_focused">
+  <piece position="entire_background" draw_ops="bg_window_no_borders"/>
   <!--<piece position="top_titlebar_edge" draw_ops="bg_top_title"/>-->
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
@@ -296,7 +323,7 @@
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="no_borders" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="bg_topbar_unfocused"/>
+  <piece position="entire_background" draw_ops="bg_window_no_borders_unfocused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <button function="maximize" state="normal" draw_ops="restore_button_unfocused_normal"/>
@@ -313,6 +340,9 @@
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>-->
+  <button function="close" state="normal" draw_ops="utility_close_button_normal"/>
+  <button function="close" state="pressed" draw_ops="utility_close_button_pressed"/>
+  <button function="close" state="prelight" draw_ops="utility_close_button_prelight"/>
 </frame_style>
 
 <frame_style name="utility_unfocused" geometry="utility" parent="normal_unfocused">
@@ -320,6 +350,9 @@
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->
+  <button function="close" state="normal" draw_ops="utility_close_button_unfocused_normal"/>
+  <button function="close" state="pressed" draw_ops="utility_close_button_unfocused_pressed"/>
+  <button function="close" state="prelight" draw_ops="utility_close_button_unfocused_prelight"/>
 </frame_style>
 
 <frame_style name="border" geometry="border" parent="normal_unfocused">
@@ -338,7 +371,7 @@
   <frame focus="no" state="maximized_and_shaded" style="maximized_shaded_unfocused"/>
 </frame_style_set>
 
-<frame_style_set name="utility" parent="normal">
+<frame_style_set name="utility">
   <frame focus="yes" state="normal" resize="both" style="utility_focused"/>
   <frame focus="no" state="normal" resize="both" style="utility_unfocused"/>
   <frame focus="yes" state="maximized" style="utility_focused"/>

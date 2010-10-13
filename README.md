@@ -128,3 +128,14 @@ Silky smooth metacity corners!
 - Tweaked outline
 - Fixed shaded title bar
 - Improved close button.
+
+0.4.6
+
+- Minimize looks like an underscore. Increased margin a little.
+- Increased size of close button 
+
+0.4.7
+
+- Use square border on maximize
+- GIMP toolbox shade
+- Use small x for utility windows (GIMP toolbox)
