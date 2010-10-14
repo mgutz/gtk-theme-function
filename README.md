@@ -152,4 +152,9 @@ Silky smooth metacity corners!
 
 0.4.8
 
-- SO X theme
+- Simplified core
+- Split archives
+
+0.4.9
+
+- Moved Function Dot and Lambda Dot to Extras archive

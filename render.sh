@@ -1,6 +1,6 @@
 #!bash
 
-version=0.4.8
+version=0.4.9
 
 node lib/gtkrc.js
 node lib/metacity.js 
@@ -30,10 +30,12 @@ do
 done
 
 # always include GTK controls for each set
-squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Dot' 'Function Raven' 'Function Shiny')
-rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny')
+squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Raven' 'Function Shiny')
+rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Raven' 'Lambda Shiny')
+extras=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function Dot' 'Lambda Dot')
 
 cd ..
 tar cfz Function-$version.tar.gz "${squared[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 tar cfz Lambda-$version.tar.gz "${rounded[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfz Extras-$version.tar.gz "${extras[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 cd src 
