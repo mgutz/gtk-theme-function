@@ -6,11 +6,21 @@ Got tired of customizing the colors of Nub whenever I switched wallpapers.
 Gray goes with everything.
 
 
-## Build
+## Installation
 
-To compile the metacity theme:
+If you have a version <= 0.4.7, remove
 
-    node lib/metacity.js
+    rm -rf ~/.themes/{Function*,Lambda*,Fn*}
+
+To install (replace tar file with appropriate file):
+    
+    # install for you only
+    tar xfz Lambda-0.4.8.tar.gz -C ~/.themes
+
+OR
+    
+    # install globally
+    sudo tar xfz Lambda-0.4.8.tar.gz -C /usr/share/themes
 
 ## Changelog
 
