@@ -23,7 +23,7 @@
     <!-- bottom hilite -->
     <tint color="white" alpha="<?= topBar.highlights[3] ?>" x="0" y="<?= topBar.effectiveHeight ?> - 2" width="width" height="1"/>
 
-    <? if (theme.isRounded) { ?>
+    <? if (topBar.isRounded) { ?>
         <!-- top-left arc hilite -->
         <arc color="shade/#808080/<?= topBar.highlightArc ?>" from="270.0" to="360.0" filled="false"  x="1" y="1" width="6" height="6"/>
 

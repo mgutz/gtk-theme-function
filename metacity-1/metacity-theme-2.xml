@@ -87,6 +87,35 @@
 
 <!-- vim: set ft=xml : -->
 <!-- Draws the topbar. -->
+<draw_ops name="bg_topbar_unfocused">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
+        <color value="#dadada"/>
+        <color value="#c6c6c6"/>
+    </gradient>
+
+    <gradient type="vertical" x="0" y="(title_height + 8) /2" width="width" height="(title_height + 8) /2">
+        <color value="#c5c5c5"/>
+        <color value="#b0b0b0"/>
+    </gradient>
+
+
+    <!-- left hilite -->
+    <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height + 8) - 1"/>
+
+    <!-- right hilite -->
+    <tint color="white" alpha="0" x="width-2" y="0" width="1" height="(title_height + 8) - 1"/>
+
+    <!-- top hilite -->
+    <tint color="white" alpha="0.1" x="0" y="1" width="width" height="1"/>
+
+    <!-- bottom hilite -->
+    <tint color="white" alpha="0" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
+
+    
+</draw_ops>
+
+<!-- vim: set ft=xml : -->
+<!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_focused_max">
     <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
         <color value="#c4c4c4"/>
@@ -116,87 +145,58 @@
 
 <!-- vim: set ft=xml : -->
 <!-- Draws the topbar. -->
+<draw_ops name="bg_topbar_unfocused_max">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
+        <color value="#dadada"/>
+        <color value="#c6c6c6"/>
+    </gradient>
+
+    <gradient type="vertical" x="0" y="(title_height + 8) /2" width="width" height="(title_height + 8) /2">
+        <color value="#c5c5c5"/>
+        <color value="#b0b0b0"/>
+    </gradient>
+
+
+    <!-- left hilite -->
+    <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height + 8) - 1"/>
+
+    <!-- right hilite -->
+    <tint color="white" alpha="0" x="width-2" y="0" width="1" height="(title_height + 8) - 1"/>
+
+    <!-- top hilite -->
+    <tint color="white" alpha="0.1" x="0" y="1" width="width" height="1"/>
+
+    <!-- bottom hilite -->
+    <tint color="white" alpha="0" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
+
+    
+</draw_ops>
+
+<!-- vim: set ft=xml : -->
+<!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_small_focused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 4) /2">
         <color value="#c4c4c4"/>
         <color value="#b0b0b0"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height+4) /2" width="width" height="(title_height+4) /2">
+    <gradient type="vertical" x="0" y="(title_height + 4) /2" width="width" height="(title_height + 4) /2">
         <color value="#afafaf"/>
         <color value="#9b9b9b"/>
     </gradient>
 
 
     <!-- left hilite -->
-    <tint color="white" alpha="0.0" x="1" y="0" width="1" height="(title_height+4) - 1"/>
+    <tint color="white" alpha="0.0" x="1" y="0" width="1" height="(title_height + 4) - 1"/>
 
     <!-- right hilite -->
-    <tint color="white" alpha="0.0" x="width-2" y="0" width="1" height="(title_height+4) - 1"/>
+    <tint color="white" alpha="0.0" x="width-2" y="0" width="1" height="(title_height + 4) - 1"/>
 
     <!-- top hilite -->
     <tint color="white" alpha="0.1" x="0" y="1" width="width" height="1"/>
 
     <!-- bottom hilite -->
-    <tint color="white" alpha="0.0" x="0" y="(title_height+4) - 2" width="width" height="1"/>
-
-    
-</draw_ops>
-
-<!-- vim: set ft=xml : -->
-<!-- Draws the topbar. -->
-<draw_ops name="bg_topbar_unfocused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height+8) /2">
-        <color value="#dadada"/>
-        <color value="#c6c6c6"/>
-    </gradient>
-
-    <gradient type="vertical" x="0" y="(title_height+8) /2" width="width" height="(title_height+8) /2">
-        <color value="#c5c5c5"/>
-        <color value="#b0b0b0"/>
-    </gradient>
-
-
-    <!-- left hilite -->
-    <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height+8) - 1"/>
-
-    <!-- right hilite -->
-    <tint color="white" alpha="0" x="width-2" y="0" width="1" height="(title_height+8) - 1"/>
-
-    <!-- top hilite -->
-    <tint color="white" alpha="0.1" x="0" y="1" width="width" height="1"/>
-
-    <!-- bottom hilite -->
-    <tint color="white" alpha="0" x="0" y="(title_height+8) - 2" width="width" height="1"/>
-
-    
-</draw_ops>
-
-<!-- vim: set ft=xml : -->
-<!-- Draws the topbar. -->
-<draw_ops name="bg_topbar_unfocused_max">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height+8) /2">
-        <color value="#dadada"/>
-        <color value="#c6c6c6"/>
-    </gradient>
-
-    <gradient type="vertical" x="0" y="(title_height+8) /2" width="width" height="(title_height+8) /2">
-        <color value="#c5c5c5"/>
-        <color value="#b0b0b0"/>
-    </gradient>
-
-
-    <!-- left hilite -->
-    <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height+8) - 1"/>
-
-    <!-- right hilite -->
-    <tint color="white" alpha="0" x="width-2" y="0" width="1" height="(title_height+8) - 1"/>
-
-    <!-- top hilite -->
-    <tint color="white" alpha="0.1" x="0" y="1" width="width" height="1"/>
-
-    <!-- bottom hilite -->
-    <tint color="white" alpha="0" x="0" y="(title_height+8) - 2" width="width" height="1"/>
+    <tint color="white" alpha="0.0" x="0" y="(title_height + 4) - 2" width="width" height="1"/>
 
     
 </draw_ops>
@@ -204,28 +204,28 @@
 <!-- vim: set ft=xml : -->
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_small_unfocused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height+4) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 4) /2">
         <color value="#dadada"/>
         <color value="#c6c6c6"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height+4) /2" width="width" height="(title_height+4) /2">
+    <gradient type="vertical" x="0" y="(title_height + 4) /2" width="width" height="(title_height + 4) /2">
         <color value="#c5c5c5"/>
         <color value="#b0b0b0"/>
     </gradient>
 
 
     <!-- left hilite -->
-    <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height+4) - 1"/>
+    <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height + 4) - 1"/>
 
     <!-- right hilite -->
-    <tint color="white" alpha="0" x="width-2" y="0" width="1" height="(title_height+4) - 1"/>
+    <tint color="white" alpha="0" x="width-2" y="0" width="1" height="(title_height + 4) - 1"/>
 
     <!-- top hilite -->
     <tint color="white" alpha="0.1" x="0" y="1" width="width" height="1"/>
 
     <!-- bottom hilite -->
-    <tint color="white" alpha="0" x="0" y="(title_height+4) - 2" width="width" height="1"/>
+    <tint color="white" alpha="0" x="0" y="(title_height + 4) - 2" width="width" height="1"/>
 
     
 </draw_ops>
@@ -301,7 +301,6 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
-
 <draw_ops name="outline_unfocused_topbar_shadow">
     <!-- topbar shadow -->
     <line color="#808080" width="1" x1="0" y1="(title_height + 8) -1" x2="width" y2="(title_height + 8) -1"/>
@@ -672,6 +671,49 @@
 <draw_ops name="unshade_button_unfocused_pressed">
     <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
     <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.35"/> 
+</draw_ops>
+
+
+
+
+<draw_ops name="menu_button_normal">
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.6"/> 
+</draw_ops>
+
+
+
+<draw_ops name="menu_button_prelight">
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="#808080"/> 
+</draw_ops>
+
+
+
+<draw_ops name="menu_button_pressed">
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.6"/> 
+</draw_ops>
+
+
+
+<draw_ops name="menu_button_unfocused_normal">
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.7"/> 
+</draw_ops>
+
+
+
+<draw_ops name="menu_button_unfocused_prelight">
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.7"/> 
+</draw_ops>
+
+
+
+<draw_ops name="menu_button_unfocused_pressed">
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.35"/> 
 </draw_ops>
 
 
