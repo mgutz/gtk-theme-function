@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=Function
+Name=0.src
 Type=X-GNOME-Metatheme
 Comment=Ultra clean light them by mgutz
 
 [X-GNOME-Metatheme]
-GtkTheme=Function
-MetacityTheme=Function
+GtkTheme=src
+MetacityTheme=src
 IconTheme=Faenza
 ButtonLayout=shade:minimize,maximize,close

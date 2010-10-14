@@ -139,3 +139,7 @@ Silky smooth metacity corners!
 - Use square border on maximize
 - GIMP toolbox shade
 - Use small x for utility windows (GIMP toolbox)
+
+0.4.8
+
+- SO X theme
