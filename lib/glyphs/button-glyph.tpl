@@ -1,4 +1,5 @@
 <?
+    
     // button.image may be string in which case, it used as both focused and unfocused image
     // button.image: [0]=focused [1]=unfocused
     if (_.isArray(button.image)) {
@@ -7,7 +8,7 @@
     } 
     else {
         focusedImage = button.image
-        unfocusedImage = button.image
+        unfocusedImage = focusedImage 
     }
 
     var _names = ['_button_normal', '_button_prelight', '_button_pressed', '_button_unfocused_normal', '_button_unfocused_prelight', '_button_unfocused_pressed'];
