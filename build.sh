@@ -33,6 +33,7 @@ done
 squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Raven' 'Function Shiny')
 rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Raven' 'Lambda Shiny')
 extras=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function Dot' 'Lambda Dot')
+sox=('Fn Gloss' 'SO X')
 
 cd ..
 tar cfz Function-$version.tar.gz "${squared[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
