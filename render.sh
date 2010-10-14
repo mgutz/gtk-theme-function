@@ -5,7 +5,7 @@ version=0.4.8
 node lib/gtkrc.js
 node lib/metacity.js 
 
-themes=('Function' 'Function Dot' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Shiny' 'Lambda SO X')
+themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'Lambda SO X')
 for i in ${!themes[@]}
 do
   theme=${themes[i]}
