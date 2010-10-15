@@ -165,3 +165,9 @@ Silky smooth metacity corners!
 
 - Rounding looks more diagonal after Ubuntu 10.10 fixes
 - Changed SO X shade button
+
+0.5.1
+
+- Improved rounding antialiasing on smooth theme corners
+- Add outline on utility dialogs (GIMP toolboxes)
+- Remove white line under utility dialogs when shaded

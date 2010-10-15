@@ -83,6 +83,15 @@
 
     
 
+        <!-- top-left arc hilite -->
+        <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        
+        <!-- top-right arc hilite -->
+        <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
+    
+
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
@@ -110,6 +119,15 @@
     <!-- bottom hilite -->
     <tint color="white" alpha="0" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
 
+    
+
+        <!-- top-left arc hilite -->
+        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        
+        <!-- top-right arc hilite -->
+        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -141,6 +159,15 @@
 
     
 
+        <!-- top-left arc hilite -->
+        <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        
+        <!-- top-right arc hilite -->
+        <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
+    
+
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
@@ -168,6 +195,15 @@
     <!-- bottom hilite -->
     <tint color="white" alpha="0" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
 
+    
+
+        <!-- top-left arc hilite -->
+        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        
+        <!-- top-right arc hilite -->
+        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
