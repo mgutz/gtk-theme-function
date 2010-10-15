@@ -24,12 +24,17 @@
     <tint color="white" alpha="<?= topBar.highlights[3] ?>" x="0" y="<?= topBar.effectiveHeight ?> - 2" width="width" height="1"/>
 
     <? if (topBar.isRounded) { ?>
-        <!-- top-left arc hilite -->
-        <arc color="shade/#808080/<?= topBar.highlightArc ?>" from="270.0" to="360.0" filled="false"  x="1" y="1" width="6" height="6"/>
 
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -->
-        <arc color="shade/#808080/<?= topBar.highlightArc ?>" from="0.0" to="90.0" filled="false"  x="width-8" y="1" width="6" height="6"/>
+        <?- draw.point(topBar.highlightArc, 3, 1) ?>
+        <?- draw.point(topBar.highlightArc, 2, 2) ?>
+        <?- draw.point(topBar.highlightArc, 1, 3) ?>
+        
+        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <?- draw.point(topBar.highlightArc, "width - 3 -1", 1) ?>
+        <?- draw.point(topBar.highlightArc, "width - 2 - 1", 2) ?>
+        <?- draw.point(topBar.highlightArc, "width - 1 - 1", 3) ?>
     <? } ?>
+
 </draw_ops>
 
 <!-- vim: set ft=xml : -->

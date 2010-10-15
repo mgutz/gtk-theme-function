@@ -14,9 +14,13 @@
     <? if (theme.isRounded) { ?>
     <!-- ROUNDING ANTIALIAS -->
     <!-- top-left arc hilite -->
-    <arc color="<?= outline.arc ?>" from="270.0" to="360.0" filled="false"  x="0" y="0" width="8" height="8"/>
+   
+    <?- draw.point(outline.arc, 2, 1) ?>
+    <?- draw.point(outline.arc, 1, 2) ?>
+
     <!-- top-right arc hilite -->
-    <arc color="<?= outline.arc ?>" from="0.0" to="90.0" filled="false"  x="width-9" y="0" width="8" height="8"/>
+    <?- draw.point(outline.arc, "width-2 -1", 1) ?>
+    <?- draw.point(outline.arc, "width-1 -1", 2) ?>
     <? } ?>
 
     <!-- LEFT LINE -->
