@@ -21,7 +21,7 @@
   <distance name="button_width" value="15"/>
   <distance name="button_height" value="15"/>
   <border name="title_border" left="4" right="5" top="4" bottom="4"/>
-  <border name="button_border" left="{{buttonPadding}}" right="{{buttonPadding}}" top="1" bottom="1"/>
+  <border name="button_border" left="{{buttonPadding}}" right="{{buttonPadding}}" top="0" bottom="0"/>
   <!--<aspect_ratio name="button" value="1"/>-->
 </frame_geometry>
 
@@ -46,7 +46,7 @@
   <!--<distance name="title_vertical_pad" value="3"/>-->
   <!--<border name="button_border" left="0" right="0" top="0" bottom="0"/>-->
   <border name="title_border" left="0" right="0" top="2" bottom="2"/>
-  <border name="button_border" left="1" right="1" top="4" bottom="4"/>
+  <border name="button_border" left="1" right="1" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
@@ -94,9 +94,9 @@
 </draw_ops>
 
 <draw_ops name="bg_borders">
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-(title_height+8)-1" x="0" y="title_height+8"/>
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-{{topBarEffectiveHeight}}-1" x="0" y="{{topBarEffectiveHeight}}"/>
     
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-(title_height+8)-1" x="width-{{border_width}}" y="title_height+8"/>
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-{{topBarEffectiveHeight}}-1" x="width-{{border_width}}" y="{{topBarEffectiveHeight}}"/>
     
     <rectangle color="gtk:bg[NORMAL]" filled="true" width="width" height="{{border_width}}" x="0" y="height-{{border_width}}"/>
 </draw_ops>
@@ -156,8 +156,8 @@
 
 {{#title}}
     <clip x="0" y="0" width="width" height="height"/>
-    <title color="HILITE" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
-    <title color="COLOR" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+    <title color="HILITE" x="(width - title_width) / 2" y="(height-title_height) / 2 + 1"/>
+    <title color="COLOR" x="(width - title_width) / 2" y="(height-title_height) / 2"/>
 {{/title}}
 
 <frame_style name="common_focused" geometry="normal">

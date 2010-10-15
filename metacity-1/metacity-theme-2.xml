@@ -18,7 +18,7 @@
   <distance name="button_width" value="15"/>
   <distance name="button_height" value="15"/>
   <border name="title_border" left="4" right="5" top="4" bottom="4"/>
-  <border name="button_border" left="1" right="1" top="1" bottom="1"/>
+  <border name="button_border" left="1" right="1" top="0" bottom="0"/>
   <!--<aspect_ratio name="button" value="1"/>-->
 </frame_geometry>
 <frame_geometry name="no_borders" parent="normal" rounded_top_left="false" rounded_top_right="false">
@@ -41,7 +41,7 @@
   <!--<distance name="title_vertical_pad" value="3"/>-->
   <!--<border name="button_border" left="0" right="0" top="0" bottom="0"/>-->
   <border name="title_border" left="0" right="0" top="2" bottom="2"/>
-  <border name="button_border" left="1" right="1" top="4" bottom="4"/>
+  <border name="button_border" left="1" right="1" top="0" bottom="0"/>
 </frame_geometry>
 <frame_geometry name="border" has_title="false">
   <distance name="left_width" value="3"/>
@@ -83,15 +83,6 @@
 
     
 
-        <!-- top-left arc hilite -->
-        <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
-        
-        <!-- top-right arc hilite -->
-        <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
-    
-
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
@@ -119,15 +110,6 @@
     <!-- bottom hilite -->
     <tint color="white" alpha="0" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
 
-    
-
-        <!-- top-left arc hilite -->
-        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
-        
-        <!-- top-right arc hilite -->
-        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -159,15 +141,6 @@
 
     
 
-        <!-- top-left arc hilite -->
-        <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
-        
-        <!-- top-right arc hilite -->
-        <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
-    
-
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
@@ -195,15 +168,6 @@
     <!-- bottom hilite -->
     <tint color="white" alpha="0" x="0" y="(title_height + 8) - 2" width="width" height="1"/>
 
-    
-
-        <!-- top-left arc hilite -->
-        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
-        
-        <!-- top-right arc hilite -->
-        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -235,15 +199,6 @@
 
     
 
-        <!-- top-left arc hilite -->
-        <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
-        
-        <!-- top-right arc hilite -->
-        <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
-    
-
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
@@ -273,15 +228,6 @@
 
     
 
-        <!-- top-left arc hilite -->
-        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
-        
-        <!-- top-right arc hilite -->
-        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
-    
-
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
@@ -303,9 +249,9 @@
 <draw_ops name="bg_right_title_shaded">
 </draw_ops>
 <draw_ops name="bg_borders">
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="1" height="height-(title_height+8)-1" x="0" y="title_height+8"/>
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="1" height="height-(title_height + 8)-1" x="0" y="(title_height + 8)"/>
     
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="1" height="height-(title_height+8)-1" x="width-1" y="title_height+8"/>
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="1" height="height-(title_height + 8)-1" x="width-1" y="(title_height + 8)"/>
     
     <rectangle color="gtk:bg[NORMAL]" filled="true" width="width" height="1" x="0" y="height-1"/>
 </draw_ops>
@@ -1038,13 +984,13 @@
 
 <draw_ops name="title_focused">
     <clip x="0" y="0" width="width" height="height"/>
-    <title color="#b8b8b8" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
-    <title color="#222222" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+    <title color="#b8b8b8" x="(width - title_width) / 2" y="(height-title_height) / 2 + 1"/>
+    <title color="#222222" x="(width - title_width) / 2" y="(height-title_height) / 2"/>
 </draw_ops>
 <draw_ops name="title_unfocused">
     <clip x="0" y="0" width="width" height="height"/>
-    <title color="#c8c8c8" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
-    <title color="#585858" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+    <title color="#c8c8c8" x="(width - title_width) / 2" y="(height-title_height) / 2 + 1"/>
+    <title color="#585858" x="(width - title_width) / 2" y="(height-title_height) / 2"/>
 </draw_ops>
 <frame_style name="common_focused" geometry="normal">
   <piece position="title" draw_ops="title_focused"/>
@@ -1151,7 +1097,7 @@
   <!--<piece position="bottom_titlebar_edge" draw_ops="botton_outline"/>-->
 </frame_style>
 <frame_style name="utility_focused" geometry="utility" parent="normal_focused">
-  <piece position="entire_background" draw_ops="bg_topbar_small_focused"/>
+  <piece position="entire_background" draw_ops="bg_utility_borders_focused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>-->
@@ -1160,7 +1106,7 @@
   <button function="close" state="prelight" draw_ops="utility_close_button_prelight"/>
 </frame_style>
 <frame_style name="utility_unfocused" geometry="utility" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="bg_topbar_small_unfocused"/>
+  <piece position="entire_background" draw_ops="bg_utility_borders_unfocused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->
