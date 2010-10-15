@@ -13,8 +13,8 @@
 
     <? if (theme.isRounded) { ?>
     <!-- ROUNDING ANTIALIAS -->
+
     <!-- top-left arc hilite -->
-   
     <?- draw.point(outline.arc, 2, 1) ?>
     <?- draw.point(outline.arc, 1, 2) ?>
 

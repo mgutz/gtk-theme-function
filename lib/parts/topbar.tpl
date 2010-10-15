@@ -10,7 +10,6 @@
         <color value="<?= topBar.gradients[3] ?>"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="<?= topBar.highlights[1] ?>" x="1" y="0" width="1" height="<?= topBar.effectiveHeight ?> - 1"/>
 
@@ -25,12 +24,13 @@
 
     <? if (topBar.isRounded) { ?>
 
+        <!-- top-left arc hilite -->
         <?- draw.point(topBar.highlightArc, 3, 1) ?>
         <?- draw.point(topBar.highlightArc, 1, 3) ?>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <?- draw.point(topBar.highlightArc, "width - 3 -1", 1) ?>
-        <?- draw.point(topBar.highlightArc, "width - 1 - 1", 3) ?>
+        <?- draw.point(topBar.highlightArc, "width - 1 -1", 3) ?>
     <? } ?>
 
 </draw_ops>
