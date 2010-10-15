@@ -122,12 +122,12 @@
 
     
 
-        <line color="shade/#808080/1.44" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.44" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
         <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
-        <line color="shade/#808080/1.44" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.44" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
     
 
 </draw_ops>
@@ -198,12 +198,12 @@
 
     
 
-        <line color="shade/#808080/1.44" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.44" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
         <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
-        <line color="shade/#808080/1.44" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.44" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
     
 
 </draw_ops>
@@ -274,12 +274,12 @@
 
     
 
-        <line color="shade/#808080/1.44" width="0" x1="3" y1="1" x2="3" y2="1"/>
-        <line color="shade/#808080/1.44" width="0" x1="1" y1="3" x2="1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
         <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
-        <line color="shade/#808080/1.44" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.44" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
     
 
 </draw_ops>
@@ -326,12 +326,12 @@
     <!-- ROUNDING ANTIALIAS -->
     <!-- top-left arc hilite -->
    
-    <line color="shade/#9c9c9c/1.06" width="0" x1="2" y1="1" x2="2" y2="1"/>
-    <line color="shade/#9c9c9c/1.06" width="0" x1="1" y1="2" x2="1" y2="2"/>
+    <line color="shade/#9c9c9c/1.02" width="0" x1="2" y1="1" x2="2" y2="1"/>
+    <line color="shade/#9c9c9c/1.02" width="0" x1="1" y1="2" x2="1" y2="2"/>
 
     <!-- top-right arc hilite -->
-    <line color="shade/#9c9c9c/1.06" width="0" x1="width-2 -1" y1="1" x2="width-2 -1" y2="1"/>
-    <line color="shade/#9c9c9c/1.06" width="0" x1="width-1 -1" y1="2" x2="width-1 -1" y2="2"/>
+    <line color="shade/#9c9c9c/1.02" width="0" x1="width-2 -1" y1="1" x2="width-2 -1" y2="1"/>
+    <line color="shade/#9c9c9c/1.02" width="0" x1="width-1 -1" y1="2" x2="width-1 -1" y2="2"/>
     
 
     <!-- LEFT LINE -->
@@ -382,12 +382,12 @@
     <!-- ROUNDING ANTIALIAS -->
     <!-- top-left arc hilite -->
    
-    <line color="shade/#909090/1.06" width="0" x1="2" y1="1" x2="2" y2="1"/>
-    <line color="shade/#909090/1.06" width="0" x1="1" y1="2" x2="1" y2="2"/>
+    <line color="shade/#909090/1.02" width="0" x1="2" y1="1" x2="2" y2="1"/>
+    <line color="shade/#909090/1.02" width="0" x1="1" y1="2" x2="1" y2="2"/>
 
     <!-- top-right arc hilite -->
-    <line color="shade/#909090/1.06" width="0" x1="width-2 -1" y1="1" x2="width-2 -1" y2="1"/>
-    <line color="shade/#909090/1.06" width="0" x1="width-1 -1" y1="2" x2="width-1 -1" y2="2"/>
+    <line color="shade/#909090/1.02" width="0" x1="width-2 -1" y1="1" x2="width-2 -1" y2="1"/>
+    <line color="shade/#909090/1.02" width="0" x1="width-1 -1" y1="2" x2="width-1 -1" y2="2"/>
     
 
     <!-- LEFT LINE -->
