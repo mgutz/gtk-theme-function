@@ -26,12 +26,10 @@
     <? if (topBar.isRounded) { ?>
 
         <?- draw.point(topBar.highlightArc, 3, 1) ?>
-        <?- draw.point(topBar.highlightArc, 2, 2) ?>
         <?- draw.point(topBar.highlightArc, 1, 3) ?>
         
         <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
         <?- draw.point(topBar.highlightArc, "width - 3 -1", 1) ?>
-        <?- draw.point(topBar.highlightArc, "width - 2 - 1", 2) ?>
         <?- draw.point(topBar.highlightArc, "width - 1 - 1", 3) ?>
     <? } ?>
 
