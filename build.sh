@@ -54,8 +54,9 @@ tar cfz SOX-Debian-$version.tar.gz "${soxdebian[@]}" --exclude=.git --exclude=.g
 tar cfz SOX-Ubuntu-$version.tar.gz "${soxubuntu[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 tar cfz SOX-Mint-$version.tar.gz "${soxmint[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 
-tar cfz SSOX-$version.tar.gz SOX*gz --exclude=.git --exclude=.gitignore --exclude=.*swp
-rm SOX*gz
+tar cfz SSOX-$version.tar.gz SOX-Debian-$version.tar.gz SOX-Ubuntu-$version.tar.gz SOX-Mint-$version.tar.gz --exclude=.git --exclude=.gitignore --exclude=.*swp
+
+rm SOX*tar.gz
 
 mv SSOX-$version.tar.gz SOX-distros-$version.tar.gz
 
