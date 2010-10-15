@@ -944,7 +944,7 @@
 <draw_ops name="title_unfocused">
     <clip x="0" y="0" width="width" height="height"/>
     <title color="#c8c8c8" x="(width - title_width) / 2" y="(height - title_height) / 2 + 1"/>
-    <title color="#525252" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+    <title color="#585858" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
 </draw_ops>
 <frame_style name="common_focused" geometry="normal">
   <piece position="title" draw_ops="title_focused"/>
