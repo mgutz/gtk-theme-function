@@ -1,3 +1,4 @@
+
 # Function Metacity + GTK2 Theme
 
 Clean. Gray. Function'al metacity theme.
@@ -14,13 +15,13 @@ If you have a version <= 0.4.7, remove
 
 To install (replace tar file with appropriate file):
     
-    # install for you only
-    tar xfz Lambda-0.4.8.tar.gz -C ~/.themes
+    # install locally 
+    tar xfz Lambda-{{version}}.tar.gz -C ~/.themes
 
 OR
     
     # install globally
-    sudo tar xfz Lambda-0.4.8.tar.gz -C /usr/share/themes
+    sudo tar xfz Lambda-{{version}}.tar.gz -C /usr/share/themes
 
 ## Changelog
 
@@ -159,3 +160,8 @@ Silky smooth metacity corners!
 
 - Moved Function Dot and Lambda Dot to Extras archive
 - Slightly brighten Raven panel background 
+
+0.5.0
+
+- Rounding looks more diagonal after Ubuntu 10.10 fixes
+- Changed SO X shade button

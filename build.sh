@@ -1,6 +1,6 @@
 #!bash
 
-version=0.4.9
+version=0.5.0
 
 node lib/gtkrc.js
 node lib/metacity.js 
@@ -45,14 +45,20 @@ tar cfz Extras-$version.tar.gz "${extras[@]}" --exclude=.git --exclude=.gitignor
 tar cfz SOX-$version.tar.gz "${sox[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 tar cfz Function-Lambda-$version.tar.gz Function-$version.tar.gz Lambda-$version.tar.gz Extras-$version.tar.gz SOX-$version.tar.gz
 
-tar cfz SOX-Debian-$version.tar.gz "${soxdebian[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-Ubuntu-$version.tar.gz "${soxubuntu[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-Mint-$version.tar.gz "${soxmint[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-
 rm Function-$version.tar.gz 
 rm Lambda-$version.tar.gz 
 rm Extras-$version.tar.gz 
 rm SOX-$version.tar.gz
+
+tar cfz SOX-Debian-$version.tar.gz "${soxdebian[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfz SOX-Ubuntu-$version.tar.gz "${soxubuntu[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfz SOX-Mint-$version.tar.gz "${soxmint[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+
+tar cfz SSOX-$version.tar.gz SOX*gz --exclude=.git --exclude=.gitignore --exclude=.*swp
+rm SOX*gz
+
+mv SSOX-$version.tar.gz SOX-distros-$version.tar.gz
+
 cd src 
 
 
