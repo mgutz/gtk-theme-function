@@ -127,6 +127,19 @@
   <include name="outline_unfocused"/>
 </draw_ops>
 
+<draw_ops name="bg_utility_borders_focused">
+  <include name="bg_topbar_small_focused"/>
+  <include name="outline_utility_focused"/>
+</draw_ops>
+
+<draw_ops name="bg_utility_borders_unfocused">
+  <include name="bg_topbar_small_unfocused"/>
+  <include name="outline_utility_unfocused"/>
+</draw_ops>
+
+
+
+
 
 <draw_ops name="bg_button">
 </draw_ops>
@@ -268,7 +281,7 @@
 </frame_style>
 
 <frame_style name="utility_focused" geometry="utility" parent="normal_focused">
-  <piece position="entire_background" draw_ops="bg_topbar_small_focused"/>
+  <piece position="entire_background" draw_ops="bg_utility_borders_focused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>-->
@@ -278,7 +291,7 @@
 </frame_style>
 
 <frame_style name="utility_unfocused" geometry="utility" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="bg_topbar_small_unfocused"/>
+  <piece position="entire_background" draw_ops="bg_utility_borders_unfocused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->

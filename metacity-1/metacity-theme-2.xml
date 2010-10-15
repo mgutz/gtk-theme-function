@@ -69,7 +69,6 @@
         <color value="#9b9b9b"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="0.0" x="1" y="0" width="1" height="(title_height + 8) - 1"/>
 
@@ -84,12 +83,13 @@
 
     
 
+        <!-- top-left arc hilite -->
         <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
         <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -107,7 +107,6 @@
         <color value="#b0b0b0"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height + 8) - 1"/>
 
@@ -122,12 +121,13 @@
 
     
 
+        <!-- top-left arc hilite -->
         <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
         <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -145,7 +145,6 @@
         <color value="#9b9b9b"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="0.0" x="1" y="0" width="1" height="(title_height + 8) - 1"/>
 
@@ -160,12 +159,13 @@
 
     
 
+        <!-- top-left arc hilite -->
         <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
         <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -183,7 +183,6 @@
         <color value="#b0b0b0"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height + 8) - 1"/>
 
@@ -198,12 +197,13 @@
 
     
 
+        <!-- top-left arc hilite -->
         <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
         <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -221,7 +221,6 @@
         <color value="#9b9b9b"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="0.0" x="1" y="0" width="1" height="(title_height + 4) - 1"/>
 
@@ -236,12 +235,13 @@
 
     
 
+        <!-- top-left arc hilite -->
         <line color="shade/#808080/1.4" width="0" x1="3" y1="1" x2="3" y2="1"/>
         <line color="shade/#808080/1.4" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <line color="shade/#808080/1.4" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.4" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.4" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -259,7 +259,6 @@
         <color value="#b0b0b0"/>
     </gradient>
 
-
     <!-- left hilite -->
     <tint color="white" alpha="0" x="1" y="0" width="1" height="(title_height + 4) - 1"/>
 
@@ -274,12 +273,13 @@
 
     
 
+        <!-- top-left arc hilite -->
         <line color="shade/#808080/1.48" width="0" x1="3" y1="1" x2="3" y2="1"/>
         <line color="shade/#808080/1.48" width="0" x1="1" y1="3" x2="1" y2="3"/>
         
-        <!-- top-right arc hilite shade/#808080/ARC_SHADE -topBar.highlightArc-->
+        <!-- top-right arc hilite -->
         <line color="shade/#808080/1.48" width="0" x1="width - 3 -1" y1="1" x2="width - 3 -1" y2="1"/>
-        <line color="shade/#808080/1.48" width="0" x1="width - 1 - 1" y1="3" x2="width - 1 - 1" y2="3"/>
+        <line color="shade/#808080/1.48" width="0" x1="width - 1 -1" y1="3" x2="width - 1 -1" y2="3"/>
     
 
 </draw_ops>
@@ -324,8 +324,8 @@
 
     
     <!-- ROUNDING ANTIALIAS -->
+
     <!-- top-left arc hilite -->
-   
     <line color="shade/#9c9c9c/1.02" width="0" x1="2" y1="1" x2="2" y2="1"/>
     <line color="shade/#9c9c9c/1.02" width="0" x1="1" y1="2" x2="1" y2="2"/>
 
@@ -380,8 +380,8 @@
 
     
     <!-- ROUNDING ANTIALIAS -->
+
     <!-- top-left arc hilite -->
-   
     <line color="shade/#909090/1.02" width="0" x1="2" y1="1" x2="2" y2="1"/>
     <line color="shade/#909090/1.02" width="0" x1="1" y1="2" x2="1" y2="2"/>
 
@@ -421,6 +421,98 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
+<draw_ops name="outline_utility_focused_topbar_shadow">
+    <!-- topbar shadow -->
+    <line color="#707070" width="1" x1="0" y1="(title_height + 4) -1" x2="width" y2="(title_height + 4) -1"/>
+</draw_ops>
+
+<!-- Draws the 1px outline around entire window. The title bar's bottom shadow is
+     also drawn here, otherwise the border is drawn over by the outline. -->
+<draw_ops name="outline_utility_focused">
+    <include name="bg_borders"/>
+
+    <!-- TOP LINE -->
+    <line color="#9c9c9c" width="1" x1="0" y1="0" x2="width" y2="0"/>
+
+    
+
+    <!-- LEFT LINE -->
+    <!-- topbar -->
+    <gradient type="vertical" x="0" y="0" width="1" height="(title_height + 4)">
+    <color value="#9c9c9c"/>
+    <color value="#808080"/>
+    </gradient>
+    <!-- client area -->
+    <gradient type="vertical" x="0" y="(title_height + 4)" width="1" height="height - (title_height + 4)">
+    <color value="#808080"/>
+    <color value="#707070"/>
+    </gradient>
+
+    <!-- RIGHT LINE -->
+    <!-- topbar -->
+    <gradient type="vertical" x="width-1" y="0" width="1" height="(title_height + 4)">
+    <color value="#9c9c9c"/>
+    <color value="#808080"/>
+    </gradient>
+    <!-- client area -->
+    <gradient type="vertical" x="width-1" y="(title_height + 4)" width="1" height="height - (title_height + 4)">
+        <color value="#808080"/>
+        <color value="#707070"/>
+    </gradient>
+
+    <!-- bottom line -->
+    <line color="#707070" width="1" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
+
+    <include name="outline_utility_focused_topbar_shadow" />
+</draw_ops>
+
+<!-- vim: set ft=xml : -->
+<draw_ops name="outline_utility_unfocused_topbar_shadow">
+    <!-- topbar shadow -->
+    <line color="#808080" width="1" x1="0" y1="(title_height + 4) -1" x2="width" y2="(title_height + 4) -1"/>
+</draw_ops>
+
+<!-- Draws the 1px outline around entire window. The title bar's bottom shadow is
+     also drawn here, otherwise the border is drawn over by the outline. -->
+<draw_ops name="outline_utility_unfocused">
+    <include name="bg_borders"/>
+
+    <!-- TOP LINE -->
+    <line color="#909090" width="1" x1="0" y1="0" x2="width" y2="0"/>
+
+    
+
+    <!-- LEFT LINE -->
+    <!-- topbar -->
+    <gradient type="vertical" x="0" y="0" width="1" height="(title_height + 4)">
+    <color value="#909090"/>
+    <color value="#8a8a8a"/>
+    </gradient>
+    <!-- client area -->
+    <gradient type="vertical" x="0" y="(title_height + 4)" width="1" height="height - (title_height + 4)">
+    <color value="#8a8a8a"/>
+    <color value="#808080"/>
+    </gradient>
+
+    <!-- RIGHT LINE -->
+    <!-- topbar -->
+    <gradient type="vertical" x="width-1" y="0" width="1" height="(title_height + 4)">
+    <color value="#909090"/>
+    <color value="#8a8a8a"/>
+    </gradient>
+    <!-- client area -->
+    <gradient type="vertical" x="width-1" y="(title_height + 4)" width="1" height="height - (title_height + 4)">
+        <color value="#8a8a8a"/>
+        <color value="#808080"/>
+    </gradient>
+
+    <!-- bottom line -->
+    <line color="#808080" width="1" x1="0" y1="height - 1" x2="width" y2="height - 1"/>
+
+    <include name="outline_utility_unfocused_topbar_shadow" />
+</draw_ops>
+
+<!-- vim: set ft=xml : -->
 
 <draw_ops name="botton_outline">
     <line color="shade/gtk:bg[SELECTED]/0.6" width="1" x1="0" y1="0" x2="width" y2="0"/>
@@ -440,6 +532,14 @@
 <draw_ops name="bg_window_borders_unfocused">
   <include name="bg_topbar_unfocused"/>
   <include name="outline_unfocused"/>
+</draw_ops>
+<draw_ops name="bg_utility_borders_focused">
+  <include name="bg_topbar_small_focused"/>
+  <include name="outline_utility_focused"/>
+</draw_ops>
+<draw_ops name="bg_utility_borders_unfocused">
+  <include name="bg_topbar_small_unfocused"/>
+  <include name="outline_utility_unfocused"/>
 </draw_ops>
 <draw_ops name="bg_button">
 </draw_ops>
