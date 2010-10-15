@@ -158,3 +158,4 @@ Silky smooth metacity corners!
 0.4.9
 
 - Moved Function Dot and Lambda Dot to Extras archive
+- Slightly brighten Raven panel background 

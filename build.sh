@@ -7,7 +7,7 @@ node lib/metacity.js
 
 
 # always copy images
-themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'Lambda SO X')
+themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X')
 for i in ${!themes[@]}
 do
   theme=${themes[i]}
