@@ -171,3 +171,8 @@ Silky smooth metacity corners!
 - Improved rounding antialiasing on smooth theme corners
 - Add outline on utility dialogs (GIMP toolboxes)
 - Remove white line under utility dialogs when shaded
+
+0.5.2
+
+- Slightly increased smooth focused window gradient
+- Slightly darkened top bar separator
