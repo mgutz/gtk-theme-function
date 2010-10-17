@@ -185,3 +185,6 @@ Silky smooth metacity corners!
 - Improved shade button on gloss themes
 - Slight changes to window button spacing
 
+0.5.4
+
+- Window buttons vertical center off by 1 pixel.

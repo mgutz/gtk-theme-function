@@ -18,7 +18,7 @@
   <distance name="button_width" value="15"/>
   <distance name="button_height" value="15"/>
   <border name="title_border" left="4" right="5" top="4" bottom="4"/>
-  <border name="button_border" left="1" right="1" top="0" bottom="0"/>
+  <border name="button_border" left="1" right="1" top="1" bottom="0"/>
   <!--<aspect_ratio name="button" value="1"/>-->
 </frame_geometry>
 <frame_geometry name="no_borders" parent="normal" rounded_top_left="false" rounded_top_right="false">
