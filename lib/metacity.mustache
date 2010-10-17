@@ -175,8 +175,10 @@
   <button function="maximize" state="pressed" draw_ops="maximize_button_pressed"/>
   <button function="maximize" state="prelight" draw_ops="maximize_button_prelight"/>
   <button function="shade" state="normal" draw_ops="shade_button_normal"/>
+  <button function="shade" state="prelight" draw_ops="shade_button_prelight"/>
   <button function="shade" state="pressed" draw_ops="shade_button_pressed"/>
   <button function="unshade" state="normal" draw_ops="unshade_button_normal"/>
+  <button function="unshade" state="prelight" draw_ops="unshade_button_prelight"/>
   <button function="unshade" state="pressed" draw_ops="unshade_button_pressed"/>
 
   <!--<button function="menu" state="normal" draw_ops="menu_button_normal"/>-->
@@ -233,8 +235,10 @@
   <button function="menu" state="prelight" draw_ops="nop"/>
 
   <button function="shade" state="normal" draw_ops="shade_button_unfocused_normal"/>
+  <button function="shade" state="prelight" draw_ops="shade_button_unfocused_prelight"/>
   <button function="shade" state="pressed" draw_ops="shade_button_unfocused_pressed"/>
   <button function="unshade" state="normal" draw_ops="unshade_button_unfocused_normal"/>
+  <button function="unshade" state="prelight" draw_ops="unshade_button_unfocused_prelight"/>
   <button function="unshade" state="pressed" draw_ops="unshade_button_unfocused_pressed"/>
   <button function="above" state="normal" draw_ops="nop"/>
   <button function="above" state="pressed" draw_ops="nop"/>
@@ -305,9 +309,15 @@
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>-->
+  <button function="shade" state="normal" draw_ops="utility_shade_button_normal"/>
+  <button function="shade" state="prelight" draw_ops="utility_shade_button_prelight"/>
+  <button function="shade" state="pressed" draw_ops="utility_shade_button_pressed"/>
+  <button function="unshade" state="normal" draw_ops="utility_unshade_button_normal"/>
+  <button function="unshade" state="prelight" draw_ops="utility_unshade_button_prelight"/>
+  <button function="unshade" state="pressed" draw_ops="utility_unshade_button_pressed"/>
   <button function="close" state="normal" draw_ops="utility_close_button_normal"/>
-  <button function="close" state="pressed" draw_ops="utility_close_button_pressed"/>
   <button function="close" state="prelight" draw_ops="utility_close_button_prelight"/>
+  <button function="close" state="pressed" draw_ops="utility_close_button_pressed"/>
 </frame_style>
 
 <frame_style name="utility_unfocused" geometry="utility" parent="normal_unfocused">
@@ -315,6 +325,12 @@
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->
+  <button function="shade" state="normal" draw_ops="utility_shade_button_unfocused_normal"/>
+  <button function="shade" state="prelight" draw_ops="utility_shade_button_unfocused_prelight"/>
+  <button function="shade" state="pressed" draw_ops="utility_shade_button_unfocused_pressed"/>
+  <button function="unshade" state="normal" draw_ops="utility_unshade_button_unfocused_normal"/>
+  <button function="unshade" state="prelight" draw_ops="utility_unshade_button_unfocused_prelight"/>
+  <button function="unshade" state="pressed" draw_ops="utility_unshade_button_unfocused_pressed"/>
   <button function="close" state="normal" draw_ops="utility_close_button_unfocused_normal"/>
   <button function="close" state="pressed" draw_ops="utility_close_button_unfocused_pressed"/>
   <button function="close" state="prelight" draw_ops="utility_close_button_unfocused_prelight"/>

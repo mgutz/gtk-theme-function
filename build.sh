@@ -1,6 +1,6 @@
 #!bash
 
-version=0.5.2
+version=0.5.3
 
 node lib/gtkrc.js
 node lib/metacity.js 

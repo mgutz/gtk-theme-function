@@ -176,4 +176,12 @@ Silky smooth metacity corners!
 
 - Slightly increased smooth focused window gradient
 - Slightly darkened top bar separator
+- Changed shade button on SO X themes
 - SO X Bar Theme - shade button could be improved
+
+0.5.3
+
+- Prelight hover on unfocused utility windows
+- Improved shade button on gloss themes
+- Slight changes to window button spacing
+
