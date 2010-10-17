@@ -7,7 +7,7 @@ node lib/metacity.js
 
 
 # always copy images
-themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X.' 'SO X. X' 'SO X. Left')
+themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X.' 'SO X. Bar' 'SO X. X' 'SO X. Left')
 for i in ${!themes[@]}
 do
   theme=${themes[i]}
@@ -33,7 +33,7 @@ done
 squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Raven' 'Function Shiny')
 rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Raven' 'Lambda Shiny')
 extras=('Fn Smooth' 'Function Dot' 'Lambda Dot')
-sox=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X')
+sox=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X')
 soxdebian=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X' 'SO X Debian' 'SO X Debian Left' 'SO X Debian X')
 soxubuntu=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X' 'SO X Ubuntu' 'SO X Ubuntu Left' 'SO X Ubuntu X')
 soxmint=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X' 'SO X Mint' 'SO X Mint Left' 'SO X Mint X')
