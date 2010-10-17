@@ -176,3 +176,4 @@ Silky smooth metacity corners!
 
 - Slightly increased smooth focused window gradient
 - Slightly darkened top bar separator
+- SO X Bar Theme - shade button could be improved

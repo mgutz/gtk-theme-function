@@ -1,6 +1,6 @@
 #!bash
 
-version=0.5.1
+version=0.5.2
 
 node lib/gtkrc.js
 node lib/metacity.js 
@@ -34,9 +34,9 @@ squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Raven' 'Function
 rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Raven' 'Lambda Shiny')
 extras=('Fn Smooth' 'Function Dot' 'Lambda Dot')
 sox=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X')
-soxdebian=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X' 'SO X Debian' 'SO X Debian Left' 'SO X Debian X')
-soxubuntu=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X' 'SO X Ubuntu' 'SO X Ubuntu Left' 'SO X Ubuntu X')
-soxmint=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. X' 'SO X Mint' 'SO X Mint Left' 'SO X Mint X')
+soxdebian=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X Debian' 'SO X Debian Bar' 'SO X Debian Left' 'SO X Debian X')
+soxubuntu=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X Ubuntu' 'SO X Ubuntu Bar' 'SO X Ubuntu Left' 'SO X Ubuntu X')
+soxmint=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X Mint' 'SO X Mint Bar' 'SO X Mint Left' 'SO X Mint X')
 
 cd ..
 tar cfz Function-$version.tar.gz "${squared[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp

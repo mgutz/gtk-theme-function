@@ -11,7 +11,7 @@
   <description>Clean and elegant.</description>
 </info>
 
-<frame_geometry name="normal" rounded_top_left="{{topRounding}}" rounded_top_right="{{topRounding}}">
+<frame_geometry name="normal" rounded_top_left="{{topRounding}}" rounded_top_right="{{topRounding}}" rounded_bottom_left="false" rounded_bottom_right="false">
   <distance name="left_width" value="{{border_width}}"/>
   <distance name="right_width" value="{{border_width}}"/>
   <distance name="bottom_height" value="{{border_width}}"/>
@@ -280,6 +280,26 @@
   <!--<piece position="bottom_titlebar_edge" draw_ops="botton_outline"/>-->
 </frame_style>
 
+
+<frame_style name="dialog_focused" parent="normal_focused">
+  <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>-->
+  <button function="close" state="normal" draw_ops="dialog_close_button_normal"/>
+  <button function="close" state="pressed" draw_ops="dialog_close_button_pressed"/>
+  <button function="close" state="prelight" draw_ops="dialog_close_button_prelight"/>
+</frame_style>
+
+<frame_style name="dialog_unfocused" parent="normal_unfocused">
+  <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->
+  <button function="close" state="normal" draw_ops="dialog_close_button_unfocused_normal"/>
+  <button function="close" state="pressed" draw_ops="dialog_close_button_unfocused_pressed"/>
+  <button function="close" state="prelight" draw_ops="dialog_close_button_unfocused_prelight"/>
+</frame_style>
+
+
 <frame_style name="utility_focused" geometry="utility" parent="normal_focused">
   <piece position="entire_background" draw_ops="bg_utility_borders_focused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
@@ -300,6 +320,9 @@
   <button function="close" state="prelight" draw_ops="utility_close_button_unfocused_prelight"/>
 </frame_style>
 
+
+
+
 <frame_style name="border" geometry="border" parent="normal_unfocused">
   <piece position="entire_background" draw_ops="outline_focused"/>
   <piece position="title" draw_ops="nop"/>
@@ -314,6 +337,17 @@
   <frame focus="no" state="shaded" style="normal_shaded_unfocused"/>
   <frame focus="yes" state="maximized_and_shaded" style="maximized_shaded_focused"/>
   <frame focus="no" state="maximized_and_shaded" style="maximized_shaded_unfocused"/>
+</frame_style_set>
+
+<frame_style_set name="dialog">
+  <frame focus="yes" state="normal" resize="both" style="dialog_focused"/>
+  <frame focus="no" state="normal" resize="both" style="dialog_unfocused"/>
+  <frame focus="yes" state="maximized" style="dialog_focused"/>
+  <frame focus="no" state="maximized" style="dialog_unfocused"/>
+  <frame focus="yes" state="shaded" style="dialog_focused"/>
+  <frame focus="no" state="shaded" style="dialog_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="dialog_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="dialog_unfocused"/>
 </frame_style_set>
 
 <frame_style_set name="utility">
@@ -339,9 +373,9 @@
 </frame_style_set>
 
 <window type="normal" style_set="normal"/>
-<window type="dialog" style_set="normal"/>
-<window type="modal_dialog" style_set="normal"/>
-<window type="menu" style_set="normal"/>
+<window type="dialog" style_set="dialog"/>
+<window type="modal_dialog" style_set="dialog"/>
+<window type="menu" style_set="utility"/>
 <window type="utility" style_set="utility"/>
 <window type="border" style_set="border"/>
 
