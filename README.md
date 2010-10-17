@@ -188,3 +188,8 @@ Silky smooth metacity corners!
 0.5.4
 
 - Window buttons vertical center off by 1 pixel.
+
+0.5.5
+
+- Darkened terminal selected tab
+- Tweaked shade button yet again

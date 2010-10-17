@@ -263,6 +263,20 @@ style "notebook" = "wider"
 	bg[ACTIVE] = shade(1.05, @bg_color) # inactive tabs
 }
 
+style "terminal-notebook" = "wider"
+{
+	engine "murrine"
+	{
+		contrast = .8
+		#gradient_shades = {1.1,1.06,0.92,0.1} # { 1.1, 1.02, 0.97, 0.93 }
+		lightborder_shade = 1.1
+	}
+	
+        #bg[NORMAL] = mix(0.2, @selected_bg_color, @bg_color)
+        bg[NORMAL] = shade(0.9, @bg_color)
+	bg[ACTIVE] = shade(1.0, @bg_color) # inactive tabs
+}
+
 style "panel" = "selected"
 {
         # both need to be 0 to get nice window list on taskbar 
@@ -705,6 +719,7 @@ class "PanelToplevel*" 					style "panel"
 widget_class "*notif*" 					style "panel"
 widget_class "*Notif*" 					style "panel"
 
+widget_class "Terminal*Notebook*" style "terminal-notebook"
 class "TerminalScreen" style "terminal"
 
 # vim: set ft=gtkrc :
