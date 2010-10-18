@@ -193,3 +193,4 @@ Silky smooth metacity corners!
 
 - Darkened terminal selected tab
 - Tweaked shade button yet again
+- Status bar resize gripper in Faenza style

@@ -410,8 +410,47 @@ style "progressbar"
 	fg[PRELIGHT] 	= "#fff"
 }
 
-style "statusbar" 
+style "statusbar" = "default"
 {
+    ythickness = 3
+    xthickness = 3
+
+    engine "pixmap"
+    {
+        image
+        {
+            function = RESIZE_GRIP
+            recolorable = TRUE
+            detail = "statusbar"
+            overlay_file = "statusgrip.png"
+            overlay_border = {0,0,0,0}
+            overlay_stretch = TRUE
+        }
+        image
+	{
+	   function			= SHADOW
+	   shadow			= IN
+	   file				= "blank.png"
+	}
+	image
+	{
+	   function			= SHADOW
+	   shadow			= OUT
+	   file				= "blank.png"
+	}
+	image
+	{
+	   function		= SHADOW
+	   shadow			= ETCHED_IN
+	   file				= "blank.png"	
+	}
+	image
+	{
+	   function		= SHADOW
+	   shadow			= ETCHED_OUT
+	   file				= "blank.png"
+	}
+    }
 }
 
 # make comboboxes, togglebuttons flatter than buttons. most themes

@@ -1,6 +1,6 @@
 #!bash
 
-version=0.5.4
+version=0.5.5
 
 node lib/gtkrc.js
 node lib/metacity.js 
@@ -15,9 +15,17 @@ do
   cp -R metacity-1/images "../$theme/metacity-1"
 done
 
-# add controls
-themes=("${themes[@]}" 'Fn Dark' 'Fn Gloss' 'Fn Smooth')
+gtks=('Fn Dark' 'Fn Gloss' 'Fn Smooth')
+for i in ${!themes[@]}
+do
+    images=('blank.png' 'statusgrip.png' 'handlebox.png')
+    for j in ${!images[@]}; do
+        cp gtk-2.0/${images[j]} "../${gtks[i]}/gtk-2.0"
+    done 
+done
 
+# add controls to array
+themes=("${themes[@]}" 'Fn Dark' 'Fn Gloss' 'Fn Smooth')
 
 # add info files
 for i in ${!themes[@]}
