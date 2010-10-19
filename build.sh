@@ -1,13 +1,12 @@
-#!bash
+#!/bin/bash
 
-version=0.5.5
+version=0.5.6
 
 node lib/gtkrc.js
 node lib/metacity.js 
 
-
 # always copy images
-themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X.' 'SO X. Bar' 'SO X. X' 'SO X. Left')
+themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X.' 'SO X. Bar' 'SO X. X' 'SO X. IO' 'SO X. Left')
 for i in ${!themes[@]}
 do
   theme=${themes[i]}
@@ -16,7 +15,7 @@ do
 done
 
 gtks=('Fn Dark' 'Fn Gloss' 'Fn Smooth')
-for i in ${!themes[@]}
+for i in ${!gtks[@]}
 do
     images=('blank.png' 'statusgrip.png' 'handlebox.png')
     for j in ${!images[@]}; do
@@ -41,10 +40,10 @@ done
 squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Raven' 'Function Shiny')
 rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Raven' 'Lambda Shiny')
 extras=('Fn Smooth' 'Function Dot' 'Lambda Dot')
-sox=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X')
-soxdebian=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X Debian' 'SO X Debian Bar' 'SO X Debian Left' 'SO X Debian X')
-soxubuntu=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X Ubuntu' 'SO X Ubuntu Bar' 'SO X Ubuntu Left' 'SO X Ubuntu X')
-soxmint=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X Mint' 'SO X Mint Bar' 'SO X Mint Left' 'SO X Mint X')
+sox=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X. IO')
+soxdebian=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X. IO' 'SO X Debian' 'SO X Debian Bar' 'SO X Debian IO' 'SO X Debian Left' 'SO X Debian X')
+soxubuntu=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X. IO' 'SO X Ubuntu' 'SO X Ubuntu Bar' 'SO X Ubuntu IO' 'SO X Ubuntu Left' 'SO X Ubuntu X')
+soxmint=('Fn Gloss' 'SO X.' 'SO X. Bar' 'SO X. Left' 'SO X. X' 'SO X. IO' 'SO X Mint' 'SO X Mint Bar' 'SO X Mint IO' 'SO X Mint Left' 'SO X Mint X')
 
 cd ..
 tar cfz Function-$version.tar.gz "${squared[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
@@ -69,6 +68,3 @@ rm SOX*tar.gz
 mv SSOX-$version.tar.gz SOX-distros-$version.tar.gz
 
 cd src 
-
-
-

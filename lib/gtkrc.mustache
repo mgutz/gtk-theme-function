@@ -27,7 +27,7 @@ style "default"
 	GtkImage::x-ayatana-indicator-dynamic = 1
 
 	GtkScrolledWindow ::scrollbar-spacing = 0
-	GtkScrolledWindow ::scrollbar-within-bevel = 0
+	GtkScrolledWindow ::scrollbar-within-bevel = 0 
 	
 	GtkButton::child-displacement-x = 1
 	GtkButton::child-displacement-y = 1
@@ -75,9 +75,12 @@ style "default"
 	GtkMenuBar:: shadow-type = GTK_SHADOW_NONE
 	GtkMenuBar::window-dragging = 1
 
-	GtkWidget::link-color = @link_color
-	GtkIMHtml::hyperlink-color = @link_color
-	GtkHTML::link-color = @link_color
+	GtkWidget::link-color = mix (0.5, @selected_bg_color, @fg_color)
+	GtkIMHtml::hyperlink-color = mix (0.5, @selected_bg_color, @fg_color)
+	GtkHTML::link-color = mix (0.5, @selected_bg_color, @fg_color)
+	#GtkWidget::link-color = @link_color
+	#GtkIMHtml::hyperlink-color = @link_color
+	#GtkHTML::link-color = @link_color
 
 	####################
 	# Color Definitions
@@ -145,7 +148,8 @@ style "default"
 		stepperstyle        = 1     # 0 = standard, 1 = integrated stepper handles, 2 = squared steppers with round slider
 		textstyle           = 0     # 0 = normal text, 1 = inset
 		toolbarstyle	    = 0     # 0 = flat, 1 = glassy, 2 = gradient
-		trough_shades       = { 0.88, 2.0 } # draw gradient on trough of GtkScrollbar and GtkProgressbar
+		#trough_shades       = { 0.88, 2.0 } # draw gradient on trough of GtkScrollbar and GtkProgressbar
+		trough_shades       = { 0.88, 1.8 } # draw gradient on trough of GtkScrollbar and GtkProgressbar
 	}
 }
 
@@ -260,7 +264,7 @@ style "notebook" = "wider"
 		lightborder_shade = 1.1
 	}
 	
-	bg[ACTIVE] = shade(1.05, @bg_color) # inactive tabs
+	bg[ACTIVE] = shade(1.07, @bg_color) # inactive tabs
 }
 
 style "terminal-notebook" = "wider"
@@ -576,6 +580,7 @@ style "nautilus-location"
 style "nautilus-sidebar" 
 {
 	GtkTreeView::even_row_color = @base_color 
+	#GtkTreeView::even_row_color = @bg_color
 }
 
 style "radiocheck"
@@ -601,7 +606,29 @@ style "radiocheck"
 	}
 }
 
-#########################################
+
+style "scrolledwindow" {
+    GtkScrolledWindow ::scrollbar-within-bevel = 1 
+    # controls the thickness inside of file views, etc
+    xthickness = 3
+    ythickness = 3
+    engine "murrine"
+    {
+         contrast = 0.8 
+    }
+}
+
+style "scrolledwindow-noborder" = "debug" {
+    # controls the thickness inside of file views, etc
+    xthickness = 1
+    ythickness = 1
+    engine "murrine"
+    {
+         contrast = 0.0
+    }
+}
+
+########################################
 # Matches
 #########################################
 
@@ -633,7 +660,9 @@ widget_class "*<GtkNotebook>*<GtkEventBox>"     	style "notebook"
 widget_class "*<GtkNotebook>*<GtkDrawingArea>"		style "notebook"
 widget_class "*<GtkNotebook>*<GtkLayout>"       	style "notebook"
 widget_class "*<GtkNotebook>*<GtkViewport>"		style "notebook"
-widget_class "*<GtkNotebook>*<GtkScrolledWindow>"	style "notebook"
+
+#widget_class "*<GtkNotebook>*<GtkScrolledWindow>"	style "notebook"
+widget_class "*<GtkScrolledWindow>"	style "scrolledwindow"
 
 widget_class "*<GtkButton>"      			style "button"
 widget_class "*<GtkNotebook>"    			style "notebook"

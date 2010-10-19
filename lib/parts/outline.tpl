@@ -6,8 +6,6 @@
 <!-- Draws the 1px outline around entire window. The title bar's bottom shadow is
      also drawn here, otherwise the border is drawn over by the outline. -->
 <draw_ops name="<?= outline.name ?>">
-    <include name="bg_borders"/>
-
     <!-- TOP LINE -->
     <line color="<?= outline.gradients[0] ?>" width="1" x1="0" y1="0" x2="width" y2="0"/>
 

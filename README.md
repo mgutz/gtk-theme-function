@@ -194,3 +194,15 @@ Silky smooth metacity corners!
 - Darkened terminal selected tab
 - Tweaked shade button yet again
 - Status bar resize gripper in Faenza style
+
+0.5.6
+
+IO theme. I find, as a web developer, using a very dark theme
+strains the eyes more than using a light scheme since I use the browser
+so much. Going from a black, dark theme to browsing white pages is cause
+for retina burn.
+
+- Adjusted shade button again.
+- Adjusted red hover color on leaf theme.
+- Lightened unselected tabs a tad
+- Reduced status bar window resize gripper.

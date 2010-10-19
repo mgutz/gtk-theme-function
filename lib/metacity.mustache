@@ -12,9 +12,9 @@
 </info>
 
 <frame_geometry name="normal" rounded_top_left="{{topRounding}}" rounded_top_right="{{topRounding}}" rounded_bottom_left="false" rounded_bottom_right="false">
-  <distance name="left_width" value="{{border_width}}"/>
-  <distance name="right_width" value="{{border_width}}"/>
-  <distance name="bottom_height" value="{{border_width}}"/>
+  <distance name="left_width" value="{{borderWidth}}"/>
+  <distance name="right_width" value="{{borderWidth}}"/>
+  <distance name="bottom_height" value="{{borderWidth}}"/>
   <distance name="left_titlebar_edge" value="{{titleBarLRPadding}}"/>
   <distance name="right_titlebar_edge" value="{{titleBarLRPadding}}"/>
   <distance name="title_vertical_pad" value="0"/>
@@ -25,7 +25,19 @@
   <!--<aspect_ratio name="button" value="1"/>-->
 </frame_geometry>
 
-<frame_geometry name="no_borders" parent="normal" rounded_top_left="false" rounded_top_right="false">
+
+<!-- used by shaded windows
+     Left and right width will be drawn over by top bar. This keeps the shaded 
+     topbar same dimensions horizontally so it does jump.
+-->
+<frame_geometry name="normal_outline_only" parent="normal">
+  <distance name="left_width" value="{{borderWidth}}"/>
+  <distance name="right_width" value="{{borderWidth}}"/>
+  <distance name="bottom_height" value="1"/>
+</frame_geometry>
+
+<!-- used by maximized windows -->
+<frame_geometry name="no_borders_square" parent="normal" rounded_top_left="false" rounded_top_right="false">
   <distance name="left_width" value="0"/>
   <distance name="right_width" value="0"/>
   <distance name="bottom_height" value="0"/>
@@ -93,13 +105,7 @@
 <draw_ops name="bg_right_title_shaded">
 </draw_ops>
 
-<draw_ops name="bg_borders">
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-{{topBarEffectiveHeight}}-1" x="0" y="{{topBarEffectiveHeight}}"/>
-    
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="{{border_width}}" height="height-{{topBarEffectiveHeight}}-1" x="width-{{border_width}}" y="{{topBarEffectiveHeight}}"/>
-    
-    <rectangle color="gtk:bg[NORMAL]" filled="true" width="width" height="{{border_width}}" x="0" y="height-{{border_width}}"/>
-</draw_ops>
+{{{drawBorders}}}
 
 {{{drawOutlines}}}
 
@@ -119,13 +125,27 @@
 
 <draw_ops name="bg_window_borders">
   <include name="bg_topbar_focused"/>
+  <include name="bg_borders"/>
   <include name="outline_focused"/>
 </draw_ops>
 
+<draw_ops name="bg_window_shaded">
+  <include name="bg_topbar_focused"/>
+  <include name="outline_focused"/>
+</draw_ops>
+
+
 <draw_ops name="bg_window_borders_unfocused">
+  <include name="bg_topbar_unfocused"/>
+  <include name="bg_borders"/>
+  <include name="outline_unfocused"/>
+</draw_ops>
+
+<draw_ops name="bg_window_unfocused_shaded">
   <include name="bg_topbar_unfocused"/>
   <include name="outline_unfocused"/>
 </draw_ops>
+
 
 <draw_ops name="bg_utility_borders_focused">
   <include name="bg_topbar_small_focused"/>
@@ -153,12 +173,7 @@
 
 {{{drawButtons}}}
 
-
-{{#title}}
-    <clip x="0" y="0" width="width" height="height"/>
-    <title color="HILITE" x="(width - title_width) / 2" y="(height-title_height) / 2 + 1"/>
-    <title color="COLOR" x="(width - title_width) / 2" y="(height-title_height) / 2"/>
-{{/title}}
+{{{drawTitles}}}
 
 <frame_style name="common_focused" geometry="normal">
   <piece position="title" draw_ops="title_focused"/>
@@ -205,8 +220,8 @@
 </frame_style>
 
 
-<frame_style name="normal_shaded_focused" geometry="normal" parent="normal_focused">
-  <piece position="entire_background" draw_ops="bg_window_borders"/>
+<frame_style name="normal_shaded_focused" geometry="normal_outline_only" parent="normal_focused">
+  <piece position="entire_background" draw_ops="bg_window_shaded"/>
   <!--<piece position="left_titlebar_edge" draw_ops="bg_left_title_shaded"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="bg_right_title_shaded"/>-->
 </frame_style>
@@ -250,13 +265,13 @@
   <button function="unstick" state="pressed" draw_ops="nop"/>  
 </frame_style>
 
-<frame_style name="normal_shaded_unfocused" geometry="normal" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="bg_window_borders"/>
+<frame_style name="normal_shaded_unfocused" geometry="normal_outline_only" parent="normal_unfocused">
+  <piece position="entire_background" draw_ops="bg_window_unfocused_shaded"/>
   <!--<piece position="left_titlebar_edge" draw_ops="bg_left_title_shaded"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="bg_right_title_shaded"/>-->
 </frame_style>
 
-<frame_style name="maximized_focused" geometry="no_borders" parent="common_focused">
+<frame_style name="maximized_focused" geometry="no_borders_square" parent="common_focused">
   <piece position="entire_background" draw_ops="bg_window_no_borders"/>
   <!--<piece position="top_titlebar_edge" draw_ops="bg_top_title"/>-->
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
@@ -267,11 +282,11 @@
   <button function="maximize" state="prelight" draw_ops="restore_button_prelight"/>
 </frame_style>
 
-<frame_style name="maximized_shaded_focused" geometry="no_borders" parent="maximized_focused">
+<frame_style name="maximized_shaded_focused" geometry="no_borders_square" parent="maximized_focused">
   <piece position="bottom_titlebar_edge" draw_ops="botton_outline"/>
 </frame_style>
 
-<frame_style name="maximized_unfocused" geometry="no_borders" parent="normal_unfocused">
+<frame_style name="maximized_unfocused" geometry="no_borders_square" parent="normal_unfocused">
   <piece position="entire_background" draw_ops="bg_window_no_borders_unfocused"/>
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
@@ -280,7 +295,7 @@
   <button function="maximize" state="prelight" draw_ops="restore_button_unfocused_prelight"/>
 </frame_style>
 
-<frame_style name="maximized_shaded_unfocused" geometry="no_borders" parent="maximized_unfocused">
+<frame_style name="maximized_shaded_unfocused" geometry="no_borders_square" parent="maximized_unfocused">
   <!--<piece position="bottom_titlebar_edge" draw_ops="botton_outline"/>-->
 </frame_style>
 
@@ -295,6 +310,24 @@
 </frame_style>
 
 <frame_style name="dialog_unfocused" parent="normal_unfocused">
+  <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->
+  <button function="close" state="normal" draw_ops="dialog_close_button_unfocused_normal"/>
+  <button function="close" state="pressed" draw_ops="dialog_close_button_unfocused_pressed"/>
+  <button function="close" state="prelight" draw_ops="dialog_close_button_unfocused_prelight"/>
+</frame_style>
+
+<frame_style name="dialog_shaded_focused" parent="normal_shaded_focused">
+  <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
+  <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>-->
+  <button function="close" state="normal" draw_ops="dialog_close_button_normal"/>
+  <button function="close" state="pressed" draw_ops="dialog_close_button_pressed"/>
+  <button function="close" state="prelight" draw_ops="dialog_close_button_prelight"/>
+</frame_style>
+
+<frame_style name="dialog_shaded_unfocused" parent="normal_shaded_unfocused">
   <!--<piece position="left_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="right_titlebar_edge" draw_ops="nop"/>-->
   <!--<piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title_unfocused"/>-->
@@ -360,8 +393,8 @@
   <frame focus="no" state="normal" resize="both" style="dialog_unfocused"/>
   <frame focus="yes" state="maximized" style="dialog_focused"/>
   <frame focus="no" state="maximized" style="dialog_unfocused"/>
-  <frame focus="yes" state="shaded" style="dialog_focused"/>
-  <frame focus="no" state="shaded" style="dialog_unfocused"/>
+  <frame focus="yes" state="shaded" style="dialog_shaded_focused"/>
+  <frame focus="no" state="shaded" style="dialog_shaded_unfocused"/>
   <frame focus="yes" state="maximized_and_shaded" style="dialog_focused"/>
   <frame focus="no" state="maximized_and_shaded" style="dialog_unfocused"/>
 </frame_style_set>

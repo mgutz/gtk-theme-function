@@ -32,7 +32,6 @@
         <?- draw.point(topBar.highlightArc, "width - 3 -1", 1) ?>
         <?- draw.point(topBar.highlightArc, "width - 1 -1", 3) ?>
     <? } ?>
-
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
