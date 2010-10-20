@@ -52,33 +52,33 @@ soxmint=("${sox[@]}" 'SO X Mint' 'SO X Mint Bar' 'SO X Mint IO' 'SO X Mint X')
 soxmintL=("${sox[@]}" 'SO X Mint Left' 'SO X Mint Bar Left' 'SO X Mint IO Left' 'SO X Mint X Left')
 
 cd ..
-tar cfz Function-$version.tar.gz "${squared[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz Lambda-$version.tar.gz "${rounded[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz Extras-$version.tar.gz "${extras[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-$version.tar.gz "${sox[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz Function-Lambda-$version.tar.gz Function-$version.tar.gz Lambda-$version.tar.gz Extras-$version.tar.gz SOX-$version.tar.gz
+tar cfj Function-$version.tar.bz2 "${squared[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj Lambda-$version.tar.bz2 "${rounded[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj Extras-$version.tar.bz2 "${extras[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-$version.tar.bz2 "${sox[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj Function-Lambda-$version.tar.bz2 Function-$version.tar.bz2 Lambda-$version.tar.bz2 Extras-$version.tar.bz2 SOX-$version.tar.bz2
 
-rm Function-$version.tar.gz 
-rm Lambda-$version.tar.gz 
-rm Extras-$version.tar.gz 
-rm SOX-$version.tar.gz
+rm Function-$version.tar.bz2 
+rm Lambda-$version.tar.bz2 
+rm Extras-$version.tar.bz2 
+rm SOX-$version.tar.bz2
 
-tar cfz SOX-Debian-$version.tar.gz "${soxdebian[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-Ubuntu-$version.tar.gz "${soxubuntu[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-Mint-$version.tar.gz "${soxmint[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-Debian-$version.tar.bz2 "${soxdebian[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-Ubuntu-$version.tar.bz2 "${soxubuntu[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-Mint-$version.tar.bz2 "${soxmint[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 
-tar cfz SOX-Debian-Left-$version.tar.gz "${soxdebianL[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-Ubuntu-Left-$version.tar.gz "${soxubuntuL[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfz SOX-Mint-Left-$version.tar.gz "${soxmintL[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-Debian-Left-$version.tar.bz2 "${soxdebianL[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-Ubuntu-Left-$version.tar.bz2 "${soxubuntuL[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
+tar cfj SOX-Mint-Left-$version.tar.bz2 "${soxmintL[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 
-tar cfz SSOX-$version.tar.gz \
-    SOX-Debian-$version.tar.gz SOX-Debian-Left-$version.tar.gz\
-    SOX-Ubuntu-$version.tar.gz SOX-Ubuntu-Left-$version.tar.gz \
-    SOX-Mint-$version.tar.gz SOX-Mint-Left-$version.tar.gz \
+tar cfj SSOX-$version.tar.bz2 \
+    SOX-Debian-$version.tar.bz2 SOX-Debian-Left-$version.tar.bz2\
+    SOX-Ubuntu-$version.tar.bz2 SOX-Ubuntu-Left-$version.tar.bz2 \
+    SOX-Mint-$version.tar.bz2 SOX-Mint-Left-$version.tar.bz2 \
     --exclude=.git --exclude=.gitignore --exclude=.*swp
 
-rm SOX*tar.gz
+rm SOX*tar.bz2
 
-mv SSOX-$version.tar.gz SOX-distros-$version.tar.gz
+mv SSOX-$version.tar.bz2 SOX-distros-$version.tar.bz2
 
 cd src 
