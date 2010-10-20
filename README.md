@@ -212,4 +212,5 @@ for retina burn.
 - Added left variants for: SO X X, SO X Bar, SO X IO
 - Repackage into left and right variants
 - Slight gloss on IO controls
+- Switched to bzip for archiving
 
