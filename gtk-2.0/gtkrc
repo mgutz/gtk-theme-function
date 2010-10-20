@@ -8,7 +8,7 @@
 # contrast setting is noticeable on disbled buttons
 #
 gtk_color_scheme = "bg_color:#dcdcdc\nselected_bg_color:#73ADE6\nfg_color:#101010\nselected_fg_color:#101010\nbase_color:#f4f4f4\ntext_color:#101010\ntooltip_bg_color:#242424\ntooltip_fg_color:#f4f4f4\nlink_color:#3476B8"
-gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
+gtk-icon-sizes = "panel-menu=22,22:panel=22,22:gtk-button=16,16:gtk-large-toolbar=22,22"
 gtk-auto-mnemonics = 1 
 style "default"
 {
@@ -651,7 +651,7 @@ widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" st
 widget "*PanelWidget*" 					style "panel"
 widget "*PanelApplet*" 					style "panel"
 widget "*fast-user-switch*"				style "panel" # workaround for Fast User Switch applet
-class "PanelApp*" 					    style "panel"
+class "PanelApp*" 					style "panel"
 class "PanelToplevel*" 					style "panel"
 widget_class "*notif*" 					style "panel"
 widget_class "*Notif*" 					style "panel"

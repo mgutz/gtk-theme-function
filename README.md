@@ -206,3 +206,10 @@ for retina burn.
 - Adjusted red hover color on leaf theme.
 - Lightened unselected tabs a tad
 - Reduced status bar window resize gripper.
+
+0.5.7
+
+- Added left variants for: SO X X, SO X Bar, SO X IO
+- Repackage into left and right variants
+- Slight gloss on IO controls
+

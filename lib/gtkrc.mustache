@@ -11,7 +11,7 @@
 #
 
 gtk_color_scheme = "bg_color:{{bgColor}}\nselected_bg_color:{{selectedBgColor}}\nfg_color:{{fgColor}}\nselected_fg_color:{{selectedFgColor}}\nbase_color:{{baseColor}}\ntext_color:{{textColor}}\ntooltip_bg_color:{{tooltipBgColor}}\ntooltip_fg_color:{{tooltipFgColor}}\nlink_color:{{linkColor}}"
-gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
+gtk-icon-sizes = "panel-menu=22,22:panel=22,22:gtk-button=16,16:gtk-large-toolbar=22,22"
 gtk-auto-mnemonics = 1 
 
 style "default"
@@ -414,6 +414,7 @@ style "progressbar"
 	fg[PRELIGHT] 	= "#fff"
 }
 
+
 style "statusbar" = "default"
 {
     ythickness = 3
@@ -782,7 +783,7 @@ widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" st
 widget "*PanelWidget*" 					style "panel"
 widget "*PanelApplet*" 					style "panel"
 widget "*fast-user-switch*"				style "panel" # workaround for Fast User Switch applet
-class "PanelApp*" 					    style "panel"
+class "PanelApp*" 					style "panel"
 class "PanelToplevel*" 					style "panel"
 widget_class "*notif*" 					style "panel"
 widget_class "*Notif*" 					style "panel"

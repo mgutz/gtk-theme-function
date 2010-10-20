@@ -698,7 +698,7 @@
     
 
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -706,11 +706,11 @@
 
 <draw_ops name="utility_close_button_pressed">
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -718,11 +718,11 @@
 
 <draw_ops name="utility_close_button_unfocused_normal">
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -730,11 +730,11 @@
 
 <draw_ops name="utility_close_button_unfocused_prelight">
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -742,7 +742,7 @@
 
 <draw_ops name="utility_close_button_unfocused_pressed">
     
-    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/close-x.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -771,7 +771,7 @@
     
 
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -779,11 +779,11 @@
 
 <draw_ops name="maximize_button_pressed">
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -791,11 +791,11 @@
 
 <draw_ops name="maximize_button_unfocused_normal">
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -803,11 +803,11 @@
 
 <draw_ops name="maximize_button_unfocused_prelight">
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -815,7 +815,7 @@
 
 <draw_ops name="maximize_button_unfocused_pressed">
     
-    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/maximize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -844,7 +844,7 @@
     
 
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -852,11 +852,11 @@
 
 <draw_ops name="restore_button_pressed">
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -864,11 +864,11 @@
 
 <draw_ops name="restore_button_unfocused_normal">
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -876,11 +876,11 @@
 
 <draw_ops name="restore_button_unfocused_prelight">
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -888,7 +888,7 @@
 
 <draw_ops name="restore_button_unfocused_pressed">
     
-    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/restore.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -917,7 +917,7 @@
     
 
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -925,11 +925,11 @@
 
 <draw_ops name="minimize_button_pressed">
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -937,11 +937,11 @@
 
 <draw_ops name="minimize_button_unfocused_normal">
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -949,11 +949,11 @@
 
 <draw_ops name="minimize_button_unfocused_prelight">
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -961,7 +961,7 @@
 
 <draw_ops name="minimize_button_unfocused_pressed">
     
-    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/minimize.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -990,7 +990,7 @@
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -998,11 +998,11 @@
 
 <draw_ops name="shade_button_pressed">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -1010,11 +1010,11 @@
 
 <draw_ops name="shade_button_unfocused_normal">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -1022,11 +1022,11 @@
 
 <draw_ops name="shade_button_unfocused_prelight">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -1034,7 +1034,7 @@
 
 <draw_ops name="shade_button_unfocused_pressed">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -1063,7 +1063,7 @@
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -1071,11 +1071,11 @@
 
 <draw_ops name="unshade_button_pressed">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -1083,11 +1083,11 @@
 
 <draw_ops name="unshade_button_unfocused_normal">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -1095,11 +1095,11 @@
 
 <draw_ops name="unshade_button_unfocused_prelight">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -1107,7 +1107,7 @@
 
 <draw_ops name="unshade_button_unfocused_pressed">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -1136,7 +1136,7 @@
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -1144,11 +1144,11 @@
 
 <draw_ops name="utility_shade_button_pressed">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -1156,11 +1156,11 @@
 
 <draw_ops name="utility_shade_button_unfocused_normal">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -1168,11 +1168,11 @@
 
 <draw_ops name="utility_shade_button_unfocused_prelight">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -1180,7 +1180,7 @@
 
 <draw_ops name="utility_shade_button_unfocused_pressed">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -1209,7 +1209,7 @@
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -1217,11 +1217,11 @@
 
 <draw_ops name="utility_unshade_button_pressed">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -1229,11 +1229,11 @@
 
 <draw_ops name="utility_unshade_button_unfocused_normal">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -1241,11 +1241,11 @@
 
 <draw_ops name="utility_unshade_button_unfocused_prelight">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -1253,7 +1253,7 @@
 
 <draw_ops name="utility_unshade_button_unfocused_pressed">
     
-    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/unshade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
@@ -1282,7 +1282,7 @@
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.3"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.30"/> 
     
 </draw_ops>
 
@@ -1290,11 +1290,11 @@
 
 <draw_ops name="menu_button_pressed">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.75" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.76" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.1"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.10"/> 
     
 </draw_ops>
 
@@ -1302,11 +1302,11 @@
 
 <draw_ops name="menu_button_unfocused_normal">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.9"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.90"/> 
     
 </draw_ops>
 
@@ -1314,11 +1314,11 @@
 
 <draw_ops name="menu_button_unfocused_prelight">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.5"/> 
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2" width="15" height="15" colorize="shade/#808080/0.50"/> 
     
 </draw_ops>
 
@@ -1326,7 +1326,7 @@
 
 <draw_ops name="menu_button_unfocused_pressed">
     
-    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.8" />
+    <image filename="images/gray-15/shade.png" x="(height-15)/2" y="(height-15)/2 + 1" width="15" height="15" colorize="shade/white/0.80" />
     
 
     
