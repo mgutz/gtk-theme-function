@@ -37,10 +37,10 @@ do
 done
 
 # always include GTK controls for each set
-squared=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Function' 'Function Raven' 'Function Shiny')
-rounded=('Fn Dark' 'Fn Gloss'  'Fn Smooth' 'Lambda' 'Lambda Raven' 'Lambda Shiny')
-extras=('Fn Smooth' 'Function Dot' 'Lambda Dot')
-sox=('Fn Gloss' 'SO X.' 'SO X. Left' 'SO X. Bar' 'SO X. Bar Left' 'SO X. X' 'SO X. X Left' 'SO X. IO' 'SO X. IO Left')
+squared=('Fn Gloss' 'Fn IO' 'Fn Smooth' 'Function' 'Function IO' 'Function Shiny')
+rounded=('Fn Gloss' 'Fn IO'  'Fn Smooth' 'Lambda' 'Lambda IO' 'Lambda Shiny')
+extras=('Fn Dark' 'Fn Smooth' 'Function Dot' 'Function Raven' 'Lambda Dot' 'Lambda Raven')
+sox=('Fn Gloss' 'Fn IO' 'SO X.' 'SO X. Left' 'SO X. Bar' 'SO X. Bar Left' 'SO X. X' 'SO X. X Left' 'SO X. IO' 'SO X. IO Left')
 
 soxdebian=("${sox[@]}" 'SO X Debian' 'SO X Debian Bar' 'SO X Debian IO' 'SO X Debian X')
 soxdebianL=("${sox[@]}" 'SO X Debian Left' 'SO X Debian Bar Left' 'SO X Debian IO Left' 'SO X Debian X Left')

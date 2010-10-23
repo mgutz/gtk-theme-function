@@ -8,10 +8,12 @@
   <date>September 28, 2010</date>
   <description>Clean and elegant.</description>
 </info>
+<!-- constants cannot use other contants -->
+<constant name="BorderWidth" value="1"/>
 <frame_geometry name="normal" rounded_top_left="4" rounded_top_right="4" rounded_bottom_left="false" rounded_bottom_right="false">
-  <distance name="left_width" value="1"/>
-  <distance name="right_width" value="1"/>
-  <distance name="bottom_height" value="1"/>
+  <distance name="left_width" value="BorderWidth"/>
+  <distance name="right_width" value="BorderWidth"/>
+  <distance name="bottom_height" value="BorderWidth"/>
   <distance name="left_titlebar_edge" value="5"/>
   <distance name="right_titlebar_edge" value="5"/>
   <distance name="title_vertical_pad" value="0"/>
@@ -26,8 +28,8 @@
      topbar same dimensions horizontally so it does jump.
 -->
 <frame_geometry name="normal_outline_only" parent="normal">
-  <distance name="left_width" value="1"/>
-  <distance name="right_width" value="1"/>
+  <distance name="left_width" value="BorderWidth"/>
+  <distance name="right_width" value="BorderWidth"/>
   <distance name="bottom_height" value="1"/>
 </frame_geometry>
 <!-- used by maximized windows -->
@@ -289,7 +291,11 @@
 <draw_ops name="bg_right_title_shaded">
 </draw_ops>
 <draw_ops name="bg_borders">
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="Borderwidth `max` 1" height="height-(title_height + 8)-1" x="0" y="(title_height + 8)"/>
     
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="BorderWidth `max` 1" height="height-(title_height + 8)-1" x="width - (BorderWidth `max` 1)" y="(title_height + 8)"/>
+    
+    <rectangle color="gtk:bg[NORMAL]" filled="true" width="width" height="BorderWidth `max` 1" x="0" y="height - (BorderWidth `max` 1)"/>
 </draw_ops>
 
 <draw_ops name="outline_focused_topbar_shadow">

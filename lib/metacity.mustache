@@ -11,10 +11,13 @@
   <description>Clean and elegant.</description>
 </info>
 
+<!-- constants cannot use other contants -->
+<constant name="BorderWidth" value="{{borderWidth}}"/>
+
 <frame_geometry name="normal" rounded_top_left="{{topRounding}}" rounded_top_right="{{topRounding}}" rounded_bottom_left="false" rounded_bottom_right="false">
-  <distance name="left_width" value="{{borderWidth}}"/>
-  <distance name="right_width" value="{{borderWidth}}"/>
-  <distance name="bottom_height" value="{{borderWidth}}"/>
+  <distance name="left_width" value="BorderWidth"/>
+  <distance name="right_width" value="BorderWidth"/>
+  <distance name="bottom_height" value="BorderWidth"/>
   <distance name="left_titlebar_edge" value="{{titleBarLRPadding}}"/>
   <distance name="right_titlebar_edge" value="{{titleBarLRPadding}}"/>
   <distance name="title_vertical_pad" value="0"/>
@@ -31,8 +34,8 @@
      topbar same dimensions horizontally so it does jump.
 -->
 <frame_geometry name="normal_outline_only" parent="normal">
-  <distance name="left_width" value="{{borderWidth}}"/>
-  <distance name="right_width" value="{{borderWidth}}"/>
+  <distance name="left_width" value="BorderWidth"/>
+  <distance name="right_width" value="BorderWidth"/>
   <distance name="bottom_height" value="1"/>
 </frame_geometry>
 

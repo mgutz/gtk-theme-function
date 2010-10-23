@@ -214,3 +214,15 @@ for retina burn.
 - Slight gloss on IO controls
 - Switched to bzip for archiving
 
+0.5.8
+
+Some usability changes:
+
+- BorderWidth constant in index.theme (recommend value of 3)
+- More contrast between inactive/active tab
+- Replace Raven, which was too dark, with IO as core coder theme
+
+Other fixes:
+
+- Move Raven to Extras archive
+- Removed padding in treeviews, scrollwindows

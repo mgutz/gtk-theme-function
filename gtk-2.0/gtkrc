@@ -12,8 +12,8 @@ gtk-icon-sizes = "panel-menu=22,22:panel=22,22:gtk-button=16,16:gtk-large-toolba
 gtk-auto-mnemonics = 1 
 style "default"
 {
-	xthickness = 2 # set this.xthickness + button.xthickness >= 3 to get nice spacing on breadcrumbs in open file dialog
-	ythickness = 1
+	xthickness = 0 # set this.xthickness + butt0n.xthickness >= 3 to get nice spacing on breadcrumbs in open file dialog
+	ythickness = 0
 	#######################
 	# Style Properties
 	#######################
@@ -26,8 +26,8 @@ style "default"
 	GtkButton::child-displacement-y = 1
 	GtkButton::default-border = { 0, 0, 0, 0 }
 	GtkCheckButton::indicator-size = 14
-	GtkPaned::handle-size = 5
-        GtkNotebook ::tab-overlap = 3 
+	GtkPaned::handle-size = 3
+        GtkNotebook ::tab-overlap = 1 
 	GtkRange::trough-border = 0
 	GtkRange::slider-width = 14
 	GtkRange::stepper-size = 18 
@@ -44,7 +44,10 @@ style "default"
 	GtkTreeView::vertical-separator = 0
         GtkTreeView::odd-row-color = @base_color 
         GtkTreeView::even-row-color = shade(1.03, @base_color)
-	#GtkProgressBar ::min-vertical-bar-width = 14 #GtkProgressBar ::min-horizontal-bar-width = 14 #GtkProgressBar ::min-horizontal-bar-height = 14 #GtkProgressBar ::min-vertical-bar-height = 12
+	GtkProgressBar::min-vertical-bar-width = 16 
+        #GtkProgressBar ::min-horizontal-bar-width = 14 
+        GtkProgressBar::min-horizontal-bar-height = 16 
+        #GtkProgressBar ::min-vertical-bar-height = 12
 	GtkMenu::horizontal-padding = 1
 	GtkMenu::vertical-padding = 0
 	WnckTasklist::fade-overlay-rect = 0
@@ -99,6 +102,7 @@ style "default"
 		contrast            = 0.4   # 0.8 for less contrast, more than 1.0 for more contrast on borders
 		expanderstyle       = 0 # 0 = arrows, 1 = circles with plus/minus, 2 = buttons with plus/minus
 		focus_color         = @selected_bg_color 
+                focusstyle          = 0
 		glazestyle          = 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          = 1.1   # sets glow amount for buttons or widgets
 		glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
@@ -184,6 +188,7 @@ style "entry"
 	{
 		border_shades = {1.0, 1.0 }
 		contrast = .8
+                focusstyle = 1
 	}
 }
 style "button"
@@ -210,33 +215,28 @@ style "button"
 }
 style "toolbar" 
 {
+    xthickness=0
+    ythickness=2
 }
 style "toolbar-item" = "toolbar"
 {
 }
-style "notebook" = "wider"
-{
-	engine "murrine"
-	{
-		contrast = .8
-		#gradient_shades = {1.1,1.06,0.92,0.1} # { 1.1, 1.02, 0.97, 0.93 }
-		lightborder_shade = 1.1
-	}
-	
-	bg[ACTIVE] = shade(1.07, @bg_color) # inactive tabs
+style "notebook-tab" {
+    fg[ACTIVE] = mix(0.9, @fg_color, 'white') # inactive tab text
 }
-style "terminal-notebook" = "wider"
+style "notebook"
 {
+        xthickness=1
+        ythickness=1
 	engine "murrine"
 	{
 		contrast = .8
-		#gradient_shades = {1.1,1.06,0.92,0.1} # { 1.1, 1.02, 0.97, 0.93 }
+		#gradient_shades = {0.97,0.92,0.92,0.87} # { 1.1, 1.02, 0.97, 0.93 }
+		gradient_shades = {1.0,0.95,0.95,0.9} # { 1.1, 1.02, 0.97, 0.93 }
 		lightborder_shade = 1.1
 	}
 	
-        #bg[NORMAL] = mix(0.2, @selected_bg_color, @bg_color)
-        bg[NORMAL] = shade(0.9, @bg_color)
-	bg[ACTIVE] = shade(1.0, @bg_color) # inactive tabs
+	bg[ACTIVE] = shade(1.1, @bg_color) # inactive tabs
 }
 style "panel" = "selected"
 {
@@ -262,7 +262,7 @@ style "terminal"
 }
 style "menu" 
 {
-	xthickness = 1
+	xthickness = 0
 	ythickness = 1
 	bg[INSENSITIVE]   = mix (0.4, @selected_bg_color, @bg_color)
         engine "murrine" 
@@ -272,7 +272,7 @@ style "menu"
 }
 style "menu-item" = "default"
 {
-	xthickness = 0
+	xthickness = 1
 	ythickness = 4
         #bg[SELECTED] = mix(0.5, @selected_bg_color, @bg_color) #@selected_bg_color 
 	    bg[SELECTED] = @selected_bg_color
@@ -284,6 +284,7 @@ style "menu-item" = "default"
 	
             	glowstyle = 0
            	roundness = 0
+                textstyle = 1
         }
 }
 style "separator-menu-item"
@@ -296,12 +297,14 @@ style "separator-menu-item"
 }
 style "treeview"
 {
+    xthickness = 0
+    ythickness = 0
 }
 # make comboboxes, togglebuttons flatter than buttons. most themes
 # look too bumpy
 style "treeview-header"
 {
-	ythickness = 1
+	ythickness = 0
 	xthickness = 1
 	bg[NORMAL]	= shade(1.02,@bg_color)
 	bg[PRELIGHT] 	= shade (.9, @bg_color)
@@ -313,7 +316,7 @@ style "treeview-header"
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
-		gradient_shades     = {1.05, 0.97, 0.97, 0.9} # default: {1.1,1.0,1.0,1.1}
+		gradient_shades     = {1.02, 0.97, 0.97, 0.92} # default: {1.1,1.0,1.0,1.1}
 		highlight_shade     	= 1.0  # set highlight amount for buttons or widgets
 		lightborder_shade   	= 1.1   # sets lightborder amount for buttons or widgets
                 roundness = 0
@@ -406,6 +409,7 @@ style "chiclet"
 		border_shades       	= { 1.03, 0.9} # draw a gradient on the border.
                 border_colors       	= { darker(@bg_color), darker(@bg_color) }
 		contrast = 0.8
+                focusstyle = 1
 		glazestyle          	= 0     # 0 = flat, 1 = curved, 2 = concave, 3 = top-curved, 4 = beryl
 		glow_shade          	= 1.0   # sets glow amount for buttons or widgets
 		glowstyle           	= 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = center (vertical), 4 = center (horizontal) 
@@ -494,8 +498,11 @@ style "nautilus-location"
 }
 style "nautilus-sidebar" 
 {
-	GtkTreeView::even_row_color = @base_color 
-	#GtkTreeView::even_row_color = @bg_color
+	#GtkTreeView::even_row_color = @base_color 
+	GtkTreeView::even_row_color = @bg_color
+        engine "murrine" {
+            contrast = 0.0
+        }
 }
 style "radiocheck"
 {
@@ -512,8 +519,8 @@ style "radiocheck"
 style "scrolledwindow" {
     GtkScrolledWindow ::scrollbar-within-bevel = 1 
     # controls the thickness inside of file views, etc
-    xthickness = 3
-    ythickness = 3
+    xthickness = 1
+    ythickness = 1
     engine "murrine"
     {
          contrast = 0.8 
@@ -536,7 +543,7 @@ widget "*IdoEntryMenuItem*" style "wide"
 # default style is applied to every widget
 class "GtkWidget"    style "default"
 # Increase the x/ythickness in some widgets
-class "GtkToolbar"   					style "default" 
+class "GtkToolbar"   					style "toolbar" 
 class "GtkRange"     					style "wide"
 class "GtkFrame"     					style "wide"
 class "GtkSeparator" 					style "wide"
@@ -554,7 +561,6 @@ widget_class "*<GtkNotebook>*<GtkEventBox>"     	style "notebook"
 widget_class "*<GtkNotebook>*<GtkDrawingArea>"		style "notebook"
 widget_class "*<GtkNotebook>*<GtkLayout>"       	style "notebook"
 widget_class "*<GtkNotebook>*<GtkViewport>"		style "notebook"
-#widget_class "*<GtkNotebook>*<GtkScrolledWindow>"	style "notebook"
 widget_class "*<GtkScrolledWindow>"	style "scrolledwindow"
 widget_class "*<GtkButton>"      			style "button"
 widget_class "*<GtkNotebook>"    			style "notebook"
@@ -598,8 +604,9 @@ widget "gtk-tooltip*" 					style "tooltips"
 # ToDo: A more generic approach for all applications that have a widget like this.
 widget "*.nautilus-extra-view-widget" 			style : highest "nautilus-location"
 # Nautilus sidebar
-widget_class "*Nautilus*Places*Sidebar*"    	style "nautilus-sidebar"
-widget_class "*Nautilus*Side*.GtkWidget"    	style "nautilus-sidebar"
+#widget_class "*Nautilus*Places*Sidebar*"    	style "nautilus-sidebar"
+#widget_class "*Nautilus*Sidebar*"    	style "nautilus-sidebar"
+#widget_class "*Nautilus*Side*.GtkWidget"    	style "nautilus-sidebar"
 # Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
 # Note that the work around assumes that the combobox is _not_ in
 # appears-as-list mode.
@@ -655,6 +662,5 @@ class "PanelApp*" 					style "panel"
 class "PanelToplevel*" 					style "panel"
 widget_class "*notif*" 					style "panel"
 widget_class "*Notif*" 					style "panel"
-widget_class "Terminal*Notebook*" style "terminal-notebook"
-class "TerminalScreen" style "terminal"
+class "TerminalScreen"                                  style "terminal"
 # vim: set ft=gtkrc :
