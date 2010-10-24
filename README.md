@@ -218,11 +218,16 @@ for retina burn.
 
 Some usability changes:
 
-- BorderWidth constant in index.theme (recommend value of 3)
+- BorderWidth constant in metacity theme (set value of >=3 if you're having problems resizing)
 - More contrast between inactive/active tab
-- Replace Raven, which was too dark, with IO as core coder theme
+- Replace Raven with IO as core coding theme
 
 Other fixes:
 
 - Move Raven to Extras archive
 - Removed padding in treeviews, scrollwindows
+
+0.5.9
+
+- Simplified menu/listview/treeview highlights
+- Slight adjustment to button dimensions

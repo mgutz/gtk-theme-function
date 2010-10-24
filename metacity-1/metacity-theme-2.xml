@@ -69,14 +69,16 @@
 </frame_geometry>
 <draw_ops name="nop">
 </draw_ops>
+
+
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_focused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) * 0.53">
         <color value="#c6c6c6"/>
         <color value="#b0b0b0"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height + 8) /2" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="(title_height + 8) * 0.53" width="width" height="(title_height + 8) * 0.47">
         <color value="#afafaf"/>
         <color value="#999999"/>
     </gradient>
@@ -106,14 +108,16 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
+
+
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_unfocused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) * 0.53">
         <color value="#dadada"/>
         <color value="#c6c6c6"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height + 8) /2" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="(title_height + 8) * 0.53" width="width" height="(title_height + 8) * 0.47">
         <color value="#c5c5c5"/>
         <color value="#b0b0b0"/>
     </gradient>
@@ -143,14 +147,16 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
+
+
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_focused_max">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) * 0.53">
         <color value="#c6c6c6"/>
         <color value="#b0b0b0"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height + 8) /2" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="(title_height + 8) * 0.53" width="width" height="(title_height + 8) * 0.47">
         <color value="#afafaf"/>
         <color value="#999999"/>
     </gradient>
@@ -180,14 +186,16 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
+
+
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_unfocused_max">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 8) * 0.53">
         <color value="#dadada"/>
         <color value="#c6c6c6"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height + 8) /2" width="width" height="(title_height + 8) /2">
+    <gradient type="vertical" x="0" y="(title_height + 8) * 0.53" width="width" height="(title_height + 8) * 0.47">
         <color value="#c5c5c5"/>
         <color value="#b0b0b0"/>
     </gradient>
@@ -217,14 +225,16 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
+
+
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_small_focused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 4) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 4) * 0.53">
         <color value="#c6c6c6"/>
         <color value="#b0b0b0"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height + 4) /2" width="width" height="(title_height + 4) /2">
+    <gradient type="vertical" x="0" y="(title_height + 4) * 0.53" width="width" height="(title_height + 4) * 0.47">
         <color value="#afafaf"/>
         <color value="#999999"/>
     </gradient>
@@ -245,14 +255,16 @@
 </draw_ops>
 
 <!-- vim: set ft=xml : -->
+
+
 <!-- Draws the topbar. -->
 <draw_ops name="bg_topbar_small_unfocused">
-    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 4) /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="(title_height + 4) * 0.53">
         <color value="#dadada"/>
         <color value="#c6c6c6"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="(title_height + 4) /2" width="width" height="(title_height + 4) /2">
+    <gradient type="vertical" x="0" y="(title_height + 4) * 0.53" width="width" height="(title_height + 4) * 0.47">
         <color value="#c5c5c5"/>
         <color value="#b0b0b0"/>
     </gradient>
@@ -354,7 +366,7 @@
 <!-- vim: set ft=xml : -->
 <draw_ops name="outline_unfocused_topbar_shadow">
     <!-- topbar shadow -->
-    <line color="#7c7c7c" width="1" x1="0" y1="(title_height + 8) -1" x2="width" y2="(title_height + 8) -1"/>
+    <line color="#808080" width="1" x1="0" y1="(title_height + 8) -1" x2="width" y2="(title_height + 8) -1"/>
 </draw_ops>
 
 <!-- Draws the 1px outline around entire window. The title bar's bottom shadow is

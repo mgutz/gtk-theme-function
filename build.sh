@@ -1,12 +1,12 @@
 #!/bin/bash
 
-version=0.5.7
+version=0.5.8
 
 node lib/gtkrc.js
 node lib/metacity.js 
 
 # always copy images
-themes=('Function' 'Function Dot' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X.' 'SO X. Left' 'SO X. Bar' 'SO X. Bar Left' 'SO X. X' 'SO X. IO' 'SO X. IO Left')
+themes=('Function' 'Function Dot' 'Function IO' 'Function Raven' 'Function Shiny' 'Lambda' 'Lambda IO' 'Lambda Dot' 'Lambda Raven' 'Lambda Shiny' 'SO X.' 'SO X. Left' 'SO X. Bar' 'SO X. Bar Left' 'SO X. X' 'SO X. IO' 'SO X. IO Left')
 for i in ${!themes[@]}
 do
   theme=${themes[i]}
@@ -14,7 +14,7 @@ do
   cp -R metacity-1/images "../$theme/metacity-1"
 done
 
-gtks=('Fn Dark' 'Fn Gloss' 'Fn Smooth')
+gtks=('Fn Dark' 'Fn Gloss' 'Fn IO' 'Fn Smooth')
 for i in ${!gtks[@]}
 do
     images=('blank.png' 'statusgrip.png' 'handlebox.png')
@@ -24,12 +24,12 @@ do
 done
 
 # add controls to array
-themes=("${themes[@]}" 'Fn Dark' 'Fn Gloss' 'Fn Smooth')
+all_themes=("${themes[@]}" "${gtks[@]}")
 
 # add info files
-for i in ${!themes[@]}
+for i in ${!all_themes[@]}
 do
-  theme=${themes[i]}
+  theme=${all_themes[i]}
   echo "AUTHOR: Mario Gutierrez (mgutz)" > "../$theme/README.txt"
   echo "VERSION: $version" >> "../$theme/README.txt"
   echo "" >> "../$theme/README.txt"

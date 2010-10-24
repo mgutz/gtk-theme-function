@@ -1,11 +1,16 @@
+<? 
+    var upperPercent = topBar.gradientMidPercent;
+    var lowerPercent = 1 - topBar.gradientMidPercent;
+?>
+
 <!-- Draws the topbar. -->
 <draw_ops name="<?= topBar.name ?>">
-    <gradient type="vertical" x="0" y="0" width="width" height="<?= topBar.effectiveHeight ?> /2">
+    <gradient type="vertical" x="0" y="0" width="width" height="<?= topBar.effectiveHeight ?> * <?= upperPercent ?>">
         <color value="<?= topBar.gradients[0] ?>"/>
         <color value="<?= topBar.gradients[1] ?>"/>
     </gradient>
 
-    <gradient type="vertical" x="0" y="<?= topBar.effectiveHeight ?> /2" width="width" height="<?= topBar.effectiveHeight ?> /2">
+    <gradient type="vertical" x="0" y="<?= topBar.effectiveHeight ?> * <?= upperPercent ?>" width="width" height="<?= topBar.effectiveHeight ?> * <?= lowerPercent ?>">
         <color value="<?= topBar.gradients[2] ?>"/>
         <color value="<?= topBar.gradients[3] ?>"/>
     </gradient>
