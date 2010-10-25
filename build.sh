@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=0.5.8
+version=0.5.9
 
 node lib/gtkrc.js
 node lib/metacity.js 
@@ -41,6 +41,7 @@ squared=('Fn Gloss' 'Fn IO' 'Fn Smooth' 'Function' 'Function IO' 'Function Shiny
 rounded=('Fn Gloss' 'Fn IO'  'Fn Smooth' 'Lambda' 'Lambda IO' 'Lambda Shiny')
 extras=('Fn Dark' 'Fn Smooth' 'Function Dot' 'Function Raven' 'Lambda Dot' 'Lambda Raven')
 sox=('Fn Gloss' 'Fn IO' 'SO X.' 'SO X. Left' 'SO X. Bar' 'SO X. Bar Left' 'SO X. X' 'SO X. X Left' 'SO X. IO' 'SO X. IO Left')
+installer=('install' 'lib/utils.sh')
 
 soxdebian=("${sox[@]}" 'SO X Debian' 'SO X Debian Bar' 'SO X Debian IO' 'SO X Debian X')
 soxdebianL=("${sox[@]}" 'SO X Debian Left' 'SO X Debian Bar Left' 'SO X Debian IO Left' 'SO X Debian X Left')
@@ -56,7 +57,7 @@ tar cfj Function-$version.tar.bz2 "${squared[@]}" --exclude=.git --exclude=.giti
 tar cfj Lambda-$version.tar.bz2 "${rounded[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 tar cfj Extras-$version.tar.bz2 "${extras[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
 tar cfj SOX-$version.tar.bz2 "${sox[@]}" --exclude=.git --exclude=.gitignore --exclude=.*swp
-tar cfj Function-Lambda-$version.tar.bz2 Function-$version.tar.bz2 Lambda-$version.tar.bz2 Extras-$version.tar.bz2 SOX-$version.tar.bz2
+tar cfj Function-Lambda-$version.tar.bz2 Function-$version.tar.bz2 Lambda-$version.tar.bz2 Extras-$version.tar.bz2 SOX-$version.tar.bz2 -C src "${installer[@]}" 
 
 rm Function-$version.tar.bz2 
 rm Lambda-$version.tar.bz2 
@@ -75,6 +76,7 @@ tar cfj SSOX-$version.tar.bz2 \
     SOX-Debian-$version.tar.bz2 SOX-Debian-Left-$version.tar.bz2\
     SOX-Ubuntu-$version.tar.bz2 SOX-Ubuntu-Left-$version.tar.bz2 \
     SOX-Mint-$version.tar.bz2 SOX-Mint-Left-$version.tar.bz2 \
+    -C src "${installer[@]}" \
     --exclude=.git --exclude=.gitignore --exclude=.*swp
 
 rm SOX*tar.bz2

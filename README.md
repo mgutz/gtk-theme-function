@@ -229,5 +229,6 @@ Other fixes:
 
 0.5.9
 
+- Installer. Verifies Murrine is installed, options for border width and left controls.
 - Simplified menu/listview/treeview highlights
 - Slight adjustment to button dimensions
