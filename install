@@ -1,0 +1,233 @@
+#!/bin/bash
+
+source ./lib/utils.sh
+
+usage() {
+    echo ''
+    echo 'Usage: install [Options] ARCHIVE'
+    echo ''
+    echo 'Function & Lambda Theme Installer/Uninstaller.'
+    echo ''
+    echo 'Options'
+    echo '    -b BORDER_WIDTH     Sets the border width on themes'
+    echo '    -f                  Force install even if prerequisites cannot be found'
+    echo '    -h                  Shows this help screen'
+    echo '    -l                  Move controls to left on Function & Lambda themes'
+    echo '    -s                  Install as shared themes (requires sudo)'
+    echo '    -x                  Removes all Function & Lambda themes' 
+    echo ''
+    echo 'Examples'
+    echo 'Install Lambda archive with 9px border width and controls to left side.'
+    echo '    ./install -b 9 -l Lambda-0.5.9.tar.bz2'
+    echo ''
+    echo 'Install themes as shared/global.'
+    echo '    sudo ./install -s Lambda-0.5.9.tar.bz2' 
+    echo ''
+    echo 'Uninstall'
+    echo '    ./install -x'
+}
+
+TMPDIR=''
+
+
+verify_prerequisites() {
+    cinfo "Checking for updated Murrine engine"
+    local murrine_config='/usr/share/gtk-engines/murrine.xml'
+    local version=$(grep '<version>.*</version>' $murrine_config | sed 's/^.*>\([0-9]\{1,\}\.[0-9]\{1,\}\).*$/\1/')
+
+    ftest "$version < 0.98" && {
+        cerror "GTK2 Murrine >= 0.98 is not installed and is required by this theme."
+        cmore "Please install updated Murrine engine."
+        exit 1
+    }
+}
+
+
+# $1 = directory
+backup() {
+    # if directory does not exist, ignore
+    [ -d $1 ] || return 0
+
+    cinfo "Backing up $1"
+    local base_name=`basename $1`;
+    local dir_name=`dirname $1`
+    local archive="backup/themes-`date +%s`.tar.bz2"
+
+    mkdir -p backup
+    ccheck $? "Could not make `pwd`/backup directory"
+
+    tar cfj $archive -C $dir_name $base_name
+    ccheck $? "Failed to make backup."
+
+    cok "Existing themes backed up to: $archive" 
+}
+
+
+# $1 = archive $2 = destination directory
+extract_themes() {
+    remove
+
+    local archive=$1
+    local dest=$2
+    local border_width=$3
+    local left_controls=$4
+
+    # use the file basename as the temp directory
+    local tmpdir=${archive##*/}
+    tmpdir=${tmpdir%.tar.bz2}
+
+    # extract it
+    cinfo "Extracting themes from $archive"
+    mkdir -p $tmpdir
+    tar xfj "$archive" -C "$tmpdir" --overwrite
+    ccheck $? "Failed extracting archive: $archive to: $tmpdir"
+    chmod -R 755 $tmpdir/*
+    cok "Archive extracted and staged"
+
+    # set border widths
+    if [ $border_width -gt 0 ]; then
+        cinfo "Setting border widths"
+        find . -name metacity-theme-2.xml -print0 | xargs -0 \
+            sed -i "s,constant.*BorderWidth.*$,constant name='BorderWidth' value='$border_width'/>,"
+        cok "Widths set"
+    fi
+
+    # set border widths
+    if [ $left_controls == true ]; then
+        cinfo "Moving controls to left"
+        ls -1 $tmpdir/{Function,Lambda}*/index.theme 2>/dev/null | tr '\n' '\0' | xargs -0 \
+            sed -i "s/ButtonLayout=.*/ButtonLayout=close,minimize,maximize:shade/"
+        cok "Controls moved"
+    fi
+
+
+    # copy themes to themes
+    [ -d $dest ] || mkdir -p "$dest" 
+
+    cinfo "Copying files to themes directory: $dest"
+    cp -R $tmpdir/* $dest
+    ccheck $? "Failed copying to: $dest"
+    TMPDIR=$tmpdir
+    cok "Themes copied"
+}
+
+
+remove() {
+    if [ `ls $HOME/.themes/Fn* 2> /dev/null | wc -l` -gt 0 ]; then
+        cinfo "Removing existing local themes"
+        rm -rf $HOME/.themes/Fn*
+        rm -rf $HOME/.themes/SO\ X*
+        rm -rf $HOME/.themes/Function*
+        rm -rf $HOME/.themes/Lambda*
+        cok "Local themes removed"
+    fi
+
+    if [ `ls /usr/share/themes/Fn* 2> /dev/null | wc -l` -gt 0 ]; then
+        if [[ $EUID -eq 0 ]]; then
+            cinfo "Removing existing shared themes"
+            rm -rf /usr/share/themes/Fn*
+            rm -rf /usr/share/themes/SO\ X*
+            rm -rf /usr/share/themes/Function*
+            rm -rf /usr/share/themes//Lambda*
+            cok "Shared themes removed"
+        else
+            cwarn "Shared Function themes found. Run this script as root (sudo) to remove."
+            exit 1
+        fi
+    fi
+}
+
+main() {
+    local border_width=0
+    local install_shared=false
+    local install_dir=$HOME/.themes
+    local remove=false
+    local show_usage=false
+    local force=false
+    local left_controls=false
+
+    while getopts "b:fhlsx" opt; do
+        case $opt in
+            b) 
+                border_width=$OPTARG
+            ;;
+
+            s) 
+                if [[ $EUID -ne 0 ]]; then
+                    cerror 'Script must be run as root (sudo) to install shared themes'
+                    exit 1
+                fi
+                install_dir=/usr/share/themes
+            ;;
+
+            x)
+                remove=true
+            ;;
+
+            f)
+                force=true
+            ;;
+
+            l)
+                left_controls=true
+            ;;
+
+
+            h)
+                show_usage=true
+            ;;
+        esac
+    done
+
+    if [ $show_usage == true ]; then
+        usage
+        exit 0
+    fi
+
+
+    if [ $remove == true ]; then
+        read -p "Remove all Function, Lambda, SO X themes? (y/n)"
+        if [ "$REPLY" == "y" ]; then
+            cstart "Uninstalling"
+            remove
+            cend "Uninstalled"
+            exit 0
+
+        else
+            cwarn "Cancelled"
+            exit 1
+        fi
+    fi
+
+    shift $(($OPTIND - 1))
+    local archive="$1"
+
+    if [ -z $archive ]; then
+        usage
+        exit 1
+    fi
+
+    if [ ! -f $archive ]; then
+        cerror "$archive does not exist."
+        exit 1
+    fi
+
+    cstart "Installing $archive"
+    [ $force == false ] && verify_prerequisites
+
+    backup $install_dir themes
+    extract_themes $archive $install_dir $border_width $left_controls
+
+    cend 'Finished installation'
+
+    echo ''
+    echo 'These themes have been installed and are available'
+    echo 'from Start Menu -> Preferences -> Appearance -> Themes'
+    echo ''
+    find . -name metacity-theme-2.xml | sort | sed 's,.*/\([^/]*\)/metacity-1/.*$,\t\1,'
+    #rm -rf $TMPDIR
+}
+
+main "${@}"
+
+# vim: set ft=sh:
